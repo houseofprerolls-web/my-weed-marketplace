@@ -165,8 +165,25 @@ if (-not $pushBranch) {
 
 try {
   Write-Host ('Pushing branch "{0}" to origin ...' -f $pushBranch)
-  $pushLines = @(& $git push -u origin $pushBranch 2>&1 | ForEach-Object { "$_" })
-  $pushExit = $LASTEXITCODE
+  # PowerShell 7+ can treat native stderr (git prints progress there) as NativeCommandError and surface it as a terminating-looking error even when push succeeds.
+  $savedNativeErr = $null
+  if ($PSVersionTable.PSVersion.Major -ge 7) {
+    $savedNativeErr = $PSNativeCommandUseErrorActionPreference
+    $PSNativeCommandUseErrorActionPreference = $false
+  }
+  try {
+    $rawPush = @(& $git push -u origin $pushBranch 2>&1)
+    $pushExit = $LASTEXITCODE
+    $pushLines = @($rawPush | ForEach-Object {
+      if ($_ -is [System.Management.Automation.ErrorRecord]) { $_.Exception.Message }
+      else { "$_" }
+    })
+  }
+  finally {
+    if ($null -ne $savedNativeErr) {
+      $PSNativeCommandUseErrorActionPreference = $savedNativeErr
+    }
+  }
   foreach ($line in $pushLines) { Write-Host $line }
 
   if ($pushExit -ne 0) {
