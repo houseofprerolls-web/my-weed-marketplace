@@ -139,10 +139,16 @@ if (-not $git) { Write-Error 'git not found. Install Git for Windows.' }
 & $git rev-parse --is-inside-work-tree 2>$null | Out-Null
 if ($LASTEXITCODE -ne 0) { Write-Error ('Not a git repository: {0}' -f $repoRoot) }
 
-& $git remote remove origin 2>$null
 $cleanUrl = 'https://github.com/{0}/{1}.git' -f $slug, $RepoName
 $pushUrl = 'https://x-access-token:{0}@github.com/{1}/{2}.git' -f $t, $slug, $RepoName
-& $git remote add origin $cleanUrl
+$remotes = @(& $git remote 2>$null)
+if ($remotes -contains 'origin') {
+  & $git remote set-url origin $cleanUrl
+}
+else {
+  & $git remote add origin $cleanUrl
+}
+if ($LASTEXITCODE -ne 0) { Write-Error 'Could not add or update git remote origin.' }
 & $git remote set-url origin $pushUrl
 
 Write-Host 'Pushing main to origin ...'
