@@ -5,6 +5,7 @@ import type { SiteBannerRow } from '@/lib/siteBanners';
 import { resolveMarketingBannerImageUrl } from '@/lib/marketingBanners/imageUrl';
 import { pickBannersForShopperListingMarket } from '@/lib/marketingBanners/regionPick';
 import { MARKETING_BANNER_SLIDES_TABLE } from '@/lib/marketingBanners/table';
+import { rewriteVercelAppBannerClickUrl } from '@/lib/marketingBanners/rewriteVercelBannerLink';
 import {
   MARKETING_SLIDE_SELECT_BASE,
   MARKETING_SLIDE_SELECT_FULL,
@@ -52,7 +53,11 @@ export async function fetchMarketingBannerSlides(
   );
 
   const withUrls = (list: SiteBannerRow[]) =>
-    list.map((r) => ({ ...r, image_url: resolveMarketingBannerImageUrl(r.image_url) }));
+    list.map((r) => ({
+      ...r,
+      image_url: resolveMarketingBannerImageUrl(r.image_url),
+      link_url: rewriteVercelAppBannerClickUrl(r.link_url) ?? r.link_url,
+    }));
 
   if (vendorIds.length === 0) return withUrls(rows);
 

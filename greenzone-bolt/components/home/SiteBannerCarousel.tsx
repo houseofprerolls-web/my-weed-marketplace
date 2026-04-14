@@ -30,6 +30,7 @@ import {
 import { FALLBACK_LA_ZIP } from '@/lib/geoZip';
 import { readShopperZip5 } from '@/lib/shopperLocation';
 import { buildMarketingAdPreviewSlides, marketingAdDemoEnabled } from '@/lib/marketingBanners/adPreviewDemos';
+import { rewriteVercelAppBannerClickUrl } from '@/lib/marketingBanners/rewriteVercelBannerLink';
 
 const MARKETING_BANNERS_API = '/api/public/marketing-banners';
 const DEFAULT_DWELL_MS = 4500;
@@ -152,12 +153,14 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 function hrefForSlide(s: Slide): string {
+  const rewrite = (href: string) => rewriteVercelAppBannerClickUrl(href) ?? href;
   if (bannerKind(s) === 'admin') {
     const u = s.link_url?.trim();
-    return u && u.length > 0 ? u : '/';
+    if (u && u.length > 0) return rewrite(u);
+    return '/';
   }
   const u = s.link_url?.trim();
-  if (u && u.length > 0) return u;
+  if (u && u.length > 0) return rewrite(u);
   return siteBannerListingHref(s);
 }
 

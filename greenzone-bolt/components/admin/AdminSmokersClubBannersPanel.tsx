@@ -39,6 +39,7 @@ import {
   marketingBannerImageUrlSaveErrorMessage,
 } from '@/lib/marketingBanners/validateImageUrl';
 import { MARKETING_BANNER_SLIDES_TABLE } from '@/lib/marketingBanners/table';
+import { rewriteVercelAppBannerClickUrl } from '@/lib/marketingBanners/rewriteVercelBannerLink';
 import {
   MARKETING_SLIDE_SELECT_BASE,
   MARKETING_SLIDE_SELECT_FULL,
@@ -82,13 +83,15 @@ const BANNER_PRESET_SELECT_CONTENT_CLASS =
 /** Select value for `listing_market_id` null (global fallback rows). */
 const LISTING_MARKET_NONE = '__global__';
 
-/** Paths like `deals` → `/deals`; http(s) and `//` URLs unchanged. */
+/** Paths like `deals` → `/deals`; full URLs rewritten from `*.vercel.app` to canonical site. */
 function normalizeBannerLinkUrl(raw: string): string {
   const t = raw.trim();
   if (!t) return t;
-  if (/^https?:\/\//i.test(t)) return t;
-  if (t.startsWith('//')) return t;
-  return t.startsWith('/') ? t : `/${t}`;
+  let out: string;
+  if (/^https?:\/\//i.test(t)) out = t;
+  else if (t.startsWith('//')) out = t;
+  else out = t.startsWith('/') ? t : `/${t}`;
+  return rewriteVercelAppBannerClickUrl(out) ?? out;
 }
 
 /** Matches public carousel ordering: `sort_order` then newest first. */
