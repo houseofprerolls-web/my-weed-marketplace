@@ -99,6 +99,7 @@ export const PROTECTED_ROUTES = {
     '/vendor/billing',
     '/vendor/settings',
     '/vendor/team',
+    '/vendor/store-qr',
   ],
   ADMIN: [
     '/admin',

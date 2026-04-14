@@ -33,6 +33,7 @@ import {
   Palette,
   Package,
   Code2,
+  QrCode,
   type LucideIcon,
 } from 'lucide-react';
 import { VendorMarketplaceToggle } from '@/components/supply/VendorMarketplaceToggle';
@@ -136,6 +137,13 @@ const navigationItems: VendorNavItem[] = [
     icon: TicketPercent,
     badge: null,
     activePathPrefix: '/vendor/promo-codes',
+  },
+  {
+    title: 'Store QR',
+    href: '/vendor/store-qr',
+    icon: QrCode,
+    badge: null,
+    activePathPrefix: '/vendor/store-qr',
   },
   {
     title: 'Reviews',
