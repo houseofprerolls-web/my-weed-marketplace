@@ -20,11 +20,13 @@
     powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap-github-repo.ps1 -SkipRepoCreate
 
   Optional: -RepoName "other-name"   -Owner "orgname"  (when repo lives under an org)
+  Optional: -Branch "master"         (defaults to current branch from git)
 #>
 param(
   [string]$Token = $env:GITHUB_TOKEN,
   [string]$RepoName = 'my-weed-marketplace',
   [string]$Owner = '',
+  [string]$Branch = '',
   [switch]$SkipRepoCreate
 )
 
@@ -151,12 +153,34 @@ else {
 if ($LASTEXITCODE -ne 0) { Write-Error 'Could not add or update git remote origin.' }
 & $git remote set-url origin $pushUrl
 
-Write-Host 'Pushing main to origin ...'
-& $git push -u origin main
-if ($LASTEXITCODE -ne 0) { Write-Error 'git push failed.' }
+$pushBranch = $Branch.Trim()
+if (-not $pushBranch) {
+  $pushBranch = (& $git rev-parse --abbrev-ref HEAD).Trim()
+  if (-not $pushBranch) { Write-Error 'Could not determine current git branch.' }
+}
 
-& $git remote set-url origin $cleanUrl
-Write-Host ('Remote reset to {0} (token removed from saved URL).' -f $cleanUrl)
-Write-Host ''
-Write-Host 'Next: Vercel, Project, Settings, Git: confirm this repo and branch.'
-Write-Host 'If builds fail, set Root Directory to greenzone-bolt or rely on repo root vercel.json.'
+try {
+  Write-Host ('Pushing branch "{0}" to origin ...' -f $pushBranch)
+  $pushLines = @(& $git push -u origin $pushBranch 2>&1 | ForEach-Object { "$_" })
+  $pushExit = $LASTEXITCODE
+  foreach ($line in $pushLines) { Write-Host $line }
+
+  if ($pushExit -ne 0) {
+    Write-Host ''
+    Write-Host '--- git push troubleshooting (read the lines above) ---' -ForegroundColor Yellow
+    Write-Host '  * Authentication: token revoked, wrong scopes, or org SSO not authorized for this token.'
+    Write-Host '  * rejected (non-fast-forward): GitHub repo is not empty (README).'
+    Write-Host '    Fix: delete the repo and create a new EMPTY one, or on GitHub remove the extra commit, then push again.'
+    Write-Host '  * Wrong branch: pass -Branch master (or your branch name).'
+    Write-Host ''
+    Write-Error ('git push failed with exit code {0}.' -f $pushExit)
+  }
+
+  Write-Host ('Remote reset to {0} (token removed from saved URL).' -f $cleanUrl)
+  Write-Host ''
+  Write-Host 'Next: Vercel, Project, Settings, Git: confirm this repo and branch.'
+  Write-Host 'If builds fail, set Root Directory to greenzone-bolt or rely on repo root vercel.json.'
+}
+finally {
+  & $git remote set-url origin $cleanUrl 2>$null
+}
