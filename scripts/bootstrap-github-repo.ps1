@@ -142,7 +142,11 @@ if (-not $git) { Write-Error 'git not found. Install Git for Windows.' }
 if ($LASTEXITCODE -ne 0) { Write-Error ('Not a git repository: {0}' -f $repoRoot) }
 
 $cleanUrl = 'https://github.com/{0}/{1}.git' -f $slug, $RepoName
-$pushUrl = 'https://x-access-token:{0}@github.com/{1}/{2}.git' -f $t, $slug, $RepoName
+# Fine-grained PATs require your GitHub username as the HTTPS user (token as password).
+# x-access-token as user works for many classic PATs but often fails for fine-grained with "denied to <user>".
+$encUser = [System.Uri]::EscapeDataString($login)
+$encTok = [System.Uri]::EscapeDataString($t)
+$pushUrl = 'https://{0}:{1}@github.com/{2}/{3}.git' -f $encUser, $encTok, $slug, $RepoName
 $remotes = @(& $git remote 2>$null)
 if ($remotes -contains 'origin') {
   & $git remote set-url origin $cleanUrl
@@ -168,6 +172,13 @@ try {
   if ($pushExit -ne 0) {
     Write-Host ''
     Write-Host '--- git push troubleshooting (read the lines above) ---' -ForegroundColor Yellow
+    $joined = ($pushLines -join "`n")
+    if ($joined -match 'Permission .* denied') {
+      Write-Host '  * Permission denied (same user in message): usually the PAT cannot write this repo.'
+      Write-Host '    For fine-grained tokens: edit the token, set Repository access to this repo,'
+      Write-Host '    Contents = Read and write, and authorize SSO if the org requires it.'
+      Write-Host '    This script now uses HTTPS user = your API login (required for fine-grained).'
+    }
     Write-Host '  * Authentication: token revoked, wrong scopes, or org SSO not authorized for this token.'
     Write-Host '  * rejected (non-fast-forward): GitHub repo is not empty (README).'
     Write-Host '    Fix: delete the repo and create a new EMPTY one, or on GitHub remove the extra commit, then push again.'
