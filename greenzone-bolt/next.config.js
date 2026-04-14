@@ -8,6 +8,12 @@ const nextConfig = {
         destination: 'https://www.datreehouse.com/:path*',
         permanent: true,
       },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'greenzone-bolt.vercel.app' }],
+        destination: 'https://www.datreehouse.com/:path*',
+        permanent: true,
+      },
     ];
   },
   eslint: {

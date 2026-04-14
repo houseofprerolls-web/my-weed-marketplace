@@ -18,7 +18,7 @@ npx cap add android
 npx cap sync
 ```
 
-Remote server URL is set in [`capacitor.config.json`](capacitor.config.json) under `server.url` (default: `https://greenzone-bolt.vercel.app`). Change it there for staging/production domains, then run `npx cap sync` again.
+Remote server URL is set in [`capacitor.config.json`](capacitor.config.json) under `server.url` (default: `https://www.datreehouse.com`). Change it there for staging or another host, then run `npx cap sync` again.
 
 ## Open native projects
 

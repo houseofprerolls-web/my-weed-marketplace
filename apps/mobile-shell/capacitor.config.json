@@ -3,7 +3,7 @@
   "appName": "DaTreehouse",
   "webDir": "www",
   "server": {
-    "url": "https://greenzone-bolt.vercel.app",
+    "url": "https://www.datreehouse.com",
     "cleartext": false
   }
 }
