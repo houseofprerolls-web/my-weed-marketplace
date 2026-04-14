@@ -1,0 +1,2 @@
+-- Creates public.products when missing. Full file: supabase/migrations/0041_create_products_table_if_missing.sql
+-- Run via Supabase SQL editor or: supabase db push

@@ -1,0 +1,2 @@
+-- Run: supabase/migrations/0048_create_vendor_locations_table_if_missing.sql
+-- Then re-run 0046 if it skipped vendor_locations policies.

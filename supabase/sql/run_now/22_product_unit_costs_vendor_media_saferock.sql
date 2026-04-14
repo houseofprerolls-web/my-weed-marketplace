@@ -1,0 +1,3 @@
+-- Run: supabase/migrations/0038_product_unit_costs_vendor_media_saferock.sql
+-- If `public.products` is missing, 0038 skips creating `product_unit_costs` but still runs storage + Saferock.
+-- To get `products`, apply the CannaHub base migration: supabase/migrations/0001_init.sql (or your full chain).

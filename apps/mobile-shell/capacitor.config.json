@@ -1,0 +1,9 @@
+{
+  "appId": "com.datreehouse.directory",
+  "appName": "DaTreehouse",
+  "webDir": "www",
+  "server": {
+    "url": "https://greenzone-bolt.vercel.app",
+    "cleartext": false
+  }
+}

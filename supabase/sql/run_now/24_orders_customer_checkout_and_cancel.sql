@@ -1,0 +1,2 @@
+-- Run in SQL editor if needed: supabase/migrations/0042_orders_customer_checkout_and_cancel.sql
+-- Adds checkout columns on `public.orders` and `customer_cancel_order(uuid)` for buyers.

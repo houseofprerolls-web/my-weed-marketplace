@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "greenzone-bolt (app)",
+			"path": "greenzone-bolt"
+		},
+		{
+			"name": "repo root (supabase + docs)",
+			"path": "."
+		},
+		{
+			"name": "da-treehouse (Next 16, optional)",
+			"path": "da-treehouse"
+		}
+	],
+	"settings": {}
+}

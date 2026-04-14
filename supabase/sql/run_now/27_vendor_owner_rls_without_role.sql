@@ -1,0 +1,2 @@
+-- Run: supabase/migrations/0046_vendor_owner_rls_without_vendor_role.sql
+-- Owners manage catalog without profiles.role = vendor; promotes master email to vendor role.

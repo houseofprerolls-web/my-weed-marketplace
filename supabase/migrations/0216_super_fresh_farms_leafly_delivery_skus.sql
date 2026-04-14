@@ -1,0 +1,260 @@
+-- Super Fresh Farms vendor: bulk menu import from Leafly-format CSV (191 SKUs in this export).
+-- Re-run safe: deletes prior rows with the same seed marker for this vendor, then inserts.
+--
+-- Images: decodable scrape URL, else Super Fresh Farms logo `/images/vendors/super-fresh-farms/sff-menu-placeholder.png`.
+-- After insert: set menu_source_mode to `manual` so POS-only filtering does not hide these SKUs.
+
+do $body$
+declare
+  v_id uuid;
+begin
+  select v.id into v_id
+  from public.vendors v
+  where lower(v.slug) in ('super-fresh-farms', 'superfresh-farms', 'super-fresh')
+     or lower(v.name) like '%super%fresh%farm%'
+  order by case when lower(v.slug) = 'super-fresh-farms' then 0 when lower(v.slug) = 'superfresh-farms' then 1 else 2 end
+  limit 1;
+
+  if v_id is null then
+    raise exception '0216: No vendor found for Super Fresh Farms (slug super-fresh-farms / name match).';
+  end if;
+
+  delete from public.products p
+  where p.vendor_id = v_id
+    and p.description is not null
+    and (
+      p.description like '%Leafly import 2026-04-13%'
+      or p.description like '%Super Fresh Farms menu seed 2026-04-13%'
+    );
+
+  insert into public.products (
+    vendor_id,
+    name,
+    category,
+    price_cents,
+    inventory_count,
+    in_stock,
+    potency_thc,
+    potency_cbd,
+    description,
+    images
+  )
+  select
+    v_id,
+    t.name,
+    t.category,
+    t.price_cents,
+    0,
+    true,
+    t.potency_thc,
+    null,
+    t.description,
+    case
+      when t.image_url is not null and length(trim(t.image_url)) > 0
+        then array[trim(t.image_url)]::text[]
+      else '{}'::text[]
+    end
+  from (
+    values
+      ('Blue Dream pod 0.5g', 'vape', 1875, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 500mg.', 'https://leafly-public.s3.us-west-2.amazonaws.com/products/photos/AmxUJWXTfqe9WfhD85Ig_AZ_OG_BLUE_DREAM_HG-3.png'),
+      ('Grandaddy Purp pod 0.5g', 'vape', 1875, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 500mg.', 'https://leafly-public.s3.us-west-2.amazonaws.com/products/photos/Q3ZtYhm9SICUC87hc64A_AZ_OG_GRANDDADDY_PURP_HG-3.png'),
+      ('Premium Jack pod 0.5g', 'vape', 1875, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY.', 'https://images.weedmaps.com/photos/products/000/057/428/3304166_309428_PREMIUM_JACK_HG_2.png'),
+      ('Pink Acai pod 0.5g', 'vape', 1875, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY.', 'https://images.weedmaps.com/photos/products/000/456/531/3309327_1570728_AZ_OG_PINK_ACAI_HG-1.png'),
+      ('DO-SI-DOS pod 0.5g', 'vape', 1875, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 500mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('OG KUSH .5G pod', 'vape', 1875, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 500mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('King Louis XIII Pod 0.5g', 'vape', 1875, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 500mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('PINK RUNTZ .5G Live Resin LQD Pod', 'vape', 2250, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 25%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('LEMON CHERRY GELATO .5G Live Resin LQD Pod', 'vape', 2250, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 20%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('PURPLE HAZE .5G Live Resin LQD Pod', 'vape', 2250, 16::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 16%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('NORTHERN LIGHTS .5G Live Resin LQD Pod', 'vape', 2250, 18::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 18%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Do-si-dos All In One 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Blue Dream All In One 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Granddaddy Purp Pod - 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('OG Kush All In One 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('King Louis XIII All In One 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Magic Melon pod 1g', 'vape', 3000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Premium Jack pod 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Premium Jack pod 1g (2)', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY.', 'https://images.weedmaps.com/photos/products/000/202/310/3311857_309425_PREMIUM_JACK_FG_2.png'),
+      ('Pink Acai Pod - 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY.', 'https://images.weedmaps.com/photos/products/000/258/865/3311587_309005_STIIIZY_AZ_CDT_PINK_ACAI_1G_2.png'),
+      ('HAWAIIAN SNOW .5G Live Resin LQD Pod', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 500mg.', 'https://leafly-public.s3.us-west-2.amazonaws.com/products/photos/VNtmvwqHTkyZSCFCfb06_UN_LRLD-PODS_S_HAWAIIAN-SNOW.png'),
+      ('Hardcore OG pod 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', 'https://leafly-public.s3.us-west-2.amazonaws.com/products/photos/Q7yWb8QbRIe0S3d8gyGe_AZ-HARDCORE-OG-PREMIUM-THC-POD-1G-1.png'),
+      ('Blue Dream pod 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Gelato Pod - 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('GREEN CRACK 1G LQD All-In-One', 'vape', 3375, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Lucky - Crispy Rice Bars with Rosin - Cookies & Cream - 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Lucky Chief.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Lemon Lime Gummies 10x10 100mg', 'edible', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Lucky - Crispy Rice Bars with Rosin - Fruity - 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Lucky Chief.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Lucky - Crispy Rice Bars with Rosin - Original 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Lucky Chief.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Lucky - Crispy Rice Bar original 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Lucky Chief.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Watermelon Lemonade Gummies 10x10 - 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('CARIBBEAN BREEZE - Gummies 100mg THC Edibles', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Blue Raspberry Lemonade Gummies 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Pineapple Paradise Gummies 10x10 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('MANGO TANGO - Gummies 100mg THC Edibles', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Pink Lemonade Gummies 10x10 - 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Watermelon Wave Gummies 10x10 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', 'https://s3-us-west-2.amazonaws.com/leafly-public/products/photos/rUo2fj9Rmm73xjynPpaJ_daaebd4b-613b-45b5-96d9-58f4bd8ecbf4'),
+      ('BLUE RASPBERRY BLAST - Gummies 100mg THC', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', 'https://s3-us-west-2.amazonaws.com/leafly-public/products/photos/RBXUC0R6TquIqkhkwOxp_d18be0c6-975c-42f4-be3a-6e062b3d13bb'),
+      ('Sour Apple Gummies 10x10 100mg', 'edible', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', 'https://images.weedmaps.com/photos/products/000/363/085/3460613_Sour-Apple.png'),
+      ('Sour Strawberry Gummies 10x10 100mg', 'edible', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', 'https://s3-us-west-2.amazonaws.com/leafly-public/products/photos/MleNcLMGTBj62NEFoFwv_19886ea8-dadb-4ee4-a9b2-1805da871e47'),
+      ('Sparkiez Mini- Indica 7 pack - 3.5g', 'preroll', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Lucky Chief.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('WATERMELON Z 1G Pod', 'vape', 2500, 24::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 24%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Stiiizy- Cereal Milk liquid diamond pod 1g', 'vape', 4500, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 25%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('STIIIZY Cereal Milk AIO Liquid Diamonds 1g', 'vape', 4500, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 25%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('OG Kush Live Resin 1g badder SAMPLE', 'concentrate', 2500, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 25%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sour Blueberry Live Resin Sugar 1g', 'concentrate', 2500, 12::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 12%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sour Punch Live Resin Sauce - 1g', 'concentrate', 2500, 13::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 13%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('First Class Funk Live Resin Sugar', 'concentrate', 2500, 26::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 26%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Strawberry Eclipse Live Resin Badder 1g', 'concentrate', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Strawberry Eclipse Live Resin Badder 1g SAMPLE', 'concentrate', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Rainbow Mintz Live Resin Sauce 1g', 'concentrate', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Banana Dream Live Resin Badder 1g', 'concentrate', 2500, 31::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 31%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Banana Dream Live Resin Badder 1g (2)', 'concentrate', 2500, 31::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 31%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Space Cake Live Resin Sauce 1g', 'concentrate', 2500, 22::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 22%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Space Cake Live Resin Sauce 1g (2)', 'concentrate', 2500, 22::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 22%.', 'https://leafly-public.s3-us-west-2.amazonaws.com/products/photos/EotMKILStmLN50XdmUlE_UNI-SPACE-CAKE-CURATED-LIVE-RESIN-1G-2.png'),
+      ('Georgia Z Live Resin Badder', 'concentrate', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', 'https://s3-us-west-2.amazonaws.com/leafly-public/products/photos/wQzJyIinTIKL57jB2DI9_b642190b-ad95-4f08-84a1-0ad217ff6b16'),
+      ('Ultra Jack Live Resin Sugar 1g SAMPLE', 'concentrate', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', 'https://images.weedmaps.com/photos/products/000/202/085/3298907_3145931_Ultra_Jack_WCC_Live_Resin_Sugar_box.jpg'),
+      ('Orange Creamsicle Live Resin Sugar 1g SAMPLE', 'concentrate', 2500, 28::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 28%.', 'https://images.weedmaps.com/photos/products/000/491/955/3298263_3145133_Orange_Creamsicle_WCC_Live_Resin_Sugar_box.jpg'),
+      ('Peanut Butter Cup Live Resin Sugar 1h SAMPLE', 'concentrate', 2500, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 25%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Bakers Dozen 1g Live Resin Badder', 'concentrate', 2500, 15::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 15%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Rainbow Punch Live Resin 1g Badder', 'concentrate', 2500, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 25%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Ultra Jack Live Resin Sugar 1g', 'concentrate', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Lemon Cherry Gelato Live Resin Sugar', 'concentrate', 2500, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 20%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Peanut Butter Cup Live Resin Sugar 1g', 'concentrate', 2500, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 25%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Berry Pomegranate Live Resin Badder 1g', 'concentrate', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Orange Creamsicle Live Resin Sugar 1g', 'concentrate', 2500, 28::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 28%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Bakers Dozen 1g Live Resin Badder (2)', 'concentrate', 2500, 15::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 15%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sour Blueberry Live Resin Sugar 1g SAMPLE', 'concentrate', 2500, 12::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 12%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('White Papaya Curated Live Resin Sauce 1g', 'concentrate', 2500, 26::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 26%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('OG Kush 1g Live Resin Badder', 'concentrate', 2500, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 25%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Animal Cookies Live Resin Diamonds 1g', 'concentrate', 3000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sour Berry Punch Live Resin Diamonds 1g SAMPLE', 'concentrate', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Trainwreck Live Resin Diamonds 1g', 'concentrate', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', 'https://images.weedmaps.com/photos/products/000/417/434/3299332_3145477_Trainwreck_WCC_Live_Resin_Diamonds_box.jpg'),
+      ('White Fire Bomb Live Resin Diamonds', 'concentrate', 3000, 22::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 22%.', 'https://images.weedmaps.com/photos/products/000/413/332/3297204_3145458_White_Fire_Bomb_WCC_Live_Resin_Diamonds_box.jpg'),
+      ('Mango Haze Live Resin Diamonds 1g SAMPLE', 'concentrate', 3000, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 20%.', 'https://images.weedmaps.com/photos/products/000/351/745/3298800_3145988_Mango_Haze_WCC_Live_Resin_Diamonds_box.jpg'),
+      ('Sour Berry Punch Live Resin Diamonds 1g', 'concentrate', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', 'https://images.weedmaps.com/photos/products/000/372/112/3299063_3145824_Sour_Berry_Punch_WCC_Live_Resin_Diamonds_box.jpg'),
+      ('Watermelon Z Live Resin Diamonds 1g', 'concentrate', 3000, 24::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 24%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Watermelon ZLive Resin Diamonds', 'concentrate', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Orange Peel Live Resin Diamonds 1g', 'concentrate', 3000, 24::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 24%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Animal Cookies Live Resin Diamonds 1g (2)', 'concentrate', 3000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Gelato 41 Live Resin Diamonds 1g', 'concentrate', 3000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Pineapple Pound Cake Live Resin Diamonds 1g', 'concentrate', 3000, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 20%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Orange Peel Live Resin Diamonds 1g SAMPLE', 'concentrate', 3000, 24::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 24%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Pineapple Pound Cake Live Resin Diamonds 1g SAMPLE', 'concentrate', 3000, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 20%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Mango Haze Live Resin Diamonds 1g', 'concentrate', 3000, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 20%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('White Fire Bomb Live Resin Diamonds 1g SAMPLE', 'concentrate', 3000, 22::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 22%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Gelato 41 Live Resin Diamonds 1g SAMPLE', 'concentrate', 3000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('FRUIT PUNCH SPLASH - Gummies 100mg THC Edibles', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Frozen Cherries - 1.2G Infused Joint', 'preroll', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('White Walker Live Resin Sauce - 1g', 'preroll', 2500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('STRAWBERRY COUGH - .5G 40''s Infused Preroll 5 Pack', 'preroll', 4000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 19%.', 'https://connect-files-public.s3.amazonaws.com/IMG_0047-1629197c-012e-4a9d-8179-96be9764d0d1.png'),
+      ('SKYWALKER OG - .5G 40''s Infused Preroll 5 Pack', 'preroll', 4000, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 20%.', 'https://connect-files-public.s3.amazonaws.com/3311252_3133906_v2_CA_HG-MULTI_PR_I_SKYWALKER-OG-865ea34a-4a75-4342-8673-23ea1305e2bb.png'),
+      ('Stiiizy- strawberry mango 40''s infused multipack', 'preroll', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY.', 'https://connect-files-public.s3.amazonaws.com/IMG_0049-84171b82-5d4b-4f45-be7f-2fe20d45b94d.jpeg'),
+      ('Sour Diesel pod 0.5g', 'vape', 2500, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 19%.', 'https://images.weedmaps.com/photos/products/000/267/757/3303308_1775950_IL_SOUR_DIESEL_PREMIUM_THC_POD_.5G_1.png'),
+      ('Super Lemon Haze pod 0.5g', 'vape', 2500, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Purple Punch .5G pod', 'vape', 2500, 18::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 18%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Jack Herer 1g CUREpen cart', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('STRAWBERRY SHORTCAKE .5G Live Resin LQD Pod', 'vape', 3000, 16::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 16%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('TAHOE OG .5G Live Resin LQD Pod', 'vape', 3000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('WHITE WIDOW .5G Live Resin LQD Pod', 'vape', 3000, 15::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 15%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Birthday Cake CUREpen Cartridge - 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Gas OG CUREpen Cart 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('PURPLE ZLUSHIE .5G Live Resin LQD Pod', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Rainbow Gelato Live Resin Cart 1g', 'vape', 3500, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Vanilla Oranges Live Resin Cart 1g', 'vape', 3500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Watermelon Mojito 1g CUREbar', 'vape', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Purple Haze Liquid Diamonds Pod 1g', 'vape', 4000, 16::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 16%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Stiiizy - PINEAPPLE RUNTZ 1G All-In-One', 'vape', 4000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Purple Punch All In One 1g', 'vape', 4000, 18::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 18%.', 'https://images.weedmaps.com/photos/products/000/603/028/3310794_3197647_AZ_AIO_I_FG_PurplePunch_3000x3000_01.png'),
+      ('Purple Punch pod 1g', 'vape', 4000, 18::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 18%.', 'https://images.weedmaps.com/photos/products/000/202/319/3308824_1595761_AZ_OG_PURPLE_PUNCH_FG-1.png'),
+      ('Birthday Cake AIO CUREbar 1G', 'vape', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', 'https://connect-files-public.s3.amazonaws.com/Birthday-Cake-AIO-CUREbar-1G-a144f8d3-5d24-4c59-bb88-256038fb74b5.avif'),
+      ('Stiiizy - SKYWALKER OG 1G All-In-One', 'vape', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', 'https://connect-files-public.s3.amazonaws.com/3305876_1990786_AZ_SKYWALKER_OG_ALL-IN-ONE_1G_THC_PEN_1-3552bd9b-ddc9-48c9-850d-d18f5b42ce58.png'),
+      ('Stiiizy - PINEAPPLE EXPRESS 1G All-In-One', 'vape', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Banana Taffy 1g CUREbar AIO', 'vape', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Blue Dream AIO CUREbar - 1G', 'vape', 4000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sour Diesel pod 1g', 'vape', 4000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Stiiizy - SOUR TANGIE 1G All-In-One', 'vape', 4000, 18::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 18%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Super Lemon Haze pod 1g', 'vape', 4000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Stiiizy - STRAWBERRY COUGH 1G All-In-One', 'vape', 4000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sour Diesel All In One 1g', 'vape', 4000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Jack Herer AIO CUREbar 1G', 'vape', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Dabilicious AIO CUREbar 1g', 'vape', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 1000mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Rainbow Gelato Live Resin CUREbar - 1g', 'vape', 4500, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Fruit Jelly''s Live Resin CUREbar 1G', 'vape', 4500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by West Coast Cure.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('STRAWBERRY SHORTCAKE 1G LQD All-In-One', 'vape', 4500, 16::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 16%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Vape Cartridge - STRAWBERRY SHORTCAKE 1G Live Resin Liquid Diamonds Pod', 'vape', 4500, 16::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 16%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Vape Cartridge - STRAWBERRY SHORTCAKE 1G Live Resin Liquid Diamonds Pod (2)', 'vape', 4500, 16::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by STIIIZY. THC 16%.', 'https://connect-files-public.s3.amazonaws.com/3315103_3214536_UNI_LRLD_I_FG_Strawberry-Shortcake_3000x3000_3-c4cd5d46-314c-4eb5-8974-f0b45c0e8753.png'),
+      ('Kobe OG', 'flower', 2800, 34.79::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 34.79%.', 'https://connect-files-public.s3.amazonaws.com/Untitled-design-9cd83632-b614-45d7-a1ac-16b2ab7fa6e1.png'),
+      ('Super Lemon Haze', 'flower', 3150, 32.9::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 32.9%.', 'https://connect-files-public.s3.amazonaws.com/Super-Lemon-Haze-7fc14fb4-1d70-4bc9-a92a-760342607eb5.jpeg'),
+      ('Glitter Bomb', 'flower', 2000, 31.98::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 31.98%.', 'https://connect-files-public.s3.amazonaws.com/IMG_8745-fb604482-8cb1-4eb0-ad2e-f01593adcf39.jpeg'),
+      ('Blue Zushi (smalls)', 'flower', 9500, 31.2::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 31.2%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sour Grape single-cut 100mg gummy', 'edible', 1000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('14 Gram Pre-Roll Pack - Hindu Kush', 'preroll', 4000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Sparkiez. THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Extra Nuggy Shake', 'flower', 5100, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Pistachio', 'flower', 3150, 24::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 24%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Original Glue 🦍', 'flower', 2450, 31.63::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 31.63%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Candyland 🍭', 'flower', 3150, 34.54::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 34.54%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Watermelon', 'flower', 2800, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable).', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('MnM''s', 'flower', 3500, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Ice Cream Kush', 'flower', 1500, 18::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 18%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Black Cherry', 'flower', 1500, 29.3::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 29.3%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('London Truffle', 'flower', 1750, 23::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 23%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Gumbo (mediums)', 'flower', 2500, 34.67::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 34.67%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Gelato Cake', 'flower', 10000, 29.85::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 29.85%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('RS11', 'flower', 10000, 24::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 24%.', 'https://connect-files-public.s3.amazonaws.com/IMG_5499-57da7550-c6fe-416b-9fbe-d3180ed4a641.jpeg'),
+      ('Zuyaki', 'flower', 11000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms.', 'https://connect-files-public.s3.amazonaws.com/Copy-of-Untitled--1920-x-1080-px---1600-x-1600-px---1920-x-1080-px---1600-x-1600-px--ac92f403-8332-46e1-b852-8dc40120e7e0.png'),
+      ('WCC Rocket Fuel Hash Gummies 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable).', 'https://connect-files-public.s3.amazonaws.com/WCC-Rocket-Fuel-Flavored-Hash-Gummies-10-Pack-6c28c790-be00-44fa-9f2c-d4f745a622b5.png'),
+      ('Cloudberry Solventless Gummies 100mg', 'edible', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 100mg.', 'https://images.weedmaps.com/products/000/480/443/avatar/1719268466-1705347533-wcc_gummies_cloudberry_mylar.jpg'),
+      ('Sour Lemon Gummy - 100mg Single Cut', 'edible', 1000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot. THC 100mg.', 'https://images.weedmaps.com/photos/products/000/347/136/349613_froot-sour-2021_Lemon.jpg'),
+      ('Froot Sour Green Apple Gummy - 100mg Single Cut', 'edible', 1000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Froot Sour Watermelon Gummy - 100mg Single Cut-to-dose', 'edible', 1000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('FROOT Cherry single cut gummies 100mg', 'edible', 1000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Froot Sour Blue Razz Gummy - 100mg Single Cut', 'edible', 1000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot. THC 100mg.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Super Silver Haze', 'flower', 8000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sparkiez- 14 Gram Pre-Roll Pack - Guava', 'preroll', 4000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Sparkiez. THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sparkiez - Sativa Single Preroll 1.25g', 'preroll', 560, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Sparkiez.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sparkiez - hybrid Single Preroll 1.25g', 'preroll', 560, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Sparkiez.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sparkiez - Indica Single Preroll 1.25g', 'preroll', 560, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable).', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sparkiez Mini - Hybrid 7 Pack - 3.5g', 'preroll', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Sparkiez.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Sparkiez Mini - Sativa 7 Pack - 3.5g', 'preroll', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable).', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('14 Gram Pre-Roll Pack - Jack', 'preroll', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Sparkiez.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('OG Shake', 'flower', 5100, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('WCC Cereal Milk - Jefferey Infused Joint 5 Pack', 'preroll', 4000, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 25%.', 'https://images.weedmaps.com/photos/products/000/475/858/4010269_CEREAL-MILK_5-PACK-MINIS.png'),
+      ('Lemonade', 'flower', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Lemonnade.', 'https://connect-files-public.s3.amazonaws.com/Copy-of-Untitled--1920-x-1080-px---1600-x-1600-px---1920-x-1080-px---1600-x-1600-px--a9120361-24a4-4b23-8df3-6eedf89ee93d.png'),
+      ('Peanut Butter Cup 1g Live Resin Sugar', 'concentrate', 2000, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 25%.', 'https://images.weedmaps.com/photos/products/000/420/638/3297236_3145113_Peanut_Butter_Cup_WCC_Live_Resin_Sugar_box.jpg'),
+      ('Nightshade Pre-Roll', 'preroll', 1000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 21%.', 'https://connect-files-public.s3.amazonaws.com/menu_preroll-f51f6599-6a3d-4385-a83d-b6f6a7fb7d20.JPEG'),
+      ('Grape Soda Pre-Roll', 'preroll', 1200, 28::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Super Fresh Farms. THC 28%.', 'https://connect-files-public.s3.amazonaws.com/menu_preroll-757fe4b8-20e3-4cf6-9811-631401f7bccd.JPEG'),
+      ('Froot Watermelon Infused 1-gram Pre-roll', 'preroll', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Froot Orange Tangie Infused 1-gram Pre-roll', 'preroll', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Froot Grape Ape Infused 1-gram Pre-roll', 'preroll', 2000, 18::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot. THC 18%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Froot Blue Razz Dream Infused 1-gram Pre-roll', 'preroll', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Froot Cherry Pie Infused 1-gram Pre-roll', 'preroll', 2000, 16::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot. THC 16%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Lemon Burst 1.2G Jefferey Infused Joint', 'preroll', 2000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable).', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Watermelon Zkittlez - 1.2G Jefferey Infused Joint', 'preroll', 2000, 24::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 24%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Froot Pineapple Express Infused 1-gram Pre-roll', 'preroll', 2000, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). by Froot. THC 20%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Yuzu Lemon- Jefferey Infused Joint 5 Pack', 'preroll', 4000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable).', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('WCC Blackberry Kush Jefferey Infused Joint 5 Pack', 'preroll', 4000, 17::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 17%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Tangie CUREjoint Minis 6pk', 'preroll', 4000, 17::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 17%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Rainbow Sherbet - Top Shelf CUREjoint Minis 6 x .35g', 'preroll', 4000, 18::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 18%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('WCC Blue Dream Jefferey Infused 5 Pack', 'preroll', 4000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Dabilicious CUREpen Cart 1g', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable).', 'https://connect-files-public.s3.amazonaws.com/1g_curepen_dabilicious-WCC-0466d6a8-4752-473a-b6fe-08914ec36293.avif'),
+      ('Granddaddy Purple 1g CUREpen', 'vape', 3000, 17::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 17%.', 'https://connect-files-public.s3.amazonaws.com/Granddaddy-Purple---WCC-1g-CUREpen-b0376f51-053a-4514-b17a-c7ad8c1378d6.avif'),
+      ('Blueberry Kush CUREpen Cart- 1g', 'vape', 3000, 18::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 18%.', 'https://connect-files-public.s3.amazonaws.com/Blueberry-Kush-CUREpen-Cartridge---1g-ed4c33d1-cf5c-4358-b5c0-ba42a332146b.avif'),
+      ('Blueberry Acai 1G CUREpen Cart', 'vape', 3000, null::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable).', 'https://connect-files-public.s3.amazonaws.com/1756333312-1g_curepen_blueberry_acai-7564f38a-3a36-48b4-9356-6fbc11584e67.png'),
+      ('Skywalker OG CUREpen Cartridge - 1g', 'vape', 3000, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 20%.', 'https://connect-files-public.s3.amazonaws.com/Skywalker-OG-CUREpen-Cartridge---1g-b4327caa-cd9a-48ec-96e2-781aa2d38843.jpeg'),
+      ('Blue Dream CUREpen Cart 1g', 'vape', 3000, 21::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 21%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Orange Creamsicle CUREpen Cart1g', 'vape', 3000, 28::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 28%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Maui Waui CUREpen Cart 1g', 'vape', 3000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Cereal Milk CUREpen Cart 1g', 'vape', 3000, 25::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 25%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Strawberry Lemonade CUREpen Cartridge - 1g', 'vape', 3000, 20::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 20%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png'),
+      ('Super Lemon Haze CUREpen Cartridge - 1g', 'vape', 3000, 19::numeric, 'Super Fresh Farms menu seed 2026-04-13 (delivery SKUs, editable). THC 19%.', '/images/vendors/super-fresh-farms/sff-menu-placeholder.png')
+  ) as t(name, category, price_cents, potency_thc, description, image_url);
+
+  if to_regclass('public.vendor_menu_settings') is not null then
+    insert into public.vendor_menu_settings (vendor_id, menu_source_mode)
+    values (v_id, 'manual')
+    on conflict (vendor_id) do update
+      set menu_source_mode = excluded.menu_source_mode,
+          updated_at = now();
+  end if;
+end;
+$body$;

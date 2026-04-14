@@ -1,0 +1,338 @@
+license_number,public_name,vendor_id,name_source,is_public_dispensary,city,state
+C10-0001290-LIC,Urban Smoke Dispensary,1b533a52-df6d-41ca-922f-0c90416134ec,name_column,yes,Los Angeles,CA
+C10-0001291-LIC,"High-Land Cannabis, LLC",a21d74ea-8429-489f-9e57-7d23ad5e760d,name_column,yes,Los Angeles,CA
+C10-0001292-LIC,"Vineyard Retail, LLC",b2866e5b-51c6-4222-9970-0deafe49f297,name_column,yes,Oxnard,CA
+C10-0001294-LIC,Union Cannabis Club,5a534c95-5025-4727-805a-f15942266e1b,name_column,yes,San Francisco,CA
+C10-0001298-LIC,OFF THE CHARTS,88ab8574-3f0b-400a-b366-66d10b93fe70,name_column,yes,Goleta,CA
+C10-0001299-LIC,Backpackboyz Hollywood,bb1f792a-929a-4633-aeec-0f7672ce9664,name_column,yes,Los Angeles,CA
+C10-0001300-LIC,Culture Cannabis Club,22e355df-e993-4740-9823-770708deb71b,name_column,yes,Concord,CA
+C10-0001301-LIC,CANNABIS 21+,d2216cbd-4c12-49b3-b71f-604351debebf,name_column,yes,Santa Rosa,CA
+C10-0001302-LIC,The Cure Company South LA,1bbe3ef1-e968-46ec-b391-b4454b373219,name_column,yes,Los Angeles,CA
+C10-0001303-LIC,Southern California Flower Company LLC,4c67e92b-b3d8-41e8-97e8-5139f8889b14,name_column,yes,Los Angeles,CA
+C10-0001304-LIC,Ceremony Dispensary #01,a27e5451-821b-4771-b1fc-17f516940806,name_column,yes,Northridge,CA
+C10-0001305-LIC,Authentic Fresno Willow LLC,f737a15d-00fc-4018-b35c-f057268f7261,legal_entity_from_description,yes,Fresno,CA
+C10-0001307-LIC,DopeMates LA,b146b71d-7f4f-4950-903c-e235b092f6bb,name_column,yes,Los Angeles,CA
+C10-0001308-LIC,STREET KINGS,e95ce06e-8ba9-4c46-857d-916e652e2022,name_column,yes,Los Angeles,CA
+C10-0001309-LIC,Eastern Sereno Group Inc.,42e854a6-d0da-4778-971d-7b483d3cd094,name_column,yes,Los Angeles,CA
+C10-0001310-LIC,Mecca Hospitality Group LLC,1044045d-a55b-4851-98dd-7ac07b904ecf,name_column,yes,Los Angeles,CA
+C10-0001311-LIC,Hollywood Walk of Weed,b951e384-9092-4e65-82f4-2826c39f9ad1,name_column,yes,Los Angeles,CA
+C10-0001313-LIC,Trees Hollywood,f308f55f-5375-4989-86b9-14f0c53cd08b,name_column,yes,Los Angeles,CA
+C10-0001314-LIC,Off the Charts,eb1ed76b-10de-48d1-a332-3b853e72053a,name_column,yes,Corona,CA
+C10-0001316-LIC,MUHA MEDS,d2fdc6e2-c83c-4afb-894a-7406f1e208d7,name_column,yes,Los Angeles,CA
+C10-0001317-LIC,HPC,e297ed7b-c99c-4134-9304-2a9e8ad2d4ac,name_column,yes,Oxnard,CA
+C10-0001318-LIC,Elevate Granada Hills,f92ec9e3-6237-4586-ba3a-5477216d6c4e,name_column,yes,Granada Hills,CA
+C10-0001319-LIC,Secret Garden,62d79da8-6690-4789-809f-c1d5b40f8f41,name_column,yes,Costa Mesa,CA
+C10-0001320-LIC,"Zzz Enterprises, Inc.",1d21013f-1fe0-4435-b3e3-22e333e7da07,name_column,yes,Los Angeles,CA
+C10-0001321-LIC,Traditional,9580b200-13ea-48cf-b0b0-925b1f1ceabb,name_column,yes,Westchester,CA
+C10-0001322-LIC,The Cake House,2e76141e-d45c-4a81-8d90-e87ae6570575,name_column,yes,Santa Rosa,CA
+C10-0001323-LIC,E7 OAKLAND LLC,1c28db8e-786d-40d3-a9ba-ddbe6bf98fa3,name_column,yes,Oakland,CA
+C10-0001324-LIC,"Platinum Alliance, LLC",e6d6c1b7-f090-4693-9df1-72f22c3e4ef9,name_column,yes,Los Angeles,CA
+C10-0001325-LIC,Flor,401a0c8b-861f-420b-89e5-3307bac24ad6,name_column,yes,Redwood City,CA
+C10-0001326-LIC,NUG,68caf8b4-dcde-41a9-bcc2-86a265984948,name_column,yes,Bishop,CA
+C10-0001327-LIC,Humboldt's Premium,f6e11a17-f179-4a28-aa89-59a1b0df655c,name_column,yes,Arcata,CA
+C10-0001328-LIC,MMD San Francisco,6669c5e6-7907-432d-895a-38584016ae7a,name_column,yes,San Francisco,CA
+C10-0001330-LIC,Stanley Alley Holdings LLC,0e5e246e-a88c-4a98-b0bc-41b633cff7cf,name_column,yes,N Hollywood,CA
+C10-0001331-LIC,HYRBA,e6dcc6d2-ae4b-4717-ae6c-5fea6c29168d,name_column,yes,San Francisco,CA
+C10-0001332-LIC,S.E. #43 LLC,19e6bdf3-2c9e-459d-9af7-ae32b0fdc9ce,name_column,yes,Los Angeles,CA
+C10-0001333-LIC,"THREE DONKEYS, INC.",21afebf6-9fcb-4319-9de8-03050ea83ecb,name_column,yes,Los Angeles,CA
+C10-0001334-LIC,HOOVER HOUSE,2549010c-a5a9-42bd-99f3-0f9269654c3f,name_column,yes,Los Angeles,CA
+C10-0001335-LIC,STIIIZY INGLEWOOD,716dc750-7ec1-4a50-81d7-ca4069cc6d09,name_column,yes,Los Angeles,CA
+C10-0001336-LIC,"Atwater Retail Partners, LLC",9cde8819-bc90-48a8-9a56-4839b41d4486,name_column,yes,Los Angeles,CA
+C10-0001339-LIC,Haze,f62317b5-d63a-4192-be31-4a3b001bba89,name_column,yes,San Jose,CA
+C10-0001340-LIC,Catalyst - Bellflower LLC,84ab760b-6ddc-4e70-92ae-ae09dd00bd80,name_column,yes,Bellflower,CA
+C10-0001341-LIC,Kings Krop LLC [Equity Retailer],3422d0b0-c52c-403c-8139-b179f78a7a14,legal_entity_from_description,yes,Los Angeles,CA
+C10-0001342-LIC,CLOVEST RETAIL,e96591be-cc4c-4578-9204-7aac0a3917f1,name_column,yes,Los Angeles,CA
+C10-0001344-LIC,iLyfted Sylmar,f7caeada-14ab-47a5-87fb-f1243a6dcf87,name_column,yes,Sylmar,CA
+C10-0001345-LIC,Rebud Highland Park,b7224acf-cb70-42fd-95c9-060b972b79b2,name_column,yes,Los Angeles,CA
+C10-0001351-LIC,STIIIZY LA CIENEGA,5888f863-491e-42de-adf4-8f1245bb66d0,name_column,yes,Los Angeles,CA
+C10-0001353-LIC,"PAC WELLNESS, LLC",42bd4928-2004-4b6c-9e20-a35fa40a9567,name_column,yes,Sherman Oaks,CA
+C10-0001354-LIC,Balboa Bud,64020774-c816-4bd5-93aa-5f578d3fd8a6,name_column,yes,Granada Hills,CA
+C10-0001355-LIC,Ether,3134232c-bf5d-4f3e-a3c3-7cf0e02e82bc,name_column,yes,Corona,CA
+C10-0001357-LIC,FAT BUNNY,1d0b3a97-211b-40b8-9698-d724cd19c22e,name_column,yes,Los Angeles,CA
+C10-0001358-LIC,GOLDSTAR INDUSTRIES LLC,558aa228-b82c-4680-ba1d-12d567a38dfa,name_column,yes,Northridge,CA
+C10-0001359-LIC,Catalyst - San Bernardino LLC,de5b8152-1785-48d2-b2b3-ea86e226eb62,name_column,yes,SN Bernrdno,CA
+C10-0001360-LIC,Hills and Valleys LLC,d90dc4e7-f2c7-4c0a-b987-3ae5246ab889,name_column,yes,Los Angeles,CA
+C10-0001361-LIC,REBUD SYLMAR,cf286ec0-3ece-4614-ba0b-ec20daecbb16,name_column,yes,Sylmar,CA
+C10-0001363-LIC,Ghost Management Retail LLC,3b3a10ae-23c8-4576-a847-0f5e8ca802f6,name_column,yes,Pacoima,CA
+C10-0001365-LIC,"GDinLA, Inc.",419b521a-b463-4816-a06e-b1c173136fe3,name_column,yes,Culver City,CA
+C10-0001366-LIC,"Arize Holdings, LLC",c90bf909-075e-45c3-a2bf-62dc35680805,name_column,yes,Sacramento,CA
+C10-0001367-LIC,NUG,136f5f65-ac44-4a18-99c7-af392f4fa09c,name_column,yes,Red Bluff,CA
+C10-0001368-LIC,STIIIZY SOUTH COAST,3e735ec4-8da1-4469-9ec6-47e36eb05335,name_column,yes,Costa Mesa,CA
+C10-0001369-LIC,Carlotta Gardens LLC,2d509115-8645-424d-a46b-2724c0ca8b9c,name_column,yes,Carlotta,CA
+C10-0001370-LIC,Sunset Social Club,aea01ece-bc61-40fd-a2fc-66cc81f98658,name_column,yes,W Hollywood,CA
+C10-0001371-LIC,BUZZ Cannabis,116802ff-d10f-4656-997e-5ddc82005c1f,name_column,yes,Wildomar,CA
+C10-0001372-LIC,Embarc Ventura,4fd297f2-1922-41bb-a8f9-eb4f72c1cc48,name_column,yes,Ventura,CA
+C10-0001373-LIC,SHANGO,e63fdc42-e631-49e2-8381-d4f22e45fc13,name_column,yes,Moreno Valley,CA
+C10-0001377-LIC,The Artist Tree,0160c4ed-83e3-4ff1-b151-c5375ca9e06f,name_column,yes,El Sobrante,CA
+C10-0001379-LIC,Del Rey Farms,b561d76a-d0c0-486b-95fe-81a7b5c0cdb6,name_column,yes,Del Rey Oaks,CA
+C10-0001380-LIC,Culture Cannabis Club,1f44178e-3878-4958-be64-5652d0f619d0,name_column,yes,Fresno,CA
+C10-0001381-LIC,LEVEL,5a45280d-a225-46ea-8004-c06c8cf1c40a,name_column,yes,Merced,CA
+C10-0001382-LIC,Oregrown,23b954a9-9189-4584-a831-8738d5a4a551,name_column,yes,Chico,CA
+C10-0001383-LIC,Bleu Diamond Social Club,59b6ee4f-dc01-4599-88f7-c25fca73e3b0,name_column,yes,Lompoc,CA
+C10-0001384-LIC,The Cake House El Monte,b9b6d91d-e9ef-44b5-883c-0f6b5e4bb8f4,name_column,yes,El Monte,CA
+C10-0001387-LIC,MMD Redwood City,2a589d10-0966-469c-b22c-6435b231f806,name_column,yes,Redwood City,CA
+C10-0001388-LIC,Loe Dispensary,d03bfa79-a9ca-4322-a617-7a4e55e7932a,name_column,yes,Sonoma,CA
+C10-0001389-LIC,Megan's Organic Market,dd88ae06-3632-4c86-a365-1be62df22c81,name_column,yes,Goleta,CA
+C10-0001391-LIC,ASCENT,746eb655-6903-4914-a33d-0dbf75618112,name_column,yes,Bishop,CA
+C10-0001392-LIC,ELEMENT 7 SF1 LLC,77e18fda-740c-4920-9f5d-f623d5f3d317,name_column,yes,San Francisco,CA
+C10-0001394-LIC,Highlands Reserve LLC,3768cb7e-e3a4-4f7c-a341-6cae10ee4648,name_column,yes,Perris,CA
+C10-0001395-LIC,Fuego,250ee044-ffad-47cd-8ccc-77415e8cd010,name_column,yes,Crescent City,CA
+C10-0001396-LIC,Native Garden,34780937-3d8d-464f-9f79-1a6200229ee4,name_column,yes,Costa Mesa,CA
+C10-0001397-LIC,Embarc Tracy,f2d82b52-c4d5-456c-8f9f-48c323445349,name_column,yes,Tracy,CA
+C10-0001398-LIC,Embarc Meyers,9fdf6413-824e-45a3-a3f0-125310a5d538,name_column,yes,S Lake Tahoe,CA
+C10-0001400-LIC,Kannabis Works,e08e89a8-9563-4c08-be76-e1efecfebae8,name_column,yes,Stanton,CA
+C10-0001401-LIC,Lake Street Organics,ad507c79-c24f-4bfb-a624-2020d7cd821a,name_column,yes,Lower Lake,CA
+C10-0001402-LIC,SIESTA LIFE ENCINITAS LLC,205bc8c7-ac6d-4543-b31f-1c710704835e,name_column,yes,Encinitas,CA
+C10-0001403-LIC,Crystal Nugs Shop,db779055-a571-46d0-a1eb-19b4c6d38dbf,name_column,yes,Sacramento,CA
+C10-0001404-LIC,Wellgreens Dispensary,a0e6b704-f0e3-4476-ad64-22035b895ec9,name_column,yes,Encinitas,CA
+C10-0001405-LIC,"Metro 1996, LLC",7812ddbb-f397-4ca0-a30b-0d3970934a20,name_column,yes,Sacramento,CA
+C10-0001406-LIC,Ohana Cannabis,e19b550f-d511-4b6d-8ea1-7b8c4aee2a29,name_column,yes,Palm Springs,CA
+C10-0001409-LIC,The Hill,52e1c600-4b54-4524-95c4-a9388eafcaa4,name_column,yes,San Francisco,CA
+C10-0001410-LIC,Wellgreens Dispensary,d99f5bcf-89a1-4dd9-b60d-eacce12cfd7d,name_column,yes,San Diego,CA
+C10-0001411-LIC,Wellgreens Dispensary,bb68d28b-a5f2-48e8-8804-5b5c940110f4,name_column,yes,San Diego,CA
+C10-0001413-LIC,Blissful Moments Healing Center,65a621aa-f3e1-4c96-b4f1-373eac705d56,name_column,yes,Corcoran,CA
+C10-0001414-LIC,Embarc,2d1fa9a3-afea-48e8-b6c5-44d92bc72a32,name_column,yes,Indio,CA
+C10-0001415-LIC,TRADECRAFT FARMS,6da1c47c-ae08-46b0-990b-8f850202b6ee,name_column,yes,Lancaster,CA
+C10-0001416-LIC,SeaWeedsf,52d7940c-d219-41c4-985e-64d727692663,name_column,yes,San Francisco,CA
+C10-0001418-LIC,Local Roots,67816969-170b-42ae-9286-d3b01c9f5c85,name_column,yes,Ukiah,CA
+C10-0001419-LIC,"Sweet Flower Fresno 2, LLC",ad125c1b-c413-4a82-8d96-c1f5020e6d61,name_column,yes,Fresno,CA
+C10-0001420-LIC,"HIGH TIDE, HIGHER GROUND- LYNWOOD",2dea7b3c-dedf-43f9-a03d-a989c9e740bf,name_column,yes,Lynwood,CA
+C10-0001421-LIC,Wheelhouse Ventura,4a5aa8c0-c859-4bda-8690-0cc2cfa8068e,name_column,yes,Ventura,CA
+C10-0001422-LIC,The Cake House,d653ff1a-3961-497b-81b2-f9aa6e9f5c92,name_column,yes,Corona,CA
+C10-0001423-LIC,OXNARD HOLISTICS,c502265b-fc42-4448-927c-5cb2a88b613c,name_column,yes,Oxnard,CA
+C10-0001424-LIC,The Cake House Dispensary,ce72fc75-a9da-41f1-bc8a-8f08aaeb7daa,name_column,yes,Encinitas,CA
+C10-0001425-LIC,Dank Depot,e2c1e7f4-d9fc-4edf-9257-9aacc3eb2ee2,name_column,yes,Cathedral CTY,CA
+C10-0001426-LIC,Prime Exotics,c219f0bc-ea1c-42a2-86d2-803b471adc8b,name_column,yes,Eureka,CA
+C10-0001427-LIC,CATALYST - HAWTHORNE,5c51ba27-70d9-473a-8ffb-3762f37e0135,name_column,yes,Hawthorne,CA
+C10-0001428-LIC,CATALYST - LYNWOOD,6b60f67f-6ef7-4740-9e67-cd46f4b008fc,name_column,yes,Lynwood,CA
+C10-0001429-LIC,Mr Nice Guy Marijuana Cannabis Dispensary Santa Ana,f64efcd1-0a6b-416d-9d67-5f23f17901e6,name_column,yes,Santa Ana,CA
+C10-0001430-LIC,Off the Charts,3048344d-0ea2-4a6c-bad8-0bc5bdfd06ed,name_column,yes,Perris,CA
+C10-0001431-LIC,Premium Blossom,d4d8e172-8bc5-4a60-9795-c1f68fc7d18a,name_column,yes,Porterville,CA
+C10-0001432-LIC,Embarc Fontana,e2fae4fd-191b-4732-b76c-b1ace1b0176b,name_column,yes,Fontana,CA
+C10-0001433-LIC,West Coast Cannabis Club,cefec3fb-b7ab-415b-8b70-02dbab056fbb,name_column,yes,Indio,CA
+C10-0001434-LIC,CATALYST OC3 SANTA ANA,511bd3fe-486a-4f12-9dfd-5166ce4c5449,name_column,yes,Santa Ana,CA
+C10-0001435-LIC,STIIIZY Encinitas,ca0126c8-9126-48a0-a78d-4771aa2407d4,name_column,yes,Encinitas,CA
+C10-0001436-LIC,SHRYNE NATIONAL CITY LLC,6923773e-bfb7-4925-80c1-b53386287d9e,name_column,yes,National City,CA
+C10-0001437-LIC,Goldn Bloom,3321324b-e1e6-496e-afd9-2351c18c99c9,name_column,yes,Hemet,CA
+C10-0001439-LIC,HiKei Cannabis,74d9f5dc-57c4-4783-b609-598400ff6f37,name_column,yes,La Mesa,CA
+C10-0001440-LIC,Purple Lotus,7d41514e-5e1a-472b-a043-d626af1e840b,name_column,yes,San Jose,CA
+C10-0001441-LIC,HIGHER GROUND - BALDWIN PARK,a6dbd335-e48e-4081-b658-52372cf150cc,name_column,yes,Baldwin Park,CA
+C10-0001442-LIC,Embarc,d854479c-7c97-488b-a4a8-59d5595c3c8a,name_column,yes,Fresno,CA
+C10-0001443-LIC,Deli by Caliva San Jose,b13a9c9f-5056-4ef5-ac5f-3491aadcba01,name_column,yes,San Jose,CA
+C10-0001444-LIC,Seedstar Cannabis,d98b0e57-1a57-4c5c-8381-e59eebc75574,name_column,yes,Sacramento,CA
+C10-0001445-LIC,Desert Kush,3c2523e0-dc9c-4057-a83f-b9025c25f06d,name_column,yes,Cathedral CTY,CA
+C10-0001446-LIC,SPARC,d3aabc54-0ea4-4f09-8009-9ee9fe23409e,name_column,yes,Napa,CA
+C10-0001447-LIC,Embarc Madera,067e232e-b5e9-4981-9782-c3ba7d0f488b,name_column,yes,Madera,CA
+C10-0001448-LIC,PACKS,a2186a1e-053a-42c2-92d9-f5de754de680,name_column,yes,Santa Ana,CA
+C10-0001449-LIC,SLOCAL Roots GB,fc74ed16-6f16-4251-9bbc-174bf1e0f9bb,name_column,yes,Grover Beach,CA
+C10-0001450-LIC,Portola Pipeline,c49d7f3e-d4f8-4227-aeb3-a275d7a390e6,name_column,yes,San Francisco,CA
+C10-0001451-LIC,ROOT ONE,b510e63e-70ca-49ee-aef6-384bffb5e489,name_column,yes,Guadalupe,CA
+C10-0001452-LIC,STIIIZY LYNWOOD 2,1ad03845-1c1c-4318-947b-f8a8176c804d,name_column,yes,Lynwood,CA
+C10-0001453-LIC,The Artist Tree,c3a21b91-bb7c-4d38-b653-9e5a170dab5e,name_column,yes,Laguna Woods,CA
+C10-0001454-LIC,Jaderoom Artesia,bbbceffe-6884-4951-9d69-6a7f941c1355,name_column,yes,Artesia,CA
+C10-0001455-LIC,Harvest Of Santa Monica,86846455-fba4-4bbc-8b9a-1437f77d33b1,name_column,yes,Santa Monica,CA
+C10-0001456-LIC,Green Rush Cannabis Co.,3cfce09e-ccb6-49fd-8c0d-cceede33cf33,name_column,yes,Eureka,CA
+C10-0001457-LIC,Club W,e79d9857-93e4-4440-a50d-55fee37b6854,name_column,yes,Modesto,CA
+C10-0001458-LIC,CATALYST - LANCASTER,0fdc4915-7802-4e53-822c-9869499cc5af,name_column,yes,Lancaster,CA
+C10-0001459-LIC,99 High Tide,478aca29-5206-410d-9b63-98a6559529ff,name_column,yes,Oxnard,CA
+C10-0001460-LIC,BACKPACK BOYZ SAN BERNARDINO,f0f938c4-4c76-4cc1-9050-7caab8985354,name_column,yes,SN Bernrdno,CA
+C10-0001461-LIC,Off the Charts,e677c705-113a-4f42-b657-a6046cac7b89,name_column,yes,Los Angeles,CA
+C10-0001462-LIC,Nela Rd,efb99ce2-4f93-4e34-8519-8f432fd55aeb,name_column,yes,Los Angeles,CA
+C10-0001463-LIC,My420,fb38ac4f-afd2-4e1b-ae74-f739e6c79676,name_column,yes,Winnetka,CA
+C10-0001464-LIC,Gradus Hollywood,d77f0efb-ebb7-464a-8058-2010006d6ea5,name_column,yes,Los Angeles,CA
+C10-0001465-LIC,Green Label RX,c8deccc8-a21b-4d73-acda-1fb8d5f6cd6a,name_column,yes,Canoga Park,CA
+C10-0001466-LIC,Ccwat LLC,ebac6e4b-38ad-4fc4-bc8f-50184a0031e0,name_column,yes,Watsonville,CA
+C10-0001467-LIC,Off the Charts,059c3baf-8d42-4d41-8853-2a9e4aac4f86,name_column,yes,Artesia,CA
+C10-0001468-LIC,SOLFUL,986c7e38-0ccc-4ae4-8d58-957b6f10fc7f,name_column,yes,Healdsburg,CA
+C10-0001469-LIC,The Artist Tree,7c77fd86-b318-4c68-be7c-a245c2498a8e,name_column,yes,Inglewood,CA
+C10-0001470-LIC,BISHOP BOYZ LLC,511e949e-e7fd-47f8-8ebe-397a8013452a,name_column,yes,N Hollywood,CA
+C10-0001471-LIC,Off the Charts,42174417-5437-4e03-abb4-1fd44a38e8e8,name_column,yes,Sylmar,CA
+C10-0001473-LIC,Clarkies,127cbae5-d28e-4a5b-85f3-1c795bceb522,name_column,yes,Redway,CA
+C10-0001474-LIC,Oakfruitland,6f3ce8c0-86f5-460f-b32e-819f6a48dcb5,name_column,yes,San Francisco,CA
+C10-0001475-LIC,Off the Charts,6c4eaddd-6f62-4b79-9e40-efd537171208,name_column,yes,MC Farland,CA
+C10-0001476-LIC,CCSAL LLC,8d29843e-713b-439c-bc8a-13799815d0c9,name_column,yes,Salinas,CA
+C10-0001477-LIC,Brentwood Greens,a0af5d8f-0b61-49d4-961b-64da0213410b,name_column,yes,Los Angeles,CA
+C10-0001478-LIC,Off the Charts,708638a8-1f4d-4fa0-b6c2-f822ac1d5003,name_column,yes,Hemet,CA
+C10-0001479-LIC,High Season,8c433eab-0296-4c10-a997-8e5ae658ff1a,name_column,yes,Fontana,CA
+C10-0001480-LIC,Mr Nice Guy Marijuana Cannabis Dispensary Santa Ana,2653c3df-e161-49c1-833e-3225767705b4,name_column,yes,Santa Ana,CA
+C10-0001481-LIC,3185 MISSION LLC,522690ae-3a9e-4709-b3bb-c240dd78b0f8,name_column,yes,San Francisco,CA
+C10-0001482-LIC,GEEZZ DISPENSARY,c052c333-1c2a-4827-b66b-45e716aa9ace,name_column,yes,Adelanto,CA
+C10-0001483-LIC,The Highway on 132,3213f46d-ea24-4f3b-b3c9-bfc870920651,name_column,yes,Waterford,CA
+C10-0001484-LIC,Ohana Cannabis,5d038e2c-4592-4bb5-a050-c3a557ef854d,name_column,yes,Oakland,CA
+C10-0001485-LIC,The Hook,119022c5-8bc6-4efb-b6d5-d217c28aee45,name_column,yes,Capitola,CA
+C10-0001486-LIC,The Hook Santa Cruz,70442811-af9f-4e10-a84c-66f83cb87b2a,name_column,yes,Santa Cruz,CA
+C10-0001487-LIC,KUSH KORNER II,c11b5735-4d7f-4bec-a329-39b3abd24eab,name_column,yes,Los Angeles,CA
+C10-0001488-LIC,"CV McHenry, INC",35921f40-865e-4c1b-a3f1-21c82e24b35a,name_column,yes,Modesto,CA
+C10-0001489-LIC,Off the Charts,eee9c9b9-56a3-4328-a697-1640b5d58268,name_column,yes,Indio,CA
+C10-0001490-LIC,Beyond Rooted 559 LLC,2341630d-91be-4ff2-bc0e-d0841a9500b4,name_column,yes,Fresno,CA
+C10-0001491-LIC,Haze,47f55159-4b97-446f-a9e0-1616fc0a14d8,name_column,yes,San Jose,CA
+C10-0001492-LIC,Nectar,65da3360-4273-4ad3-8bea-800ae81e9acd,name_column,yes,Daly City,CA
+C10-0001493-LIC,Mystika,a1ac8deb-275f-497b-9318-26597756c6ae,name_column,yes,Perris,CA
+C10-0001494-LIC,Ohana Santa Cruz LLC,19aaf061-553d-47c0-9cd1-e2a9440a86aa,name_column,yes,Santa Cruz,CA
+C10-0001495-LIC,SHRYNE INDIO LLC,a330d40e-8b89-419b-926c-08f234309b95,name_column,yes,Indio,CA
+C10-0001496-LIC,The Window,bb285085-35d5-4592-9034-06d917e81847,name_column,yes,San Francisco,CA
+C10-0001497-LIC,Lower Lake Cc Limited Liability Company,f5f8b59a-ba4a-48b6-b269-21564d228aa3,name_column,yes,Lower Lake,CA
+C10-0001498-LIC,Embarc San Bruno,52512dfa-85c0-40cb-b9ff-f9cdcd285a68,name_column,yes,San Bruno,CA
+C10-0001499-LIC,BUZZ CANNABIS,2aa8627a-759d-4333-af9c-11c2c8f5581a,name_column,yes,San Diego,CA
+C10-0001500-LIC,Weeed,146a026c-9def-42b5-9fa7-1c0ba9476ac1,name_column,yes,Kagel Canyon,CA
+C10-0001501-LIC,OFF THE CHARTS SAN YSIDRO,90e004e3-796b-4286-9baf-eed28c4fbcef,name_column,yes,San Ysidro,CA
+C10-0001503-LIC,Fig & Thistle Apothecary,5b67143d-deff-4400-8b77-aba87ee3a218,name_column,yes,San Francisco,CA
+C10-0001504-LIC,Otc Antioch LLC,32cabcea-8152-4c9b-bd28-e45236f0d306,name_column,yes,Antioch,CA
+C10-0001505-LIC,A Green Alternative,811cefb6-920a-46c2-805b-270f76a700ee,name_column,yes,San Diego,CA
+C10-0001506-LIC,"CULTURE CC INDIO, INC",5b7913d7-c8ab-42c5-b40d-6b3f0e05239d,name_column,yes,Indio,CA
+C10-0001507-LIC,STIIIZY Artesia,8c50704a-84fe-4060-880b-b162131d95fb,name_column,yes,Artesia,CA
+C10-0001509-LIC,Eagle Eye Napa,742d6f49-55e1-4ae8-bd11-9b492a31d8d6,name_column,yes,Napa,CA
+C10-0001510-LIC,HIGH SEAS,896adf74-7b7c-4e76-bcd0-fe805e4775ce,name_column,yes,Costa Mesa,CA
+C10-0001511-LIC,Green Mart,7de94cde-c983-4577-a45b-3499912a145a,name_column,yes,Santa Ana,CA
+C10-0001512-LIC,Shryne Hawthorne LLC,228baff7-fefd-411e-a60a-341f44056712,name_column,yes,Hawthorne,CA
+C10-0001513-LIC,Shryne Lynwood LLC,4a6c08fd-4bcc-4f12-a5d5-a4679245efa7,legal_entity_from_description,yes,Lynwood,CA
+C10-0001514-LIC,Authentic Tracy LLC,29fe9ec1-dc37-45da-bbb1-9aadb3114529,legal_entity_from_description,yes,Tracy,CA
+C10-0001515-LIC,STIIIZY Ventura,06bf0646-7f14-44f9-8bc0-9a9d1e5f020d,name_column,yes,Ventura,CA
+C10-0001517-LIC,Valley Pure,476968a1-5c2d-49fd-8ca3-607591ce1776,name_column,yes,Farmersville,CA
+C10-0001518-LIC,Catalyst - Kearny Mesa,c4293a69-8a08-46ec-875c-c215727c885d,name_column,yes,San Diego,CA
+C10-0001519-LIC,Tree House,cd784a47-6681-4e1a-8393-b1b2a7e79e5f,name_column,yes,Los Angeles,CA
+C10-0001520-LIC,Al'S DEPOT & EMPROIUM,f0441522-bb97-4ffe-844d-15217ad78b5a,name_column,yes,Dunsmuir,CA
+C10-0001521-LIC,Toasty,46b85e9d-6c4a-44d7-b1c1-b4054ee6dfcf,name_column,yes,Sacramento,CA
+C10-0001522-LIC,ELECTRIC AVE. HOLDINGS,7931a673-6df7-4ad9-b84d-67a11866502e,name_column,yes,Jurupa Valley,CA
+C10-0001523-LIC,Cavi Land,df9fad5c-072d-4ac2-add9-8997e9ac7552,name_column,yes,Needles,CA
+C10-0001524-LIC,Pauwels Cannabis,91a8e057-038b-40dd-93ba-7c43c4720eaf,name_column,yes,Los Angeles,CA
+C10-0001525-LIC,Off the Charts,eee0d36d-1a01-436b-88ac-bf760f4aa2ad,name_column,yes,Manteca,CA
+C10-0001527-LIC,The Cure Company Pico,d6cc25a6-2a8e-4cbe-be6c-8bbffb133949,name_column,yes,Los Angeles,CA
+C10-0001528-LIC,Green Qween Sherman Oaks LLC,cea54084-31e6-4d61-a8eb-35cc97f61c3d,name_column,yes,Sherman Oaks,CA
+C10-0001529-LIC,"CLOVEST RETAIL 6563, LLC",571a9f04-274d-4250-937b-1225cd2b3725,name_column,yes,Los Angeles,CA
+C10-0001530-LIC,WOODLAND CANNABIS DISPENSARY,f19434ef-92b6-4b92-afb3-51a4397b5600,name_column,yes,Woodland,CA
+C10-0001531-LIC,Flavors of Antioch,f1874993-6914-4817-8762-e1e01d15b226,name_column,yes,Antioch,CA
+C10-0001532-LIC,The Dispensary,52546973-8943-4457-9bcd-77d4a352b3f6,name_column,yes,Fort Bragg,CA
+C10-0001533-LIC,THE JOINT,56eb319a-47f4-4651-a4e2-e5c214d5ca29,name_column,yes,Cathedral CTY,CA
+C10-0001534-LIC,Wellgreens Dispensary,bbc23a27-430f-4d80-bb38-8c034751b88b,name_column,yes,La Mesa,CA
+C10-0001535-LIC,Perfect Union,e90d040b-9acf-4269-bdc8-20a7d30da71b,name_column,yes,Woodland,CA
+C10-0001536-LIC,Off the Charts,c9b0f9c8-00b9-4829-b837-cf200fe97d24,name_column,yes,Monterey,CA
+C10-0001537-LIC,The Coughy Shop II,13fe04e2-f42c-473e-b37b-84baa99933b0,name_column,yes,Desert Hot Springs,CA
+C10-0001539-LIC,BUZZ Cannabis,41583218-aac0-4065-8f88-4257123a7724,name_column,yes,Lemon Grove,CA
+C10-0001540-LIC,Olimpya,e0110aef-79ae-49c0-9fd7-d44d6487dc35,name_column,yes,Los Angeles,CA
+C10-0001541-LIC,CCSea LLC,f13f7203-698b-4767-947c-3eef09e85473,name_column,yes,Seaside,CA
+C10-0001542-LIC,PLNTBSD,75b2224c-2f63-45c8-8b22-91f591235c4c,name_column,yes,Los Angeles,CA
+C10-0001543-LIC,Nectar,d74d15e1-cebb-4ed4-a795-e2001b06f487,name_column,yes,Manteca,CA
+C10-0001544-LIC,Off the Charts,d67073a1-af1f-4d52-a6f0-a695bdaf2019,name_column,yes,National City,CA
+C10-0001550-LIC,Status IE LLC,6aa9fe31-2945-41dc-a399-f18198b30c96,name_column,yes,Adelanto,CA
+C10-0001551-LIC,ELEMENT 7 REDWOOD CITY LLC,04bb5929-7473-4fd5-8027-668498c55af2,name_column,yes,Redwood City,CA
+C10-0001552-LIC,The Sweet Spot,b660d041-c24d-44ae-a42e-cbc05d54a71f,name_column,yes,Santa Rosa,CA
+C10-0001553-LIC,Sessions,2688dbca-3f59-4724-a76a-bc028c4644fc,name_column,yes,National City,CA
+C10-0001554-LIC,Pico Legacy LLC.,529cc3ea-6ff8-49ef-ada5-953ca2a197bd,name_column,yes,Los Angeles,CA
+C10-0001556-LIC,"NORTH COUNTRY OPERATIONS, INC",0067c40b-eb85-4163-956a-f82e1a1401ec,name_column,yes,Sacramento,CA
+C10-0001557-LIC,Perfect Union,b139749a-a111-44a5-af85-87d09502289a,name_column,yes,San Diego,CA
+C10-0001558-LIC,Fuego Lucerne Cannabis Dispensary,6b62cd97-bb9b-4cb1-9de5-3090b0a1091c,name_column,yes,Lucerne,CA
+C10-0001561-LIC,Mammoth Roots,00b85ebb-24ad-4e49-8217-65b08a070f80,name_column,yes,Mammoth Lakes,CA
+C10-0001562-LIC,Humboldt Honey Dispensary LLC,40622ec7-bf26-4314-aa65-1b87d1a9a57d,name_column,yes,Eureka,CA
+C10-0001563-LIC,Flavors of Riverbank,8fc6e602-c3ad-4e21-8f02-7d2f95c97eb2,name_column,yes,Riverbank,CA
+C10-0001564-LIC,Flame,e0da6e33-ca07-4045-a9b5-80914abe3a08,name_column,yes,Antioch,CA
+C10-0001566-LIC,Catalyst - Long Beach Retro Row,e033f5bb-508c-465e-81fd-45e3e05869ed,name_column,yes,Long Beach,CA
+C10-0001567-LIC,L.A. DULCE,4d9603b5-103f-4715-9596-9d9d256ab333,name_column,yes,San Pedro,CA
+C10-0001568-LIC,Buzz Cannabis,7b455601-bb42-414c-9124-1e831ce3e8be,name_column,yes,National City,CA
+C10-0001569-LIC,Jane Dispensary,edd2a61c-4486-430e-a0e1-86745609d1f7,name_column,yes,Healdsburg,CA
+C10-0001570-LIC,PCF of Ceres,ab09018c-676f-484f-80ca-388670da952e,name_column,yes,Modesto,CA
+C10-0001571-LIC,Embarc Woodland,650c02f3-51e5-47e2-8974-cdedaaf88e0b,name_column,yes,Woodland,CA
+C10-0001572-LIC,The Artist Tree,ea9e7f61-ec23-43b9-bd61-d8e8b9bbea88,name_column,yes,Fresno,CA
+C10-0001573-LIC,Jackpot,3468f57d-849c-4f5c-af80-a2f0fbf4b2ca,name_column,yes,Sacramento,CA
+C10-0001574-LIC,Cathedral City Releaf,68b1f86d-cd37-446d-a783-f8f5c7cbb6cc,name_column,yes,Cathedral CTY,CA
+C10-0001575-LIC,STIIIZY Madera,6472201f-282e-458e-80ce-c61ae1f3b808,name_column,yes,Madera,CA
+C10-0001576-LIC,"Bundy Canyon, LLC",be1f13e3-59cf-4776-8bae-7e52c2d5f91c,name_column,yes,San Jose,CA
+C10-0001577-LIC,CALI LOVE 101,e1c84d33-eb29-4128-89f5-79f329c78045,name_column,yes,Salinas,CA
+C10-0001578-LIC,Purplez,25991fe0-b4ba-40d4-a6a1-5d43e86c39bc,name_column,yes,Santa Rosa,CA
+C10-0001580-LIC,Sundial Collective,a657d846-66cf-448e-af6d-8789d4f3a1ba,name_column,yes,Woodland,CA
+C10-0001581-LIC,8278,eb1ff07d-bc2c-4dde-b9d6-2248e8e4bb4f,name_column,yes,Long Beach,CA
+C10-0001582-LIC,Green Qween West Hollywood,0f480e33-3381-4047-9d36-ca5f5d8c19d6,name_column,yes,W Hollywood,CA
+C10-0001583-LIC,Tree House,9435847c-f6be-4460-8636-e7af8aaee1c3,name_column,yes,Los Angeles,CA
+C10-0001584-LIC,Virgil FG,329cfb22-54cc-46f9-89ad-1326425c1854,name_column,yes,Los Angeles,CA
+C10-0001585-LIC,"MJ DIRECT-LOMPOC, INC.",41e90739-8de2-49b3-b7cb-02063f74aeae,name_column,yes,Lompoc,CA
+C10-0001586-LIC,395 High Sky LLC,f9c2d081-bbc9-46c3-9ebf-d104d950d795,name_column,yes,Adelanto,CA
+C10-0001587-LIC,STIIIZY Ashlan,516191d4-95f3-4865-936b-f1285a9ca773,name_column,yes,Fresno,CA
+C10-0001588-LIC,CC INDUSTRY LLC,d9fdd25f-39e8-4937-b7b5-8e063facff58,name_column,yes,Cathedral CTY,CA
+C10-0001589-LIC,The Ganjery,ef7b8c58-8fe0-4786-a137-a00572736bdf,name_column,yes,Arcata,CA
+C10-0001590-LIC,High Way,2ed5d111-9dcc-48f1-a8d4-32be8a6e026b,name_column,yes,Lancaster,CA
+C10-0001591-LIC,Haven Cannabis Marijuana and Weed Dispensary - Corona,b830a810-5370-4eca-b433-1e4f182dc5f1,name_column,yes,Corona,CA
+C10-0001595-LIC,FROM THE EARTH,cc81cfa2-acdd-4448-adbf-a4775196c1cd,name_column,yes,Santa Ana,CA
+C10-0001596-LIC,"SKYLINE YAROK, LLC",5c12e55e-bfb2-4f7f-8b19-69588484d5b7,name_column,yes,Daly City,CA
+C10-0001597-LIC,JADE GROVE LLC,107e07e5-4dc6-497c-9cfb-e491d12395b6,name_column,yes,Boulder Creek,CA
+C10-0001598-LIC,Off the Charts,24da2562-f692-4144-8ba5-68d98c1bb7a0,name_column,yes,Bell Gardens,CA
+C10-0001599-LIC,Big Chief Silverlake,0d2b579f-a8ef-40ca-a13a-3cf7f8d5216a,name_column,yes,Los Angeles,CA
+C10-0001600-LIC,Leaf Society,0a2d3537-eb7e-4761-bc99-96c2b9e0ddc4,name_column,yes,Thermal,CA
+C10-0001601-LIC,GREEN LABEL RX. ECHO PARK LLC.,c0062163-f854-44a6-a32b-b36734b4086d,name_column,yes,Los Angeles,CA
+C10-0001602-LIC,Willow Lane Beach LLC,0701e625-e905-446f-9dfc-8236b7298dfa,name_column,yes,Ukiah,CA
+C10-0001604-LIC,Nug Santa Rosa,a7ff26a2-3316-401b-b645-5e4729769d65,name_column,yes,Santa Rosa,CA
+C10-0001605-LIC,"OHC Holdings, Inc.",00be5dd4-d15a-4449-a207-80fba7b298e6,name_column,yes,San Francisco,CA
+C10-0001606-LIC,Packd LLC.,f85cec7e-3fc5-45ed-9601-725fec2c8cd3,name_column,yes,Needles,CA
+C10-0001607-LIC,Kushology,9c0b0f8f-7723-4350-a8ce-36491c2cf40b,name_column,yes,San Francisco,CA
+C10-0001608-LIC,Fuego Middletown,bf22601c-f614-4364-a7b8-27792171536b,name_column,yes,Middletown,CA
+C10-0001610-LIC,Grovys,54f0e61a-1b7b-4ef7-9161-9347de234188,name_column,yes,Crescent City,CA
+C10-0001612-LIC,EJ2 Ventures LLC,ee9ce0a2-4a93-4b1b-8a32-1e587164c3a9,name_column,yes,Lancaster,CA
+C10-0001613-LIC,TrapCon LLC,74b761a1-8e89-4585-9682-85a2c56c64a9,name_column,yes,Chatsworth,CA
+C10-0001614-LIC,GOAT GLOBAL,3353807a-2eb9-473d-a64a-5ab121720cd1,name_column,yes,Eureka,CA
+C10-0001615-LIC,Pipe Dreamz,8a2b3fe1-e946-4676-8d46-1cd286c55535,name_column,yes,Lake Elsinore,CA
+C10-0001617-LIC,Potent,2f5e2b16-80c2-4730-9f24-b483e019a573,name_column,yes,San Francisco,CA
+C10-0001618-LIC,Catalyst - Antioch,9ae849bb-a21a-46c9-8872-b29e7948d648,name_column,yes,Antioch,CA
+C10-0001619-LIC,Off The Charts,70ef1047-67b9-43a7-8c28-f1f374315752,name_column,yes,Long Beach,CA
+C10-0001620-LIC,Green Field,0bef4075-71ab-46de-9c95-7f0912ab6a1e,name_column,yes,San Francisco,CA
+C10-0001621-LIC,NUG CANNAVINE,b0f3e975-3a65-4ec5-a9f6-c61e7a26e8b2,name_column,yes,Belmont,CA
+C10-0001622-LIC,Instabuds,5bd9201a-8791-4b19-af4b-3bfaf080c5c3,name_column,yes,Costa Mesa,CA
+C10-0001624-LIC,CANNACRUZ,906bc814-7b7b-40b7-939d-dbe886f5f9f0,name_column,yes,Aptos,CA
+C10-0001625-LIC,GreenSTOP,b8bf6bb3-50a7-45a4-8c09-291dac727bd8,name_column,yes,Wilmington,CA
+C10-0001626-LIC,420 Lake Elsinore,f2aac7d2-e1f7-4977-8e8d-6c5ebed18a5f,name_column,yes,Lake Elsinore,CA
+C10-0001627-LIC,STIIIZY Bell Gardens,a770f6c3-211a-4393-8561-509574939f0b,name_column,yes,Bell Gardens,CA
+C10-0001629-LIC,Off Green,16d2c5f1-51da-40a8-87a7-df5042dedd88,name_column,yes,Panorama City,CA
+C10-0001631-LIC,Las Damas,2180d15c-441a-4ff7-9861-22c09b6fa198,name_column,yes,Coachella,CA
+C10-0001632-LIC,"Emerald Ventures, Inc",d3827bd5-09a3-49e3-93f5-3ec0052eb444,name_column,yes,Lynwood,CA
+C10-0001633-LIC,Haven,f59b0f49-cc35-4f03-a427-217478da3618,name_column,yes,Hawthorne,CA
+C10-0001634-LIC,Bard Boys,b05d0d2d-8a5a-449d-8a55-922ada4c05f4,name_column,yes,Oxnard,CA
+C10-0001635-LIC,Yor Om Collective,54a35612-de78-439f-bd55-0c31f694a617,name_column,yes,Forestville,CA
+C10-0001636-LIC,"Elevate Growth Partners, LLC",8da9b059-b7d0-47d7-bc97-cfcd839d65e6,name_column,yes,Los Angeles,CA
+C10-0001637-LIC,Perfect Union,d541f32f-7dbc-4eb6-bcc6-8d55d87ca917,name_column,yes,Lompoc,CA
+C10-0001638-LIC,Utopia SJ INC,ebe758d3-8be5-4e9c-98ae-dd32f3881447,name_column,yes,San Jose,CA
+C10-0001639-LIC,313 Management LLC,fb1197c0-1dac-497b-bc72-eb1b967eae58,name_column,yes,San Jose,CA
+C10-0001641-LIC,Westside Cllctv Perris,621612a4-4f38-42c0-95f8-2473eb0a255b,name_column,yes,Perris,CA
+C10-0001642-LIC,Better Daze,d466e070-467c-4867-8bd4-45a98cf69e35,name_column,yes,Covina,CA
+C10-0001643-LIC,The Cake House,09530d52-d926-45e3-8072-3fe0d0044e58,name_column,yes,San Diego,CA
+C10-0001644-LIC,CALI LOVE WILLOWS,ef9c2497-fd13-431a-9caa-0ab882951ef8,name_column,yes,Willows,CA
+C10-0001645-LIC,"NUG Express, Lil NUG",10c2fe6b-cded-4974-83d0-b3b9d2daf389,name_column,yes,San Leandro,CA
+C10-0001646-LIC,Off the Charts,18356aaa-2861-4477-afe3-2f516fab7ccc,name_column,yes,Hemet,CA
+C10-0001647-LIC,Flight,db463ec0-50dc-4bfc-b93a-5325dde3266a,name_column,yes,San Francisco,CA
+C10-0001648-LIC,Element 7 Sf4 LLC,bcdaa899-4b6e-4dd7-a4d4-718a28a6c0f6,name_column,yes,Monterey,CA
+C10-0001649-LIC,GRAVITY RETAIL,2a964ba4-a5d0-4740-b993-eddece82d573,name_column,yes,Sherman Oaks,CA
+C10-0001650-LIC,CANNA-BEL,adaf96a2-49f2-4eef-a6cc-97d843e87dd3,name_column,yes,Belmont,CA
+C10-0001651-LIC,Canna Culture Mid Town,ae3d6427-067f-4083-8297-ef1e1e4bbda6,name_column,yes,San Jose,CA
+C10-0001652-LIC,piedmont partners,e0076e53-4eb0-406e-99a2-93aaee43b651,name_column,yes,Encino,CA
+C10-0001653-LIC,Santee Project,7c2f292a-1664-4576-bdec-c4d54fb4c262,name_column,yes,Santee,CA
+C10-0001654-LIC,Budology,e129deed-500b-48a9-97e1-933b99ab530b,name_column,yes,Hemet,CA
+C10-0001655-LIC,BUZZ Cannabis,1117765f-8bdd-4469-b998-586f4c8613a1,name_column,yes,Santee,CA
+C10-0001656-LIC,Central Remedies,797dc3d2-737b-4371-b022-8db1225256d6,name_column,yes,Los Angeles,CA
+C10-0001657-LIC,STIIIZY University,fde8d5a2-a7b7-4cbb-8f2f-b89318844703,name_column,yes,Riverside,CA
+C10-0001658-LIC,TBD - Will Add Later,44a19355-d394-4ef5-94fb-ed59d4ae53d8,name_column,yes,Los Angeles,CA
+C10-0001659-LIC,Off the Charts,14823a26-0417-4fab-a7f2-582e83fd8060,name_column,yes,Palm Springs,CA
+C10-0001660-LIC,Mr. Nice Guy,e596662d-b631-4eca-a6fb-3a66f6091186,name_column,yes,Bell Gardens,CA
+C10-0001661-LIC,FVC,f977de2c-e056-492d-ad16-85fcb2809423,name_column,yes,Murrieta,CA
+C10-0001662-LIC,Off the Charts,deeb68d5-17b9-4de2-aa1d-1a4b6f797b1a,name_column,yes,San Jose,CA
+C10-0001663-LIC,STIIIZY Riverside,bf5545fe-dbad-4afe-8622-9649f21d0e06,name_column,yes,Riverside,CA
+C10-0001664-LIC,Public Dispensary Covina,3f02fbc1-69f0-4512-ba57-95883d9df3cc,name_column,yes,Covina,CA
+C10-0001665-LIC,Jet Room,45e1b548-b909-4ed5-97c5-ddf0a1541110,name_column,yes,Long Beach,CA
+C10-0001666-LIC,Riverside Community Retail LLC,b548a533-a13d-4c73-b6be-727de3a150b6,name_column,yes,Riverside,CA
+C10-0001667-LIC,STIIIZY WILDOMAR LLC,fa66c84b-3ba3-4500-b819-5d481c68a86b,name_column,yes,Wildomar,CA
+C10-0001668-LIC,PLANET CATALYST,77bc39e6-9c09-4402-ac3d-f36895707bf3,name_column,yes,Santa Ana,CA
+C10-0001669-LIC,Dr. Greenthumb's Orcutt,5ab52871-a9ba-44dc-abe1-911b22972d80,name_column,yes,Orcutt,CA
+C10-0001670-LIC,La Flor,99fc4cca-3fda-41fc-8216-9f9defd6605d,name_column,yes,Fairfax,CA
+C10-0001671-LIC,Star Budz,a916bd01-46fb-4de4-b6c9-102104b2bc34,name_column,yes,Hemet,CA
+C10-0001672-LIC,Needles Cannabis Dispensary,500ad068-d2ac-47b4-b113-12a2b6eca3d7,name_column,yes,Needles,CA
+C10-0001673-LIC,COSDD21. LLC,cd084550-8a9d-40cb-ab70-efceed322fd9,name_column,yes,San Diego,CA
+C10-0001674-LIC,The Fireplace,d04691de-e0f7-4c30-9c95-79cf75800929,name_column,yes,Eureka,CA
+C10-0001675-LIC,Off the Charts,bfbcac60-fcc8-4f08-8d13-d49e3030aa26,name_column,yes,San Diego,CA
+C10-0001676-LIC,FF2332 LLC,55aa3155-3ec8-4410-beef-c7b8564ef917,name_column,yes,Costa Mesa,CA
+C10-0001677-LIC,Gbh Madera LLC,39fd1b46-ae4a-4484-ad3a-56aeff567e7c,name_column,yes,Madera,CA
+C10-0001678-LIC,Off the Charts,8498d0f8-977a-4ee2-96b4-1a4ebe06d96e,name_column,yes,San Pablo,CA
+C10-0001679-LIC,NIRVANA MANAGEMENT GROUP LLC,f7cadd5a-29ba-45b8-81fc-3f9c363221d3,name_column,yes,Oakland,CA
+C10-0001680-LIC,Herban Kulture,18436c49-8263-4853-a316-a27f7bfba915,name_column,yes,Moreno Valley,CA
+C10-0001681-LIC,TRD,51e6fb82-47ba-4744-97f5-4f6e0bd99412,name_column,yes,Lompoc,CA
+C10-0001682-LIC,I-5 Cannabis,04130c03-81b3-46a4-8b90-c3c97cc382ac,name_column,yes,Willows,CA
+C10-0001683-LIC,Blazed Utopia,5008f004-c492-4eda-82e1-e7eaf678d615,name_column,yes,Hemet,CA
+C10-0001684-LIC,"Cactus & Clouds Adelanto, LLC",12f8ccff-2c50-4220-a64c-5e52fc462c04,name_column,yes,Adelanto,CA
+C10-0001685-LIC,Off the Charts,8876a543-ddd5-4282-aabd-adb6b86bad4b,name_column,yes,Cudahy,CA
+C10-0001686-LIC,"Perfect Union - San Jose, LLC",5bf41503-6a5e-4891-a2cb-c2f7d2d72485,name_column,yes,San Jose,CA
+C10-0001687-LIC,Soful,b1ba891c-36c0-4271-9ac2-c728baf97e80,name_column,yes,Petaluma,CA

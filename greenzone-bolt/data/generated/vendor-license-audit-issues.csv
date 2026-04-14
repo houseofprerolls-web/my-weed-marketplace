@@ -1,0 +1,240 @@
+vendor_id,license_number,name_field,legal_entity_from_description,is_public_dispensary,is_live,offers_storefront,offers_delivery,license_status,flags,city,state,slug
+f737a15d-00fc-4018-b35c-f057268f7261,C10-0001305-LIC,TBD,Authentic Fresno Willow LLC,yes,true,true,false,approved,name_placeholder_legal_in_desc,Fresno,CA,ca-uls-c10-0001305-lic
+3422d0b0-c52c-403c-8139-b179f78a7a14,C10-0001341-LIC,TBD,Kings Krop LLC [Equity Retailer],yes,true,true,false,approved,name_placeholder_legal_in_desc,Los Angeles,CA,ca-uls-c10-0001341-lic
+4a6c08fd-4bcc-4f12-a5d5-a4679245efa7,C10-0001513-LIC,tbd,Shryne Lynwood LLC,yes,true,true,false,approved,name_placeholder_legal_in_desc,Lynwood,CA,ca-uls-c10-0001513-lic
+29fe9ec1-dc37-45da-bbb1-9aadb3114529,C10-0001514-LIC,TBD,Authentic Tracy LLC,yes,true,true,false,approved,name_placeholder_legal_in_desc,Tracy,CA,ca-uls-c10-0001514-lic
+d148c48c-3db7-42fe-82a7-273595d3c87d,C10-0001628-LIC,,Hong Kong LLC [Equity Retailer],no,false,true,false,approved,not_live|name_placeholder_legal_in_desc,Reseda,CA,ca-uls-c10-0001628-lic
+7bab6e2a-a7e9-40d8-9824-f67e9a57826e,C9-0000013-LIC,"NORCAL HOLISTICS, INC.","Norcal Holistics, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000013-lic
+1d3352c4-98af-4f86-9a03-55d9358d1cc8,C9-0000016-LIC,Dubs Green Garden,Dubs Green Garden Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Luis Obispo,CA,ca-uls-c9-0000016-lic
+cb6a7773-345b-407f-b748-558c080bd370,C9-0000019-LIC,"NICE GUYS DELIVERY, INC.","Nice Guys Delivery, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Rafael,CA,ca-uls-c9-0000019-lic
+515a75e1-3c0b-4bf6-9add-31b82da09cc3,C9-0000024-LIC,NU CANNABIS,"Kepos Enterprises, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000024-lic
+8e801292-1c23-4f10-ba23-8042b0a5c5bb,C9-0000025-LIC,Waves,Ivy Alley LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Francisco,CA,ca-uls-c9-0000025-lic
+4ca936bf-639f-4347-8a97-1880904c82b9,C9-0000026-LIC,DUBE,"Hassell Girls, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Francisco,CA,ca-uls-c9-0000026-lic
+39f42679-8392-497b-a236-c01a448d6ae7,C9-0000032-LIC,Yesca Oaks Delivery,West Coast Medical Finest Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000032-lic
+05fa4ad5-8252-4fd0-a26d-178f47c885b1,C9-0000034-LIC,Caliva Culver City,"Caliva Cadecc1, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000034-lic
+a1986d3f-071d-4021-babe-8eb8f14f0905,C9-0000040-LIC,BlazD Deliveries,"Jwc Deliveries, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000040-lic
+0320e8b6-8167-4f02-bfe2-190932314c89,C9-0000041-LIC,"BUDGET KING, LLC","Budget King, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000041-lic
+e9a12496-5e59-4ec0-b46d-8bdd4411ccac,C9-0000045-LIC,BLEU DIAMOND LLC,Bleu Diamond LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Luis Obispo,CA,ca-uls-c9-0000045-lic
+ad6f7c90-061f-4fc6-babe-6280c2cd34eb,C9-0000046-LIC,"GOLDEN STATE CANNABIS, INC.","Golden State Cannabis, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000046-lic
+4139e167-9cb2-4ff0-a6ab-2996838f600e,C9-0000048-LIC,"Kc Dbw Nsfd, LLC","Kc Dbw Nsfd, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Monterey,CA,ca-uls-c9-0000048-lic
+b79432fb-e31b-4f4a-adc7-0f55493a536d,C9-0000059-LIC,The Sensi Society,"Bay Care Delivery, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Francisco,CA,ca-uls-c9-0000059-lic
+bcb9e530-02bf-4c31-b0b8-106cb4ab5353,C9-0000061-LIC,"WINTER GREENS, LLC","Winter Greens, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Nevada City,CA,ca-uls-c9-0000061-lic
+c919a168-eb9e-44e6-a547-a8d31dcc95f9,C9-0000074-LIC,CAM,California Artisanal Medicine,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000074-lic
+af030438-a880-4146-8207-7847f0125d64,C9-0000076-LIC,"MBM Sacramento, LLC","Mbm Sacramento, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000076-lic
+e4df9b1f-40ae-495a-be5a-efccfcb6066e,C9-0000077-LIC,The Loaded Bowl,The Loaded Bowl LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Redwood City,CA,ca-uls-c9-0000077-lic
+6d25cd4f-1b99-4fb6-8370-b773094a274a,C9-0000094-LIC,Hey High,"Urban Buds, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000094-lic
+392d03a1-f780-44bd-a2c1-5778ef9c733e,C9-0000100-LIC,Ona.Life,Buttercup & Spring,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Rafael,CA,ca-uls-c9-0000100-lic
+33f7f0a5-117e-412a-b6e0-b9b4af59bce1,C9-0000104-LIC,Ohana Gardens,Ohana Gardens,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000104-lic
+4ea6a406-7159-4a55-a954-5abcc57d0729,C9-0000105-LIC,The Joy Reserve,Elefante Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Francisco,CA,ca-uls-c9-0000105-lic
+0be78d9f-edf3-40a2-9f8b-911cfa0c42e0,C9-0000122-LIC,Trees Of Knowledge,Trees Of Knowledge T,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000122-lic
+5738ec6e-6c7c-4f6b-a2fd-4873a749ff13,C9-0000139-LIC,HIGH LYFE DISTRIBUTION INCORPORATED,High Lyfe Distribution Incorporated,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000139-lic
+17a8a392-fbe2-4348-9a3e-b7ab36bf4b50,C9-0000144-LIC,SBMS,Santa Barbara Manufacturing And Supply Company LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Barbara,CA,ca-uls-c9-0000144-lic
+87e5de4f-aedc-4bb2-8d32-2b5bcde8a472,C9-0000155-LIC,ONE UP MONTEBELLO LLC,One Up Montebello LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000155-lic
+fa15202a-9682-4410-af19-034a67e2b1b3,C9-0000174-LIC,Smoakland,Hah 7 Ca LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000174-lic
+2981632a-12f7-4016-8d9e-252932300e6e,C9-0000195-LIC,Pog Marketing LLC,Pog Marketing LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000195-lic
+ffeca63b-386b-4e44-b6e8-12b5c4da992d,C9-0000204-LIC,"Dreamy Delivery, Alpaca Club","Wholesome Delivery, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000204-lic
+a86fb17f-96c5-4596-b9bb-e502018a20fd,C9-0000212-LIC,"Aralo Enterprises, LLC","Aralo Enterprises, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000212-lic
+98f1b139-8964-4bef-85bd-0f6cdd0072fc,C9-0000215-LIC,"HOMETOWN HEART, INC.","Hometown Heart, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000215-lic
+a989de77-9b9f-44c3-a190-84544558fac5,C9-0000217-LIC,Canna-Couriers,Sjc Industries LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000217-lic
+c382f2d5-d9fb-4b81-b529-21281dd8ab58,C9-0000247-LIC,Moonflower,Lumalign LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Rafael,CA,ca-uls-c9-0000247-lic
+bc72cf6a-d056-48b0-8af5-56dc5416a07f,C9-0000248-LIC,Firefly Marin,Firefly Marin,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Rafael,CA,ca-uls-c9-0000248-lic
+62f2ef75-3277-4370-8037-a74602ac79f3,C9-0000265-LIC,"PRIMETIMING, LLC","Primetiming, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000265-lic
+3c94dd0a-72c8-42a3-9840-a7a2d3754d60,C9-0000270-LIC,THE GOOD PEOPLE FARMS LLC,The Good People Farms LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Woodland,CA,ca-uls-c9-0000270-lic
+ddfcc298-61d0-487d-9f48-b7b150288782,C9-0000278-LIC,Goldy's,Altruism For All,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000278-lic
+d9354de5-42a8-45ff-91bf-09b5f5956be4,C9-0000294-LIC,Supreme Greens,Real Industries LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,El Centro,CA,ca-uls-c9-0000294-lic
+49750844-665c-4373-a1d4-e1d2973cb7a8,C9-0000295-LIC,"HOMETOWN HEART, INC.","Hometown Heart, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Francisco,CA,ca-uls-c9-0000295-lic
+3a3358bc-6a58-406e-a5c2-e00fe27e5d42,C9-0000298-LIC,Eaze,"Clearlake Growth Fund Ii, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Rosa,CA,ca-uls-c9-0000298-lic
+e1d0c7de-80d6-432c-964a-28d2c0b08d0f,C9-0000301-LIC,"Green Delivery, Inc","Green Delivery, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000301-lic
+f135d082-e2e9-412c-aa46-98070fc0e1fe,C9-0000316-LIC,HAHA Organics,Coastal Care Organics Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000316-lic
+e41dcebd-c945-4399-8d8c-139c04556978,C9-0000323-LIC,Sticky Thumb,Make Your Mark Sf Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Redwood City,CA,ca-uls-c9-0000323-lic
+3ccb4f64-b15e-44d0-832c-ab7ae175ac78,C9-0000332-LIC,Tahoe Harvest Collection,Imajn Corp,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Nevada City,CA,ca-uls-c9-0000332-lic
+cabf7358-a435-49b1-a4b2-43d6acf634e7,C9-0000334-LIC,"Garden State Nectar, Inc.","Garden State Nectar, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Luis Obispo,CA,ca-uls-c9-0000334-lic
+c456b92b-33d0-4105-94c2-0dbf26bcacf5,C9-0000346-LIC,"HUMBLE ROOT INTERNATIONAL, INC","Humble Root International, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000346-lic
+5955871f-6c3b-4e81-bc35-139891053a88,C9-0000359-LIC,GOODFELLAS,Cannabis Plus LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000359-lic
+b4e4dd21-ebce-4e41-bb83-10309af087fe,C9-0000362-LIC,Budzilla Cannabis Delivery,Cali Cannabis Care,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Bakersfield,CA,ca-uls-c9-0000362-lic
+9f85a870-fc85-4e25-83f9-d79f1f39f140,C9-0000364-LIC,"REDWOOD ROOTS RETAIL, LLC","Redwood Roots Retail, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Eureka,CA,ca-uls-c9-0000364-lic
+6ca59d1a-2a26-4cd9-aea9-a7943bd8bc97,C9-0000370-LIC,BAY LEAVES,"Elite Herbs, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Rafael,CA,ca-uls-c9-0000370-lic
+ac25f468-0ae8-43f7-92fe-a9a20e87d6c8,C9-0000373-LIC,Green Canary,Sova,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000373-lic
+b7fe6057-68ab-4c6c-9086-fedd3ea78081,C9-0000375-LIC,KUSHY CANNABIS DELIVERY,"209 Trading Company, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Stockton,CA,ca-uls-c9-0000375-lic
+c4dd0aaa-8b8a-48dc-bbbf-7eca4e1459ba,C9-0000378-LIC,Royal Kush,"Tech Delivery Solutions, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Ventura,CA,ca-uls-c9-0000378-lic
+515b2a10-5407-49e5-b452-b17eee987c75,C9-0000388-LIC,"NATURA DELIVERY ONLY DISPENSARY, LLC","Natura Delivery Only Dispensary, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000388-lic
+7eefce96-58e1-45e1-9e16-f9d2fa161e46,C9-0000391-LIC,Tahoe Honey Company,Tahoe Honey Company,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Nevada City,CA,ca-uls-c9-0000391-lic
+26783799-1005-42c4-be23-85b5bfaee666,C9-0000397-LIC,IHEARTCANNABIS,Innovative Concepts Investments Group,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Ventura,CA,ca-uls-c9-0000397-lic
+9a121311-7cc6-41b0-8d5e-27c8480a0644,C9-0000409-LIC,MY NATURAL SOLUTIONS LLC,My Natural Solutions LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000409-lic
+fa099edf-5e1b-4489-be60-fb271fce52b9,C9-0000411-LIC,710 LABS,"Asv Eq 3, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000411-lic
+9879f9e3-33dd-41f1-9839-34e5b93cfc60,C9-0000414-LIC,Bleu Diamond LLC,Bleu Diamond LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Ventura,CA,ca-uls-c9-0000414-lic
+2b61c832-af04-4f7c-a152-cdedbe8fb169,C9-0000423-LIC,X GROUP,West Coast Green Rush LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000423-lic
+bf6cd8b7-4c6b-44d3-b00b-28a3cac8db63,C9-0000425-LIC,SEND IT,Aquamarine Green LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Luis Obispo,CA,ca-uls-c9-0000425-lic
+cb9c01c1-384b-4ff8-8f42-3b54c039f4d4,C9-0000429-LIC,Lofi,Northern Altruist LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000429-lic
+a11477c4-fc01-48d7-9886-b87e643b9ad1,C9-0000431-LIC,Fast Flavors,"Kwiki Bud, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000431-lic
+7965806a-7e65-4d06-9796-34c272244a85,C9-0000433-LIC,Cannagram,Boru Co,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000433-lic
+f70eefd6-a614-44b7-885a-30807961366b,C9-0000436-LIC,ECOMEDS,Front Door Enterprises LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Ventura,CA,ca-uls-c9-0000436-lic
+f1c412f9-ddf8-40c4-af0e-6bc80f9816a4,C9-0000438-LIC,HERB - Eastside,Nickbob LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000438-lic
+46fab31d-49f8-4cf4-82d8-5068df60d4b9,C9-0000441-LIC,HEROJO SOLUTIONS LLC,Herojo Solutions LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000441-lic
+1981336d-f8f6-4afa-aebd-1f7828d5de27,C9-0000442-LIC,Padre Mu,Pm Oak LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000442-lic
+af403c3b-4b3e-4d06-b8f0-f7036a334077,C9-0000445-LIC,HERB - Westside,The Ministry LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000445-lic
+eee66583-19fd-470f-ad5a-b1db0ee32273,C9-0000446-LIC,"Sustainable Farms, LLC","Sustainable Farms, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000446-lic
+90e34b78-492d-4dff-b2ba-b1b8b0485d72,C9-0000448-LIC,Jet Room,"Laday & Guerra, General Partnership",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000448-lic
+42475450-abe0-451d-888b-be1e7edc4d6e,C9-0000463-LIC,"ERBA DELIVERY, ERBA MARKETS",Erba Delivery-1,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000463-lic
+514143ac-2a68-48ce-8c69-f755444d6a79,C9-0000468-LIC,Breez CA LLC,Breez Ca LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000468-lic
+c75936ac-de63-4168-ad57-26dccac88a7d,C9-0000474-LIC,"Full Spectrum Group, Inc.","Full Spectrum Group, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000474-lic
+c94f9f7d-89d8-4eb6-b0e6-0660eb470ea4,C9-0000478-LIC,The Pink CannaBag,Cannacreative LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000478-lic
+babbcc8a-d5e6-4ad5-a953-7c4f39c3dbd8,C9-0000479-LIC,KUSH CONNECT,Collective Strategies Enterprises LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000479-lic
+c9e13bd5-8156-46ff-a554-ca5791669721,C9-0000489-LIC,"Montvail, Inc.","Montvail, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000489-lic
+c89b49ab-fb65-4a6d-a1f9-6f7e0e8d0df7,C9-0000492-LIC,Best Friends Farm,Craig Guggolz,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Riverside,CA,ca-uls-c9-0000492-lic
+fce867f7-1409-4a49-b367-49f1f9d6cc1c,C9-0000503-LIC,GEEZZ BROS,St George Enterprise LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Bernardino,CA,ca-uls-c9-0000503-lic
+af107038-29a0-44fc-80a0-60dd114f5bcb,C9-0000504-LIC,"Bud Dynasty, Inc.",Bud Dynasty,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000504-lic
+ceab26b3-e1a3-4953-99ab-6894f8cb10ba,C9-0000509-LIC,Natrl Hi,Nh Logistics LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000509-lic
+bc0e6149-d59d-464f-9f04-b26d04b48edf,C9-0000511-LIC,Magic Stick,Collective Strategies Enterprises LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000511-lic
+3ee90767-fd1e-4f9c-9537-966f796742ce,C9-0000513-LIC,Redeye Cannabis,Golden State Remedies,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Barbara,CA,ca-uls-c9-0000513-lic
+59fa2561-6f48-40b4-ba9a-58ce8f676fee,C9-0000528-LIC,ENR SAC,Weedmo LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000528-lic
+836da8c1-87c7-4c64-a0f9-ddb444a08d09,C9-0000543-LIC,Nexus Delivers,Cjd Enterprises LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000543-lic
+703d6f34-6b3f-4be9-92ee-af5b3f64eef4,C9-0000544-LIC,Lah Di Dah Di,"Agronomic Investments, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000544-lic
+1e9c1337-5e30-47d3-98dd-406e61c2ac2b,C9-0000546-LIC,DoorHash,"Cumberland Blues, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000546-lic
+98560957-94f7-4e87-be5a-29053bb8b7ae,C9-0000548-LIC,"Ministry of Biblicallife Healing, Inc.","Ministry Of Biblicallife Healing, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000548-lic
+b60d6178-6c9b-4657-bfb7-b28c6116d62b,C9-0000550-LIC,Elusive,Ranajit Chaudhury,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000550-lic
+4891dab6-e5ae-4045-b9ba-faa72a5ea713,C9-0000551-LIC,THREE TREES,"Shark Tank Group, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000551-lic
+5c643474-ab4d-4970-a072-10c484f2a3ca,C9-0000552-LIC,"CS Group Operation, Inc.","Cs Group Operation, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000552-lic
+b9c962cb-aee7-41d0-945d-f04f217c5e4d,C9-0000554-LIC,"Bonzai, Inc.","Bonzai, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000554-lic
+2e21ad46-3b28-4c83-b19f-1ecda8719c90,C9-0000558-LIC,DROOPIES LLC,Droopies LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000558-lic
+86cabe78-e4b3-41f6-938d-57fa93cb0b86,C9-0000561-LIC,Orange Leaf Delivery,San Fernando Express,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000561-lic
+1f107839-66a7-4e6b-9846-5bcf737b079e,C9-0000565-LIC,THHC,True Holistic Health Center,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000565-lic
+61b0d464-a58a-4872-8688-d74879dc3ec7,C9-0000567-LIC,"On Deck Delivery, LLC","On Deck Delivery, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Ana,CA,ca-uls-c9-0000567-lic
+47a91283-b24e-4207-afb0-3e430c4dcee8,C9-0000568-LIC,"Uncle Green, Inc.","Uncle Green, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Visalia,CA,ca-uls-c9-0000568-lic
+090ec22f-0f9b-467e-83c6-1643078ac2f5,C9-0000570-LIC,Greenmart Organics Inc.,Greenmart Organics Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000570-lic
+46045253-e6c3-4439-8238-4409ac65ba01,C9-0000579-LIC,710 LABS,"Asv Eq 3, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000579-lic
+a84c3e75-c990-43ee-82fa-c90989af103d,C9-0000581-LIC,FLYT Delivery,Pro Genitor,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000581-lic
+ca234797-8852-4183-91b1-7526e770e2bd,C9-0000582-LIC,KannaXpress,"Kannaxpress, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Nevada City,CA,ca-uls-c9-0000582-lic
+7e2100a4-aae7-4fd0-b876-0597c0591312,C9-0000583-LIC,Enjoymint Delivered,"Alpha Core, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000583-lic
+9be58cb8-1f17-4da6-a5a7-688e68b5d775,C9-0000594-LIC,SS Commercial Enterprises LLC,Ss Commercial Enterprises LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000594-lic
+a2c20bb0-2271-42b9-bcf3-0212b80557d4,C9-0000597-LIC,HITECH IMAGING TRADE INC,Hitech Imaging Trade Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Bernardino,CA,ca-uls-c9-0000597-lic
+d039cd60-ff47-49f7-8c07-7372e95cf30f,C9-0000611-LIC,New Era Healing,"New Era Healing, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000611-lic
+c6d39346-3612-4e49-84cf-33ab9272b93a,C9-0000617-LIC,Green Mind LLC,Green Mind LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000617-lic
+8b9e8c32-d437-4d6b-9a60-fba2d0e75bd4,C9-0000619-LIC,Just J's LLC,Just J's LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000619-lic
+18e74ec9-d64a-4515-92d3-c2a40d68270d,C9-0000622-LIC,"Abundense, LLC","Abundense, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Riverside,CA,ca-uls-c9-0000622-lic
+99585b35-ce00-4d65-bc81-bb065ab91bd6,C9-0000626-LIC,"East LA Wellness, LLC","East La Wellness, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000626-lic
+7577ede6-f995-416e-b8ce-463da7199b43,C9-0000628-LIC,"Narmania, LLC",Narmania LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000628-lic
+364e4dd7-eeb0-430c-aaf6-8cc7bad4aced,C9-0000629-LIC,Rooted Group,Exotic Extraction LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Riverside,CA,ca-uls-c9-0000629-lic
+8d7263c6-4a7c-4290-9034-21a3d092687d,C9-0000630-LIC,EXPANDO PRODUCTS LLC,"Expando Products, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Ana,CA,ca-uls-c9-0000630-lic
+0ff2d8eb-bc68-4b46-b720-541eb6252712,C9-0000636-LIC,brothers Hempire,Brothers Hempire,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000636-lic
+564a2484-a907-45df-afaa-cbd2ac64ceeb,C9-0000639-LIC,7DAYZ,Vegvad LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000639-lic
+1d1cca1c-f45b-4ca6-9b15-1c0813df0323,C9-0000643-LIC,"JBLR Joint Venture, LLC","Jblr Joint Venture, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000643-lic
+35815cc8-2fb0-456c-924b-9a60a6c0c5a2,C9-0000644-LIC,Oil Haus,"Shepard Investments, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Ana,CA,ca-uls-c9-0000644-lic
+5c6abc4a-6880-4a24-b36d-77a87042a36a,C9-0000649-LIC,Firefly Delivery,Firefly Delivery LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Barbara,CA,ca-uls-c9-0000649-lic
+4ee0c6ea-4f0d-4dd3-9b78-00fb01c174b7,C9-0000651-LIC,nexus delivery,"Nexus Delivery, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000651-lic
+d639d5cb-64be-4f5e-9acc-35d1235fc276,C9-0000655-LIC,LICENSED TO DELIVER,Bb & Se Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Ventura,CA,ca-uls-c9-0000655-lic
+221cd802-c20a-4ca0-8481-ae46151f92d0,C9-0000656-LIC,"DSC Alliance, LLC","Dsc Alliance, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000656-lic
+17afa91b-fbdd-4b35-93e0-3ba62e66cda2,C9-0000659-LIC,BudExpress,Puff N' Luff Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000659-lic
+87ee40db-a468-4c29-a2cf-81f8b91395bb,C9-0000660-LIC,Young Bulls Delivery,Young Bulls Delivery LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000660-lic
+1cbb4494-b5cd-4658-8038-aeb362597cde,C9-0000661-LIC,YES DELIVERY LLC,Yes Delivery LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000661-lic
+2976f8bb-6164-4b90-aac4-f16b28af35cf,C9-0000672-LIC,FRESH FLOWER DAILY,Jc Rad Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000672-lic
+663b77d8-4bf5-4bd0-beaa-b0a542afa7e9,C9-0000674-LIC,HerbNJoy,Walnut Creek Erudite Ventures,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Martinez,CA,ca-uls-c9-0000674-lic
+b5f5932e-b2b4-4a12-91a4-fbf94921c985,C9-0000675-LIC,Sacred Tree 365,Sacred Tree 365 LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000675-lic
+142a98eb-ae2e-41b6-805e-6d0c31636307,C9-0000681-LIC,Bud Bees,Budbees LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000681-lic
+e35366a6-9d07-4d61-996d-80edd4cbd8b3,C9-0000682-LIC,PUFF LA LLC,Puff La LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000682-lic
+45d17157-85f9-4744-a23e-304da2b807c2,C9-0000685-LIC,"CS GROUP OPERATION 2, INC.","Cs Group Operation 2, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000685-lic
+53b3b634-d8be-43cc-8301-79859ef779b7,C9-0000687-LIC,Exhale,Mwkm Corporation,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Jose,CA,ca-uls-c9-0000687-lic
+7828b04d-bd9f-4248-b893-ecc5d87502b9,C9-0000691-LIC,AKNS LLC,Akns LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000691-lic
+87665dd5-610a-4d85-b617-2e6fdfcb673f,C9-0000695-LIC,"Peak Horizon, Inc.","Peak Horizon, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000695-lic
+f60d660f-72e3-4af8-b8ca-0c9765db77c5,C9-0000696-LIC,C.R.A.F.T.,"Limited Boutique Supply, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000696-lic
+da72f92e-d583-47ee-b41b-8eef63cb6269,C9-0000698-LIC,MOAB DELIVERY,Moab Delivery LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000698-lic
+b485192d-cc30-4118-96ee-b2207c05c50a,C9-0000699-LIC,Higher Ground Holdings LLC,Higher Ground Holdings LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Ana,CA,ca-uls-c9-0000699-lic
+4c35a1c9-4ee6-4c6d-980b-0f190854e9ae,C9-0000700-LIC,Relief Delivered,Ca Quantum Md LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000700-lic
+8e21a720-3a01-41e8-8fbe-b002a592c2c0,C9-0000705-LIC,Social Wellness,"Kinfolk Holistics, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Luis Obispo,CA,ca-uls-c9-0000705-lic
+0678fe40-432e-4171-93a1-34f26df07d42,C9-0000706-LIC,CannaQuik Deliveries,"Holistic Holdings, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000706-lic
+32945f27-7b8a-478a-a4c7-0b418947f8d3,C9-0000707-LIC,FROST,"Dankory, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000707-lic
+64974025-6614-449e-8d9b-0d0903e703cb,C9-0000708-LIC,SHRYNE LA HABRA LLC,Shryne La Habra LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Ana,CA,ca-uls-c9-0000708-lic
+b4360c00-32d8-4f38-b551-9bd48b0c85b6,C9-0000712-LIC,"TRESTL, INC","Trestl, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000712-lic
+274206ad-a45f-4741-b27a-c84bd3b88219,C9-0000715-LIC,Bud Nest,Farmdale Delivery LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000715-lic
+86c006bc-fe18-4ce7-b2e1-c270b57ce841,C9-0000716-LIC,Harvest House LLC.,Harvest House LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000716-lic
+2d05d977-8508-4342-a6f3-80b953a3496a,C9-0000718-LIC,Green Light Cannabis,Eric Sedrakyan,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000718-lic
+124c1b5d-c3e7-47da-97a3-d2543eb4e435,C9-0000719-LIC,Happy High Delivery,Eric Sedrakyan,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000719-lic
+6afc140b-e3cb-490f-8fd2-e724deb2fca7,C9-0000720-LIC,High Roller LLC,High Roller Club LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000720-lic
+e87b5533-b71c-46a0-baaf-b60dd48d0d17,C9-0000721-LIC,Flower Policy,Flower Policy LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000721-lic
+dcf7299e-5d8f-4cac-b0e2-449f2331016c,C9-0000723-LIC,GETGO DELIVERY LLC,Getgo Delivery LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000723-lic
+3e73e1f5-cbf1-4438-8934-a8d7f4cf4374,C9-0000724-LIC,CANNA LA LA,Canna La La LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000724-lic
+a8c356e8-586a-4ebe-8ead-701051ce44e6,C9-0000725-LIC,Rose Town Investment Group,Rose Town Investment Group,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000725-lic
+425ab1dd-f518-4370-b5f5-346f9b5fc81c,C9-0000728-LIC,Real Fire Society,Mgpi,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000728-lic
+c1607944-c5a6-4162-bfbe-c7af3d4fb6ba,C9-0000729-LIC,EUPHORIA GRAS,Khldun Issa,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000729-lic
+34632706-a63b-48e3-a721-8d4900c6a1da,C9-0000730-LIC,CORNERBOY,Security Pacific Corporation,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000730-lic
+b2c7d0b5-aa67-4eb0-a21f-80e43ec500c4,C9-0000731-LIC,CN PACHECO,Cn Pacheco,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Martinez,CA,ca-uls-c9-0000731-lic
+de70fb38-fb68-4737-bc34-6ba58fe1cddc,C9-0000732-LIC,G LION,Fabulous Creations Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Ana,CA,ca-uls-c9-0000732-lic
+228d9264-c4c4-4569-a795-6f6845436b61,C9-0000733-LIC,Wakery Bakery Delivery,Lonnell Crawford,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000733-lic
+5bd785d0-1baf-4d0d-9e76-43bdffbb014e,C9-0000734-LIC,Fast Flavors,"Onyi Mitchell, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000734-lic
+3d1f9da4-9e51-4171-a0dd-957a550c0fbc,C9-0000742-LIC,SK Delivery Inc.,Sk Delivery Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000742-lic
+0b8d5998-6866-4ca0-8e43-bf9fdce83071,C9-0000745-LIC,SK Delivery Inc.,Sk Delivery Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000745-lic
+37523c75-41e9-450b-ba70-a6822b0415e2,C9-0000747-LIC,HEAVEN'S HERB,Arg Group LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000747-lic
+cc23dabf-3922-422b-afbe-bbd3e4d72fae,C9-0000748-LIC,DT California LLC,Dt California LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Modesto,CA,ca-uls-c9-0000748-lic
+7df99401-7633-43f1-a59b-62050f6c4f5f,C9-0000750-LIC,TELOS LOGISTICAL SOLUTIONS LLC,Telos Logistical Solutions LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000750-lic
+034d16d3-325b-4df8-916f-44a4e7ac7494,C9-0000752-LIC,Bishop Boyz LLC,Bishop Boyz LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000752-lic
+fae19f3d-fff6-42f0-9707-4dc57aa2e0bb,C9-0000753-LIC,SMOOTH ELEVATIONS HOLDINGS L.L.C.,Smooth Elevations Holdings L,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000753-lic
+c28da63a-36cb-4fad-a8bc-0da85defa1d3,C9-0000756-LIC,Groovy Doobie LLC,Groovy Doobie LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000756-lic
+38370c99-ff48-493a-b42a-dc7c91486cf0,C9-0000758-LIC,SMART MED SOLUTIONS,Smart Med Solutions,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000758-lic
+1c0fd123-a069-47e0-9c1f-14ac4987fe5d,C9-0000759-LIC,Newstein Corporation,Newstein Corporation,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000759-lic
+55f98caa-9eb0-46c3-93ec-c626d3221b64,C9-0000763-LIC,CSA MEDICAL REMEDIES,Csa Medical Remedies LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000763-lic
+8b589897-c835-4730-8d59-5c6876d03fc3,C9-0000764-LIC,Norcanna Farms,Uphill Incorporated,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Placerville,CA,ca-uls-c9-0000764-lic
+5ba0bef3-f2a5-42bd-95e2-ad2e5f56f9b2,C9-0000766-LIC,MRS. BUDZ LLC,Mrs,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000766-lic
+60d3abbf-90e7-41cc-8117-6b8969faf025,C9-0000770-LIC,Deli Boys Delivery,Kushizm Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000770-lic
+a374ed47-e4a9-4354-a8df-dd70d805d238,C9-0000771-LIC,Springs Angeles,Springs Angeles LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000771-lic
+107cd27b-f52a-4ba9-abf6-bb46f7daec32,C9-0000772-LIC,"LS7 Logistics, LLC.","Ls7 Logistics, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000772-lic
+de2c7ce4-a368-48dc-b443-98db67b24854,C9-0000779-LIC,HIGHER PURPOSE DELIVERY SERVICE,"Trd Associates, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000779-lic
+e0cbd279-20a5-45e5-aaea-dff3e9f1fe08,C9-0000782-LIC,Bonnet Shores Management Company LLC,Bonnet Shores Management Company LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000782-lic
+fab5bb21-5ddf-4eed-ba66-b3912c87b138,C9-0000785-LIC,GUPPYGO,Guppygo LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000785-lic
+11b22cab-7a46-4f43-bd80-f076bd2ea689,C9-0000786-LIC,JD Simcha,Jd Simcha,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000786-lic
+10c33817-0c6f-490e-b144-237cb2da3365,C9-0000787-LIC,"THE DELIVERY LA, LLC","The Delivery La, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000787-lic
+3c60df44-a4ae-448b-a08f-1997e69a8aaa,C9-0000791-LIC,Zen Life Organics LLC,Zen Life Organics LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000791-lic
+79b5ba51-3851-4b90-97b5-e6e36d9eb631,C9-0000793-LIC,C3 Delivery,"C3 Delivery, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000793-lic
+8066a336-bd32-495a-89f4-c3e0a2890d92,C9-0000795-LIC,Abc Commerce LLC,Abc Commerce LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000795-lic
+3eb60d9c-eddb-4551-9094-62a794d050d5,C9-0000796-LIC,"CMX Distribution, Inc.","Cmx Distribution, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Ana,CA,ca-uls-c9-0000796-lic
+b65c3bf6-0ae1-4b4b-b310-8c52de4d7f4b,C9-0000797-LIC,"West Coast Safe Delivery, Inc.",A & D Couriers,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Ana,CA,ca-uls-c9-0000797-lic
+4e92d520-00a3-48e0-92ed-79a08c6ed417,C9-0000805-LIC,"Fresh Green Express, LLC","Fresh Green Express, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000805-lic
+52eac85f-e8da-4dd8-bf6b-990e140df929,C9-0000806-LIC,The Green Giant Delivery,Prospect Beach LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000806-lic
+d2892329-93f4-40ef-86e7-3b99e124bd2f,C9-0000807-LIC,Marin Gardens,The Bjork Group,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Rafael,CA,ca-uls-c9-0000807-lic
+a5f78065-8064-4f89-bf61-a0124cbb485c,C9-0000809-LIC,The Paisley Project LLC,The Paisley Project LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000809-lic
+0e50166d-576c-4e69-a977-c88c17a63aab,C9-0000810-LIC,TOP NOTCH FLOWERS,"Top Notch Flowers, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000810-lic
+46e8dae8-029b-4bde-823e-89c057479ff4,C9-0000812-LIC,GREEN GOLD DELIVERY,Green Gold Investment Corporation,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000812-lic
+6205045a-bd93-4e8b-b184-71bebf686f0f,C9-0000813-LIC,"GREEN RUSH ALLIANCES, LLC","Green Rush Alliances, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Barbara,CA,ca-uls-c9-0000813-lic
+049dc64d-974b-41cd-b06f-79cc21edca53,C9-0000814-LIC,WEEDYY,"Dazzert, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000814-lic
+db4b3a33-ebb0-4dfd-8928-8bdf37f61031,C9-0000815-LIC,"Osos Flower, LLC","Osos Flower, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Luis Obispo,CA,ca-uls-c9-0000815-lic
+0155988a-f842-46d1-adad-500ddd49916d,C9-0000816-LIC,KK Delivery,Kk Deliveries Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000816-lic
+d6863ff8-d8a6-4f6c-9ccd-b5fc14e51154,C9-0000817-LIC,OFL Delivery Sacramento LLC,Ofl Delivery Sacramento LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000817-lic
+c8f5adf7-f849-412c-847e-98f4c9b148c1,C9-0000819-LIC,HITS LA,Yan B Delivery,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000819-lic
+37ee6678-691e-4a92-9f18-ae7357b35814,C9-0000820-LIC,CANNABUS,Ap & K Management LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000820-lic
+625fde52-46f8-4561-8913-5c42c3af49fb,C9-0000821-LIC,UplyftLA,Rubibi Capital LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000821-lic
+ff0b7213-4a37-4547-81cd-5828601587e9,C9-0000823-LIC,Legacy Pharms,Amacoa Partners LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000823-lic
+eb6c996e-151e-45d9-b721-cf71fbe45f7c,C9-0000824-LIC,SA HOLDING LLC,Sa Holding LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000824-lic
+e7dee550-bed4-45f1-b5d4-c417c8747c9a,C9-0000825-LIC,The Gas Station,Shasta Street LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000825-lic
+9348d4ed-6e3c-48a0-8db3-8aee012cc170,C9-0000826-LIC,Upnorth Distribution Inc,Upnorth Distribution Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Eureka,CA,ca-uls-c9-0000826-lic
+73462d48-c9fc-4e91-9e09-22681e82dfce,C9-0000827-LIC,MX3,Mx3 LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000827-lic
+fb34e92b-bd15-496c-bcb0-84b7e640461b,C9-0000828-LIC,Emerald Dragon Holdings,Emerald Dragon Holdings,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000828-lic
+2604590a-6c53-4030-b8e8-d33bca798ad2,C9-0000830-LIC,WAWG INC,Wawg Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000830-lic
+84c5fc24-d3b9-460b-87f4-af0fddeb589b,C9-0000831-LIC,Padre Mu,Pm Oak LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000831-lic
+d98a2bdb-7b03-45d6-b5c9-e83abc148263,C9-0000832-LIC,Local Choice,Locals Choice Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Bernardino,CA,ca-uls-c9-0000832-lic
+32af42ea-a5ea-4445-a7a2-810ca487f308,C9-0000834-LIC,SUNDERSTORM BAY LLC,Sunderstorm Bay LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000834-lic
+6bd4729e-58f3-4da6-9470-b82b5d55738e,C9-0000835-LIC,Cloud7,The Kom LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000835-lic
+7d8d10a2-283c-4ed3-b01a-c124e3bd7e32,C9-0000837-LIC,Elder Creek Delivery Inc.,Elder Creek Delivery Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000837-lic
+3cc2a3b4-f74a-4ae2-bd11-80b44e20c92a,C9-0000840-LIC,Thornwood Distribution LLC,Thornwood Distribution LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Barbara,CA,ca-uls-c9-0000840-lic
+5a7672b9-327f-4a9f-8db1-8f57bb972fbe,C9-0000841-LIC,Top Shelf LLC,Top Shelf LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000841-lic
+8fc6a3bd-1111-4a6f-9fb5-4376cd26c7c2,C9-0000842-LIC,The Yucca Valley Dispensary,"M&C14, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Bernardino,CA,ca-uls-c9-0000842-lic
+92dc1108-7987-475b-b6b0-844b62667da0,C9-0000843-LIC,Smoakland,Smoakland Weed Delivery Corp,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000843-lic
+cdc7cf6a-9d92-4ef5-96a7-5f9ad98faa12,C9-0000844-LIC,Elev8ted Delivery,Bnn One LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000844-lic
+dea34792-fda3-42dc-a262-380b51e391e5,C9-0000845-LIC,Ounce Kings,Norcal Trading LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000845-lic
+092fe466-653d-4c99-8041-673d31a8dca2,C9-0000846-LIC,Banana Budda,Anmr LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000846-lic
+e041cace-207e-478b-b455-644f59a1d147,C9-0000847-LIC,Erba Catalina,Erba Catalina,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000847-lic
+7c7e0d98-5c94-44d6-8df5-8e49acaa4f44,C9-0000848-LIC,StashCo,Brandon Utke,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000848-lic
+ba4fa823-fe29-470d-9229-bc83a54b9419,C9-0000849-LIC,Greenway Highway,Greenway Highway Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000849-lic
+490ecede-87b6-4bb3-af71-0a7946672806,C9-0000850-LIC,"DISTRO DEPOT, INC.","Distro Depot, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Riverside,CA,ca-uls-c9-0000850-lic
+a9f61ca1-6404-4647-9d09-7d6671914b25,C9-0000851-LIC,Quickie Cannabis Delivery,Quickie Delivery LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Riverside,CA,ca-uls-c9-0000851-lic
+5dc35e06-3010-483c-8dd6-b0f0cfe25657,C9-0000852-LIC,Stealthee Delivery,Wmjh Logistics LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000852-lic
+0a5a2849-dfa5-47d4-9b99-ad917ba7ea07,C9-0000853-LIC,100 Gram Dash,"100 Gram Dash, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000853-lic
+23c4a3ce-33b0-4a17-8a1d-4df4aa230133,C9-0000854-LIC,"POUNDS, INC.","Pounds, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000854-lic
+c5ef7c9b-a1dd-4982-a819-2a1f05e8f399,C9-0000855-LIC,"GEKT, Inc.","Gekt, Inc",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000855-lic
+25750b3b-2320-4441-98ae-4acb6e97ad64,C9-0000856-LIC,t.h.chi,Golden Garden LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000856-lic
+b36816cf-2692-4d7c-b7b8-2a500c1641ad,C9-0000857-LIC,GOLD PHOENIX,Gold Phoenix LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000857-lic
+12765fa3-d1b6-4433-b1be-5afd968f48f9,C9-0000858-LIC,Cannabashery,"Cannabashery, LLC",no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000858-lic
+a5d50900-ea85-4763-affc-f6ac0413842d,C9-0000859-LIC,Dream Bisss LLC,Dream Bisss LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Sacramento,CA,ca-uls-c9-0000859-lic
+42397899-aa80-4222-8931-72e9875c1270,C9-0000860-LIC,Curbside Collective,Greenspeed LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000860-lic
+e0c9004f-3790-44f0-8b3b-8b2e95821cc1,C9-0000861-LIC,Jay & Silent Bob Deliver,Mariposa Oak LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Los Angeles,CA,ca-uls-c9-0000861-lic
+56fe39cb-8f35-4652-82c4-f1907ef7ec9b,C9-0000862-LIC,"Kannabis, Curbside Collective",Olympian Ventures Inc,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Oakland,CA,ca-uls-c9-0000862-lic
+33261be5-2f54-4043-8f58-b81473bf1657,C9-0000863-LIC,Indo Nation,Indo Nation LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,San Francisco,CA,ca-uls-c9-0000863-lic
+f00366ff-4deb-4b05-b552-a8ef4d03f6ff,C9-0000864-LIC,HERA DISTRIBUTION LLC,Hera Distribution LLC,no,true,false,true,approved,no_storefront_flag|not_retail_c10_heuristic,Santa Ana,CA,ca-uls-c9-0000864-lic

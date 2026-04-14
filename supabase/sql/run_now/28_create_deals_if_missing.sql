@@ -1,0 +1,2 @@
+-- Run: supabase/migrations/0047_create_deals_table_if_missing.sql
+-- Then if 0046 skipped deals policies: run supabase/migrations/0046_vendor_owner_rls_without_vendor_role.sql again.

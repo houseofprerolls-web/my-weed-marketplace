@@ -1,0 +1,12 @@
+/**
+ * Optional static file at /css-fallback.css (not linked from root layout — a <link> in app/layout.tsx
+ * can prevent Next.js from injecting the real CSS bundle). Baseline styling is in app/globals.css.
+ */
+html {
+  background-color: #000;
+  color: #f4f4f5;
+}
+body {
+  margin: 0;
+  line-height: 1.5;
+}

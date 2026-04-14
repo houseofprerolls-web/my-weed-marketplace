@@ -1,0 +1,14 @@
+INSTRUCTIONS (read in Notepad — do NOT paste this file into Supabase SQL Editor)
+
+Run these SQL files in Supabase Dashboard → SQL Editor.
+For each step: open the .sql file in this repo, copy ALL of its contents, paste into SQL Editor, Run.
+
+Step A — bolt_setup folder:
+  1) 00_wipe_public_schema.sql
+  2) 01_extensions.sql
+
+Step B — bolt_migrations folder:
+  Run every .sql file in that folder in alphabetical order by filename
+  (same order as listed in ../BOLT_GREENZONE.md).
+
+Never paste GREENZONE_BOLT.md or BOLT_GREENZONE.md — those are documentation, not SQL.

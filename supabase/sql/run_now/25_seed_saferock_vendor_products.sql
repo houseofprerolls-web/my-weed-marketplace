@@ -1,0 +1,4 @@
+-- Run in SQL editor (in order):
+--   supabase/migrations/0043_seed_saferock_vendor_products.sql
+--   supabase/migrations/0044_saferock_master_lock_extra_menu.sql
+-- Saferock slug = master store (houseofprerolls@gmail.com) + full QA menu.

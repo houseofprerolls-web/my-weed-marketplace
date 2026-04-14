@@ -1,0 +1,273 @@
+{
+  "csvPath": "c:\\Users\\itssj\\Downloads\\san diego stores and deliveries.csv",
+  "dryRun": false,
+  "region": "san-diego",
+  "updatedCount": 6,
+  "changes": [
+    {
+      "csvTitle": "STIIIZY DELIVERY",
+      "vendorId": "6079b130-7267-4811-9c4f-fbc17a3bd974",
+      "vendorName": "Stiiizy",
+      "slug": "flexotic",
+      "listingPath": "/listing/6079b130-7267-4811-9c4f-fbc17a3bd974",
+      "matchScore": 98,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/402/905/avatar/1767146214-1111.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/298/107/avatar/1771203608-tile_design_7.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Goldn Bloom",
+      "vendorId": "79331d5a-3377-4ce8-ad0c-51ee982a4f67",
+      "vendorName": "Goldn Bloom",
+      "slug": "sd-goldn-bloom-04",
+      "listingPath": "/listing/79331d5a-3377-4ce8-ad0c-51ee982a4f67",
+      "matchScore": 100,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/320/774/avatar/1707160424-logo_s_for_malik.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/052/773/avatar/1661186512-goldn_bloom.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Buzz Cannabis - Sorrento Valley",
+      "vendorId": "2f1abc4f-4575-45bf-bc50-dd49859e5fa3",
+      "vendorName": "BUZZ CANNABIS",
+      "slug": "ca-uls-c10-0001094-lic",
+      "listingPath": "/listing/2f1abc4f-4575-45bf-bc50-dd49859e5fa3",
+      "matchScore": 98,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/384/602/avatar/1749849845-buzz_logo___400_x_400_px_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/376/308/avatar/1753842323-buzz_logo___400_x_400_px_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Cookies Mission Valley",
+      "vendorId": "a084b1ef-e360-404b-b9ed-67d55076a472",
+      "vendorName": "Cookies",
+      "slug": "ca-uls-c10-0001173-lic",
+      "listingPath": "/listing/a084b1ef-e360-404b-b9ed-67d55076a472",
+      "matchScore": 92,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/304/413/avatar/1714522409-cookies_script_logo_blue.png?w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/308/794/avatar/1763756512-1666038542-app_icon_cookies.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "EMBR",
+      "vendorId": "f463df67-f546-408f-88a6-edaaff20f09b",
+      "vendorName": "Embr",
+      "slug": "ca-uls-c10-0000290-lic",
+      "listingPath": "/listing/f463df67-f546-408f-88a6-edaaff20f09b",
+      "matchScore": 100,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/320/857/avatar/1715192538-50_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/307/692/avatar/1763584402-screen_shot_2022-09-06_at_10-15-03_am_1_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Backpack Boyz San Diego",
+      "vendorId": "a7105425-4297-463d-95c6-1253f1451571",
+      "vendorName": "Backpack Boyz",
+      "slug": "ca-uls-c10-0000772-lic",
+      "listingPath": "/listing/a7105425-4297-463d-95c6-1253f1451571",
+      "matchScore": 92,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/374/049/avatar/1759183766-logo_bb__4_.png?w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/313/393/avatar/1690741485-1686601599-img_2691.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    }
+  ],
+  "unchangedCount": 26,
+  "skippedPlaceholder": 26,
+  "noMatchCount": 141,
+  "noMatchSample": [
+    {
+      "title": "Doorhash - Gaslamp",
+      "image": "https://weedmaps.com/images/deliveries/000/398/562/avatar/1774541193-untitled-12_copy_7.png?w=96&h=96&dpr=2&auto=format",
+      "line": 4
+    },
+    {
+      "title": "Grand Era",
+      "image": "https://weedmaps.com/images/deliveries/000/404/916/avatar/1774583641-profile-image-01__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 5
+    },
+    {
+      "title": "AP & K - Gaslamp District",
+      "image": "https://weedmaps.com/images/deliveries/000/399/549/avatar/1767402591-4a056e28-7f32-4c7d-8864-c9e41c27aa66.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 6
+    },
+    {
+      "title": "BudExpress - Gaslamp",
+      "image": "https://weedmaps.com/images/deliveries/000/401/132/avatar/1773933105-photoroom_20260319_081107.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 8
+    },
+    {
+      "title": "PUFF - Gaslamp District",
+      "image": "https://weedmaps.com/images/deliveries/000/399/355/avatar/1774405804-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 10
+    },
+    {
+      "title": "Golden State Greens Point Loma - Gaslamp",
+      "image": "https://weedmaps.com/images/deliveries/000/214/051/avatar/1761839167-uncle_ihj_deal_card__instagram_profile_picture_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 11
+    },
+    {
+      "title": "Budzilla - Gaslamp District",
+      "image": "https://weedmaps.com/images/deliveries/000/400/026/avatar/1774320947-profile-image-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 12
+    },
+    {
+      "title": "West Coast Safe Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/398/325/avatar/1773978884-whatsapp_image_2026-03-19_at_8-52-30_pm.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 13
+    },
+    {
+      "title": "Cali Cannabis Care - Gaslamp District",
+      "image": "https://weedmaps.com/images/deliveries/000/401/007/avatar/1773646014-chatgpt_image_16____________2026___-__00_15_24.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 14
+    },
+    {
+      "title": "PLNTBSD",
+      "image": "https://weedmaps.com/images/deliveries/000/405/584/avatar/1774296578-profile-image-02__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 15
+    },
+    {
+      "title": "Cannabis Plus - Gaslamp",
+      "image": "https://weedmaps.com/images/deliveries/000/399/519/avatar/1759335244-logo_800x800.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 18
+    },
+    {
+      "title": "BudExpress - Hillcrest",
+      "image": "https://weedmaps.com/images/deliveries/000/405/992/avatar/1773933153-photoroom_20260319_081107.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 19
+    },
+    {
+      "title": "BudExpress - North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/401/133/avatar/1773933133-photoroom_20260319_081107.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 22
+    },
+    {
+      "title": "Doorhash - North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/398/600/avatar/1774541639-untitled-12_copy_4.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 23
+    },
+    {
+      "title": "HiKei",
+      "image": "https://weedmaps.com/images/dispensaries/000/067/207/avatar/1768247332-hikei_avatar1_copy__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 25
+    },
+    {
+      "title": "Cannabis Plus - North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/399/529/avatar/1759335381-logo_800x800.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 26
+    },
+    {
+      "title": "Budzilla - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/400/032/avatar/1774321751-profile-image-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 27
+    },
+    {
+      "title": "Cali Cannabis Care - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/402/840/avatar/1773646435-chatgpt_image_16____________2026___-__00_15_24.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 29
+    },
+    {
+      "title": "PUFF - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/399/400/avatar/1774405817-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 30
+    },
+    {
+      "title": "Doorhash - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/398/598/avatar/1774541472-untitled-12_copy_4.png?w=96&h=96&dpr=2&auto=format",
+      "line": 34
+    },
+    {
+      "title": "Golden State Greens Point Loma - Ocean Beach",
+      "image": "https://weedmaps.com/images/deliveries/000/269/864/avatar/1761839318-uncle_ihj_deal_card__instagram_profile_picture_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 35
+    },
+    {
+      "title": "PUFF - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/399/407/avatar/1774405837-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 36
+    },
+    {
+      "title": "Budzilla - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/400/031/avatar/1774321747-profile-image-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 37
+    },
+    {
+      "title": "Golden State Greens Point Loma",
+      "image": "https://weedmaps.com/images/dispensaries/000/044/304/avatar/1774034453-20260320_1317_spring_logo_background_remix_01km6avykce2pa2v79k1k9rmzb.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 41
+    },
+    {
+      "title": "Grand Era",
+      "image": "https://weedmaps.com/images/deliveries/000/404/937/avatar/1774584123-profile-image-01__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 43
+    },
+    {
+      "title": "PLNTBSD",
+      "image": "https://weedmaps.com/images/deliveries/000/405/600/avatar/1774297055-profile-image-02__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 45
+    },
+    {
+      "title": "West Coast Safe Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/398/329/avatar/1773979055-whatsapp_image_2026-03-19_at_8-52-30_pm.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 47
+    },
+    {
+      "title": "Grand Era",
+      "image": "https://weedmaps.com/images/deliveries/000/404/934/avatar/1774584115-profile-image-01__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 49
+    },
+    {
+      "title": "Cannabis Plus - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/399/526/avatar/1759335350-logo_800x800.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 50
+    },
+    {
+      "title": "AP & K - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/399/553/avatar/1767402713-4a056e28-7f32-4c7d-8864-c9e41c27aa66.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 51
+    },
+    {
+      "title": "West Coast Safe Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/398/328/avatar/1773979039-whatsapp_image_2026-03-19_at_8-52-30_pm.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 53
+    },
+    {
+      "title": "Cali Cannabis Care - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/401/141/avatar/1773646273-chatgpt_image_16____________2026___-__00_15_24.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 55
+    },
+    {
+      "title": "AP & K - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/399/552/avatar/1767402682-4a056e28-7f32-4c7d-8864-c9e41c27aa66.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 56
+    },
+    {
+      "title": "PLNTBSD",
+      "image": "https://weedmaps.com/images/deliveries/000/405/603/avatar/1774297261-profile-image-02__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 57
+    },
+    {
+      "title": "Sessions By The Bay - Lounge & Dispensary National City / Chula Vista",
+      "image": "https://weedmaps.com/images/dispensaries/000/381/964/avatar/1745286463-sessions-by-the-bay-weedmaps.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 60
+    },
+    {
+      "title": "Cannabus - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/399/253/avatar/1773986316-sddd.png?w=96&h=96&dpr=2&auto=format",
+      "line": 64
+    },
+    {
+      "title": "Cannabus - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/399/256/avatar/1773986385-sddd.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 65
+    },
+    {
+      "title": "Cannabus - Ocean Beach",
+      "image": "https://weedmaps.com/images/deliveries/000/399/257/avatar/1773986406-sddd.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 67
+    },
+    {
+      "title": "Grand Era",
+      "image": "https://weedmaps.com/images/deliveries/000/404/947/avatar/1774584136-profile-image-01__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 70
+    },
+    {
+      "title": "PUFF - Ocean Beach",
+      "image": "https://weedmaps.com/images/deliveries/000/399/403/avatar/1774405824-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 71
+    }
+  ]
+}

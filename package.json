@@ -1,0 +1,31 @@
+{
+  "name": "my-weed-marketplace",
+  "private": true,
+  "description": "Monorepo: Supabase migrations + GreenZone Bolt (primary Next app). Optional Next 16 UI is in da-treehouse/.",
+  "scripts": {
+    "clean": "npm run clean --prefix greenzone-bolt",
+    "dev": "npm run dev --prefix greenzone-bolt",
+    "dev:fresh": "npm run dev:fresh --prefix greenzone-bolt",
+    "dev:host": "npm run dev:host --prefix greenzone-bolt",
+    "dev:turbo": "npm run dev:turbo --prefix greenzone-bolt",
+    "dev:clean": "npm run dev:clean --prefix greenzone-bolt",
+    "build": "npm run build --prefix greenzone-bolt",
+    "start": "npm run start --prefix greenzone-bolt",
+    "lint": "npm run lint --prefix greenzone-bolt",
+    "typecheck": "npm run typecheck --prefix greenzone-bolt",
+    "mirror:encyclopedia": "npm run mirror:encyclopedia --prefix greenzone-bolt",
+    "mirror:brands-strains": "npm run mirror:brands-strains --prefix greenzone-bolt",
+    "downscale:mirrored-images": "npm run downscale:mirrored-images --prefix greenzone-bolt",
+    "cleanup:mirrored-images:orphans": "npm run cleanup:mirrored-images:orphans --prefix greenzone-bolt",
+    "refill:smokers-club-menus": "npm run refill:smokers-club-menus --prefix greenzone-bolt",
+    "generate:uls-vendors": "node scripts/generate-uls-delivery-vendors-sql.mjs",
+    "generate:uls-spread": "node scripts/generate-uls-county-spread-migration.mjs",
+    "import:findweedny-csv": "npm run import:findweedny-csv --prefix greenzone-bolt",
+    "vercel:deploy": "npm run vercel:deploy --prefix greenzone-bolt",
+    "vercel:prod": "npm run vercel:prod --prefix greenzone-bolt",
+    "vercel:treehouse": "npm run vercel:deploy --prefix da-treehouse",
+    "vercel:treehouse:prod": "npm run vercel:prod --prefix da-treehouse",
+    "mobile:install": "npm install --prefix apps/mobile-shell",
+    "mobile:sync": "npm run cap:sync --prefix apps/mobile-shell"
+  }
+}

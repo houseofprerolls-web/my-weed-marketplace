@@ -1,0 +1,1303 @@
+{
+  "csvPath": "c:\\Users\\itssj\\Downloads\\la stores and delviries.csv",
+  "dryRun": false,
+  "region": "la",
+  "updatedCount": 109,
+  "changes": [
+    {
+      "csvTitle": "Traditional - Boyle Heights",
+      "vendorId": "b5c9af09-f2be-4bf2-b955-71582bdc46fa",
+      "vendorName": "Traditional",
+      "slug": "ca-uls-c10-0000838-lic",
+      "listingPath": "/listing/b5c9af09-f2be-4bf2-b955-71582bdc46fa",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/346/965/avatar/1770337499-traditional_avatars_1200x1200-04.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "STIIIZY - Lynwood (NOW OPEN)",
+      "vendorId": "6079b130-7267-4811-9c4f-fbc17a3bd974",
+      "vendorName": "Stiiizy",
+      "slug": "flexotic",
+      "listingPath": "/listing/6079b130-7267-4811-9c4f-fbc17a3bd974",
+      "matchScore": 98,
+      "previousLogoUrl": "https://weedmaps.com/images/deliveries/000/298/107/avatar/1771203608-tile_design_7.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/376/223/avatar/1767146077-1111.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Foreign Sherman Oaks",
+      "vendorId": "0da972e9-15f3-4aa4-a4a1-bc21bf80eb16",
+      "vendorName": "FOREIGN",
+      "slug": "ca-uls-c10-0000878-lic",
+      "listingPath": "/listing/0da972e9-15f3-4aa4-a4a1-bc21bf80eb16",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/404/694/avatar/1771036433-b9902d70-8017-4a74-b8cb-ca447314e67c.JPEG?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "LaLaLand - All Taxes Included",
+      "vendorId": "cb19d295-4df6-4178-8420-bab8991c5ac7",
+      "vendorName": "LaLaLand",
+      "slug": "ca-uls-c10-0000955-lic",
+      "listingPath": "/listing/cb19d295-4df6-4178-8420-bab8991c5ac7",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/315/779/avatar/1661116649-123.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Old G Kush",
+      "vendorId": "dfbf6ceb-96d6-49a0-b5bf-ad99f2193c00",
+      "vendorName": "Old G Kush",
+      "slug": "ca-uls-c10-0001014-lic",
+      "listingPath": "/listing/dfbf6ceb-96d6-49a0-b5bf-ad99f2193c00",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/318/135/avatar/1748370374-copy_of_green_neon_coming_soon_instagram_post-2.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Euphoros",
+      "vendorId": "34ad4455-55c5-4c2c-9ebf-9532c11900e2",
+      "vendorName": "Euphoros, LLC",
+      "slug": "ca-uls-c10-0000907-lic",
+      "listingPath": "/listing/34ad4455-55c5-4c2c-9ebf-9532c11900e2",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/313/679/avatar/1772425925-chatgpt_image_mar_1__2026__08_26_29_pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Highway DTLA (South LA)",
+      "vendorId": "d23893d2-9198-44de-ac1d-c307bacfeb34",
+      "vendorName": "Highway DTLA",
+      "slug": "ca-uls-c10-0000938-lic",
+      "listingPath": "/listing/d23893d2-9198-44de-ac1d-c307bacfeb34",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/315/014/avatar/1773879205-img_9674.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Artist Tree Dispensary & Lounge Hawthorne",
+      "vendorId": "8e67455c-af5d-4e29-be08-933b9ffea7bf",
+      "vendorName": "The Artist Tree",
+      "slug": "ca-uls-c10-0000643-lic",
+      "listingPath": "/listing/8e67455c-af5d-4e29-be08-933b9ffea7bf",
+      "matchScore": 92,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/392/717/avatar/1768866100-weedmaps_profile_image_jan2026.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/364/054/avatar/1768865918-weedmaps_profile_image_jan2026.jpg?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Off The Charts - Bell Gardens - NOW OPEN!!",
+      "vendorId": "ab08de27-d046-485e-a39b-eaa9c73ff789",
+      "vendorName": "Off the Charts",
+      "slug": "ca-uls-c10-0001037-lic",
+      "listingPath": "/listing/ab08de27-d046-485e-a39b-eaa9c73ff789",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/400/715/avatar/1771222587-bell_gardens.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Natural Remedies Caregivers",
+      "vendorId": "00a1b6d0-df98-4f5b-98c7-aa83205f215c",
+      "vendorName": "Natural Remedies Caregivers",
+      "slug": "ca-uls-c10-0000424-lic",
+      "listingPath": "/listing/00a1b6d0-df98-4f5b-98c7-aa83205f215c",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/008/552/avatar/1553641961-nrclogo.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "LA Cannabis Co - Los Angeles",
+      "vendorId": "1f245600-67c3-42ae-8f59-cf3c85aaa939",
+      "vendorName": "LA CANNABIS CO EST 2007",
+      "slug": "ca-uls-c10-0000049-lic",
+      "listingPath": "/listing/1f245600-67c3-42ae-8f59-cf3c85aaa939",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/044/355/avatar/1654912080-la_cannabis_co_bold_logo_yellow.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Syndicate - Woodland Hills (SOCAL CO-OP)",
+      "vendorId": "61ffe68d-1c5a-4811-9f65-ead0ed271a1a",
+      "vendorName": "The Syndicate",
+      "slug": "ca-uls-c10-0000126-lic",
+      "listingPath": "/listing/61ffe68d-1c5a-4811-9f65-ead0ed271a1a",
+      "matchScore": 98,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/065/998/avatar/1759167897-syndicateweedmaps-avatar-main-le1.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/042/360/avatar/1759167489-syndicateweedmaps-avatar-main-wh1.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Originals Factory & Weed Shop",
+      "vendorId": "016cf2bb-f114-4aa7-ae17-e58a1573f146",
+      "vendorName": "Originals Factory",
+      "slug": "ca-uls-c10-0000367-lic",
+      "listingPath": "/listing/016cf2bb-f114-4aa7-ae17-e58a1573f146",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/057/183/avatar/1771270466-profilepicweedmaps-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Greenhouse Herbal Center",
+      "vendorId": "b559f80a-7486-42f7-a53d-544e24b42b0f",
+      "vendorName": "GREENHOUSE HERBAL CENTER, LLC",
+      "slug": "ca-uls-c10-0000414-lic",
+      "listingPath": "/listing/b559f80a-7486-42f7-a53d-544e24b42b0f",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/055/689/avatar/1760565069-img_1322.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "HAVEN Cannabis Marijuana and Weed Dispensary - Maywood",
+      "vendorId": "d43cdf64-d3bf-4442-a513-4d467936606e",
+      "vendorName": "Haven Cannabis Marijuana and Weed Dispensary - Maywood",
+      "slug": "ca-uls-c10-0000082-lic",
+      "listingPath": "/listing/d43cdf64-d3bf-4442-a513-4d467936606e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/060/023/avatar/1758925926-haven_logo_general_1a.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Pottery Delivery",
+      "vendorId": "176d04de-a68f-490d-b4e9-f257a38b9009",
+      "vendorName": "The Pottery",
+      "slug": "ca-uls-c10-0000389-lic",
+      "listingPath": "/listing/176d04de-a68f-490d-b4e9-f257a38b9009",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/215/092/avatar/1770251091-pottery_weedmaps_logo_nov_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Level28",
+      "vendorId": "5ec04e57-880f-4a9a-a70e-011671f55f5d",
+      "vendorName": "Level 28",
+      "slug": "ca-uls-c10-0001282-lic",
+      "listingPath": "/listing/5ec04e57-880f-4a9a-a70e-011671f55f5d",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/383/867/avatar/1748645437-logocorr8003.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Chronic",
+      "vendorId": "994832f8-7a31-46bc-a87a-5698a9807587",
+      "vendorName": "The Chronic",
+      "slug": "ca-uls-c10-0000897-lic",
+      "listingPath": "/listing/994832f8-7a31-46bc-a87a-5698a9807587",
+      "matchScore": 100,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/334/788/avatar/1774031893-the_chronic_weedmaps_pfp.jpg?w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/334/788/avatar/1774031893-the_chronic_weedmaps_pfp.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Wonderbrett - La Brea",
+      "vendorId": "d6aa3f69-0335-466a-9b9e-599ac865420c",
+      "vendorName": "Wonderbrett",
+      "slug": "ca-uls-c10-0000828-lic",
+      "listingPath": "/listing/d6aa3f69-0335-466a-9b9e-599ac865420c",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/309/539/avatar/1729286220-wb_master-color.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Dope Sugar",
+      "vendorId": "1bf818d2-a0e8-4225-9513-8e7fb89e9571",
+      "vendorName": "DOPE SUGAR",
+      "slug": "ca-uls-c10-0000873-lic",
+      "listingPath": "/listing/1bf818d2-a0e8-4225-9513-8e7fb89e9571",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/314/203/avatar/1725111679-img_5632_3__1_.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Green Earth Delivery",
+      "vendorId": "34d08d81-c77a-45a0-bd09-2787af7c0916",
+      "vendorName": "Green Earth Collective Granada Hills and Green Earth Co.",
+      "slug": "ca-uls-c10-0000791-lic",
+      "listingPath": "/listing/34d08d81-c77a-45a0-bd09-2787af7c0916",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/238/184/avatar/1755110730-gec_weedmaps_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Exclusive Caregivers OF California",
+      "vendorId": "e9e7ae35-ec8c-4b9e-a90c-755d3ba2c80e",
+      "vendorName": "EXCLUSIVE CAREGIVERS OF CALIFORNIA, INC.",
+      "slug": "ca-uls-c10-0000457-lic",
+      "listingPath": "/listing/e9e7ae35-ec8c-4b9e-a90c-755d3ba2c80e",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/308/063/avatar/1754068710-otd.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Green Earth Collective",
+      "vendorId": "f12c9449-86f9-46d2-b883-01820e2c410f",
+      "vendorName": "Green Earth Collective",
+      "slug": "ca-uls-c10-0000487-lic",
+      "listingPath": "/listing/f12c9449-86f9-46d2-b883-01820e2c410f",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/011/311/avatar/1755107850-gec_weedmaps_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Gradus North Hollywood",
+      "vendorId": "d132eafe-d043-4b6b-8570-3f664815fa58",
+      "vendorName": "Gradus",
+      "slug": "ca-uls-c10-0000420-lic",
+      "listingPath": "/listing/d132eafe-d043-4b6b-8570-3f664815fa58",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/023/451/avatar/1767841241-tax_included_weedmaps__1_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "High-Land Cannabis",
+      "vendorId": "612f50e3-a559-482d-aeac-9b15ad9070db",
+      "vendorName": "Highland Cannabis",
+      "slug": "ca-uls-c10-0000831-lic",
+      "listingPath": "/listing/612f50e3-a559-482d-aeac-9b15ad9070db",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/353/017/avatar/1714870876-screenshot_2024-05-04_at_4-28-20___pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Weed Shop",
+      "vendorId": "7fafeedd-5758-417f-b63e-72b9314e9bee",
+      "vendorName": "Weed Shop",
+      "slug": "ca-uls-c10-0000945-lic",
+      "listingPath": "/listing/7fafeedd-5758-417f-b63e-72b9314e9bee",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/317/864/avatar/1666413977-design_5.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Urban Smoke",
+      "vendorId": "5e5d49ef-4a82-4b06-b4c0-0644c709d16e",
+      "vendorName": "Urban Smoke LA",
+      "slug": "ca-uls-c10-0001689-lic",
+      "listingPath": "/listing/5e5d49ef-4a82-4b06-b4c0-0644c709d16e",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/351/329/avatar/1740815911-copy_of_mobile_logo_black_800x800_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Cornerstone Wellness",
+      "vendorId": "c7324142-202b-479b-bef8-0c98bf5fa06d",
+      "vendorName": "Cornerstone Wellness",
+      "slug": "ca-uls-c10-0000538-lic",
+      "listingPath": "/listing/c7324142-202b-479b-bef8-0c98bf5fa06d",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/046/871/avatar/1766261287-hex_bag_-_black.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "ZZFLUX Mid-City formerly Broccoli",
+      "vendorId": "a6796780-103d-4d1d-aae7-0bb5e688ad7a",
+      "vendorName": "ZZFLUX MID-CITY",
+      "slug": "ca-uls-c10-0001288-lic",
+      "listingPath": "/listing/a6796780-103d-4d1d-aae7-0bb5e688ad7a",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/346/298/avatar/1761697261-logoo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "We Roll Up",
+      "vendorId": "e955ca19-9a96-485b-a553-c7b58f86ed7b",
+      "vendorName": "We Roll Up",
+      "slug": "ca-uls-c10-0000854-lic",
+      "listingPath": "/listing/e955ca19-9a96-485b-a553-c7b58f86ed7b",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/362/768/avatar/1722377394-screen_shot_2024-07-30_at_3-09-39_pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "BONAFIDE",
+      "vendorId": "b8631753-811b-4fa8-9b36-af4dd04b64a8",
+      "vendorName": "BONAFIDE",
+      "slug": "ca-uls-c10-0001212-lic",
+      "listingPath": "/listing/b8631753-811b-4fa8-9b36-af4dd04b64a8",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/021/706/avatar/1739404211-icedr__44_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "ERBA Markets - WEST Hollywood Delivery",
+      "vendorId": "ac2a9d6c-b1c7-4e59-8509-623e5fbc3be8",
+      "vendorName": "Erba Markets",
+      "slug": "ca-uls-c10-0000383-lic",
+      "listingPath": "/listing/ac2a9d6c-b1c7-4e59-8509-623e5fbc3be8",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/291/500/avatar/1687393530-1678228269-1571713765-1545075280-erba_wm_final.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Ohana Cannabis - Beverly Hills",
+      "vendorId": "7ef1aafb-cf50-4693-91c3-d50a628ebce8",
+      "vendorName": "Ohana Cannabis",
+      "slug": "ca-uls-c10-0000942-lic",
+      "listingPath": "/listing/7ef1aafb-cf50-4693-91c3-d50a628ebce8",
+      "matchScore": 98,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/340/345/avatar/1772657452-ohana_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/370/129/avatar/1772672020-file_000000008a9c722f99e4830569b2d4ee.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Xzibit’s West Coast Cannabis Dispensary - Chatsworth",
+      "vendorId": "a1dd1431-92b4-4d21-8a41-bf7fcecbe4ad",
+      "vendorName": "Xzibit's West Coast Cannabis",
+      "slug": "ca-uls-c10-0001279-lic",
+      "listingPath": "/listing/a1dd1431-92b4-4d21-8a41-bf7fcecbe4ad",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/053/020/avatar/1760460053-2_2.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "SWED A SNOOP DOGG Delivery - Inglewood",
+      "vendorId": "838dac7c-277c-424c-af28-01e49e8d6613",
+      "vendorName": "S.W.E.D. A SNOOP DOGG STORE",
+      "slug": "ca-uls-c10-0000364-lic",
+      "listingPath": "/listing/838dac7c-277c-424c-af28-01e49e8d6613",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/357/749/avatar/1759429557-storewide__6_.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Sweet Flower - Culver City",
+      "vendorId": "97b4d841-7084-40db-8d65-981e2a1047aa",
+      "vendorName": "SWEET FLOWER CULVER CITY",
+      "slug": "ca-uls-c10-0000911-lic",
+      "listingPath": "/listing/97b4d841-7084-40db-8d65-981e2a1047aa",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/314/051/avatar/1746133138-weedmaps_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "SUGARBUDZ",
+      "vendorId": "6d757b09-6df5-45b1-ba48-dfd9f972339e",
+      "vendorName": "Sugarbudz",
+      "slug": "ca-uls-c10-0000042-lic",
+      "listingPath": "/listing/6d757b09-6df5-45b1-ba48-dfd9f972339e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/262/368/avatar/1759853394-70d6d112-6413-480b-8cb5-ce3243db4165.jpeg?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "WHTC - Adult Use (Storefront Retail)",
+      "vendorId": "f7700e8a-9b6a-4073-9468-51eddbeffea6",
+      "vendorName": "WHTC",
+      "slug": "ca-uls-c10-0000571-lic",
+      "listingPath": "/listing/f7700e8a-9b6a-4073-9468-51eddbeffea6",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/000/927/avatar/1510581797-New_WHTC_logo_002.jpg?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Sweet Flower - West Los Angeles",
+      "vendorId": "bfb5f52e-599c-4c19-8398-6d03c638a9bf",
+      "vendorName": "SweetFlower (West Hollywood)",
+      "slug": "la-sweetflower-weho-10",
+      "listingPath": "/listing/bfb5f52e-599c-4c19-8398-6d03c638a9bf",
+      "matchScore": 88,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/317/357/avatar/1746133270-weedmaps_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/399/564/avatar/1759511435-untitled_design__19_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Sweet Flower - Studio City",
+      "vendorId": "19235524-9ba2-49a8-bc39-1c9ea94284ec",
+      "vendorName": "Sweet Flower Studio City",
+      "slug": "ca-uls-c10-0000362-lic",
+      "listingPath": "/listing/19235524-9ba2-49a8-bc39-1c9ea94284ec",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/008/225/avatar/1753300399-wm-logo__2_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "PAC LA",
+      "vendorId": "ed93f121-9add-43a6-befc-f89c19b359be",
+      "vendorName": "PAC LA",
+      "slug": "ca-uls-c10-0000334-lic",
+      "listingPath": "/listing/ed93f121-9add-43a6-befc-f89c19b359be",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/301/963/avatar/1773353122-img_5360.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Muha Meds Westwood",
+      "vendorId": "0f12f7c5-4464-408e-9641-99f10c01e9bd",
+      "vendorName": "Muha Meds Westwood",
+      "slug": "ca-uls-c10-0000179-lic",
+      "listingPath": "/listing/0f12f7c5-4464-408e-9641-99f10c01e9bd",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/044/614/avatar/1737408080-mm-logo-600x__1_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Hi, Neighbor Cannabis Club",
+      "vendorId": "d456f89c-5a9c-4f3b-86a7-38293375ac64",
+      "vendorName": "Hi, Neighbor Cannabis Club",
+      "slug": "ca-uls-c10-0000130-lic",
+      "listingPath": "/listing/d456f89c-5a9c-4f3b-86a7-38293375ac64",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/034/786/avatar/1769715020-logo_for_weedmaps_1.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Ounce",
+      "vendorId": "7e6cbb81-234c-41fa-95aa-c278a043e501",
+      "vendorName": "THE OUNCE",
+      "slug": "ca-uls-c10-0001218-lic",
+      "listingPath": "/listing/7e6cbb81-234c-41fa-95aa-c278a043e501",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/335/328/avatar/1680808287-logoredyellow.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "ERBA - Sawtelle",
+      "vendorId": "c6da849d-09ca-4759-b126-c06bc4620b87",
+      "vendorName": "Erba Sawtelle",
+      "slug": "ca-uls-c10-0000626-lic",
+      "listingPath": "/listing/c6da849d-09ca-4759-b126-c06bc4620b87",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/334/078/avatar/1753154188-erba_wm_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Swish Cannabis NoHo - All Taxes Included North Hollywood",
+      "vendorId": "3a90c761-73b7-48f9-b0a3-3077809114a5",
+      "vendorName": "Swish Cannabis",
+      "slug": "ca-uls-c10-0000976-lic",
+      "listingPath": "/listing/3a90c761-73b7-48f9-b0a3-3077809114a5",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/335/663/avatar/1759188671-swish_lion_logo__4_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Exhalence",
+      "vendorId": "5f322dcb-65b5-4df4-88de-d002c6aa0497",
+      "vendorName": "Exhalence",
+      "slug": "ca-uls-c10-0000243-lic",
+      "listingPath": "/listing/5f322dcb-65b5-4df4-88de-d002c6aa0497",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/052/485/avatar/1741643827-1705709945-ade9jki9_400x400.jpg?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Sweet Flower - Westwood",
+      "vendorId": "a717ae47-1514-42f5-b2ec-172fa0929d63",
+      "vendorName": "SweetFlower Westwood",
+      "slug": "ca-uls-c10-0000359-lic",
+      "listingPath": "/listing/a717ae47-1514-42f5-b2ec-172fa0929d63",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/303/293/avatar/1759854596-untitled_design__19_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Stash Studio City",
+      "vendorId": "e6916bca-b72b-4240-9bca-820db2518462",
+      "vendorName": "Stash Studio City",
+      "slug": "ca-uls-c10-0000146-lic",
+      "listingPath": "/listing/e6916bca-b72b-4240-9bca-820db2518462",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/028/319/avatar/1753470977-screenshot_2025-07-25_at_11-59-52___am.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "MMD - North Hollywood",
+      "vendorId": "e14d901d-7a27-4e20-8c46-63f44df1d938",
+      "vendorName": "MMD NORTH HOLLYWOOD",
+      "slug": "ca-uls-c10-0000481-lic",
+      "listingPath": "/listing/e14d901d-7a27-4e20-8c46-63f44df1d938",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/275/511/avatar/1759354410-weedmaps_logo__1_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "LAX Cannabis Club - LAXCC **TAXES INCLUDED**",
+      "vendorId": "d8a63760-2de2-453a-807e-5f27328eee20",
+      "vendorName": "LAX CANNABIS CLUB",
+      "slug": "ca-uls-c10-0000141-lic",
+      "listingPath": "/listing/d8a63760-2de2-453a-807e-5f27328eee20",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/022/901/avatar/1742244871-lax_cannabis_club_with_plane_2024_logo_png_square.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Highway Cannabis Co - Marina del Rey",
+      "vendorId": "d1db3784-91c1-4875-ae74-60497e3ab289",
+      "vendorName": "Highway Cannabis CO.",
+      "slug": "ca-uls-c10-0000460-lic",
+      "listingPath": "/listing/d1db3784-91c1-4875-ae74-60497e3ab289",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/030/446/avatar/1671746155-ix2zp7vwqn5qkurgrcpgrqw8tmw1636367399672_200x200.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "PUFF - LAX / Playa Del Rey / El Segundo",
+      "vendorId": "77f1f0dc-d3b5-4563-85fa-f9623fb9bb31",
+      "vendorName": "Puff LA",
+      "slug": "ca-uls-c10-0000811-lic",
+      "listingPath": "/listing/77f1f0dc-d3b5-4563-85fa-f9623fb9bb31",
+      "matchScore": 92,
+      "previousLogoUrl": "https://weedmaps.com/images/deliveries/000/399/409/avatar/1774405843-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/399/342/avatar/1774314852-puff-la-profile-image__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "HAVEN Cannabis Marijuana and Weed Dispensary - Downtown Long Beach",
+      "vendorId": "0f2a91b3-7ae9-41cc-ba52-4aea9af38af5",
+      "vendorName": "Haven Cannabis Marijuana and Weed Dispensary - Downtown Long Beach",
+      "slug": "ca-uls-c10-0000668-lic",
+      "listingPath": "/listing/0f2a91b3-7ae9-41cc-ba52-4aea9af38af5",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/301/073/avatar/1758925959-haven_logo_general_1a.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Kindly - NOHO",
+      "vendorId": "91761e51-2c83-49a1-90f4-d3343967c1c4",
+      "vendorName": "Kindly",
+      "slug": "ca-uls-c10-0001216-lic",
+      "listingPath": "/listing/91761e51-2c83-49a1-90f4-d3343967c1c4",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/355/163/avatar/1772044292-1jwbogo__7_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Culture Cannabis Club Marijuana and Weed Dispensary - Long Beach",
+      "vendorId": "88a02315-fc48-4dc1-9463-89d53345bf8e",
+      "vendorName": "CULTURE CANNABIS CLUB",
+      "slug": "ca-uls-c10-0000683-lic",
+      "listingPath": "/listing/88a02315-fc48-4dc1-9463-89d53345bf8e",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/050/488/avatar/1762218926-ccc-storesbanner-avatar-safeversion-longbeach.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Higher Path",
+      "vendorId": "7fe5ec32-402f-4844-b3e1-8b6fe52449fe",
+      "vendorName": "THE HIGHER PATH",
+      "slug": "ca-uls-c10-0000157-lic",
+      "listingPath": "/listing/7fe5ec32-402f-4844-b3e1-8b6fe52449fe",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/026/517/avatar/1772478762-top_square__2_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Leaf and Lion - Compton / Bellflower",
+      "vendorId": "8eec49f4-0112-4761-84d1-606e3f2d744a",
+      "vendorName": "Leaf and Lion",
+      "slug": "ca-uls-c10-0000566-lic",
+      "listingPath": "/listing/8eec49f4-0112-4761-84d1-606e3f2d744a",
+      "matchScore": 98,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/059/528/avatar/1743532636-img_3804.JPG?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/381/667/avatar/1745007100-ll_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "ERBA Markets- Venice",
+      "vendorId": "435b5216-36ee-49d6-8f4b-e5ec574ab957",
+      "vendorName": "ERBA Markets (Venice)",
+      "slug": "la-erba-venice-08",
+      "listingPath": "/listing/435b5216-36ee-49d6-8f4b-e5ec574ab957",
+      "matchScore": 100,
+      "previousLogoUrl": "https://dsfiwnwrwfgjuthhjima.supabase.co/storage/v1/object/public/mirrored-images/vendor-logos/435b5216-36ee-49d6-8f4b-e5ec574ab957.png",
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/267/961/avatar/1764105397-erba_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "LB Collective",
+      "vendorId": "fbc67039-6b22-4df6-8701-1532c5a4d535",
+      "vendorName": "L.B. COLLECTIVE, INC.",
+      "slug": "ca-uls-c10-0000390-lic",
+      "listingPath": "/listing/fbc67039-6b22-4df6-8701-1532c5a4d535",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/056/361/avatar/1768847631-9ea7c8ff-03bb-4dc4-a58d-105939885479.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Green Goddess Collective",
+      "vendorId": "ce70d632-bae2-48eb-9ee1-a83f949bf400",
+      "vendorName": "Green Goddess Collective",
+      "slug": "ca-uls-c10-0000056-lic",
+      "listingPath": "/listing/ce70d632-bae2-48eb-9ee1-a83f949bf400",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/010/893/avatar/1681349903-logo-11_line_logo_the_green_goddess_collective_copy.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Cookies Brentwood",
+      "vendorId": "6ebb49cd-cc42-466f-9e93-7e028cb0e03a",
+      "vendorName": "Cookies Brentwood",
+      "slug": "ca-uls-c10-0001026-lic",
+      "listingPath": "/listing/6ebb49cd-cc42-466f-9e93-7e028cb0e03a",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/321/550/avatar/1694548382-cookies_c_bite_logo_blue.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Local Cannabis Company",
+      "vendorId": "361685e2-ce4a-4d92-93b6-44f189739cbe",
+      "vendorName": "Local Cannabis Company",
+      "slug": "ca-uls-c10-0001134-lic",
+      "listingPath": "/listing/361685e2-ce4a-4d92-93b6-44f189739cbe",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/337/320/avatar/1730741303-local_profile_800x800.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "WeedWay Cannabis Dispensary",
+      "vendorId": "db316eff-d524-48f9-be0d-b54e8c2d5a57",
+      "vendorName": "WeedWay",
+      "slug": "ca-uls-c10-0000340-lic",
+      "listingPath": "/listing/db316eff-d524-48f9-be0d-b54e8c2d5a57",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/037/884/avatar/1762020888-img_8542.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "FOOTHILL WELLNESS CENTER",
+      "vendorId": "14711e1a-8acf-42ff-afb5-d9dc4abed069",
+      "vendorName": "Foothill Wellness Center",
+      "slug": "ca-uls-c10-0000597-lic",
+      "listingPath": "/listing/14711e1a-8acf-42ff-afb5-d9dc4abed069",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/024/659/avatar/1758909176-fwc_weedmap_profile.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Cana Sylmar",
+      "vendorId": "c975abb9-5c4e-4ceb-ab49-bd57853ca4a3",
+      "vendorName": "Cana Sylmar",
+      "slug": "ca-uls-c10-0000397-lic",
+      "listingPath": "/listing/c975abb9-5c4e-4ceb-ab49-bd57853ca4a3",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/289/251/avatar/1767326607-delivery.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Apothecary",
+      "vendorId": "ec3d3d99-9ca8-4c0a-a4e0-46b89aa770c7",
+      "vendorName": "Apothecary 420",
+      "slug": "ca-uls-c10-0000518-lic",
+      "listingPath": "/listing/ec3d3d99-9ca8-4c0a-a4e0-46b89aa770c7",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/026/563/avatar/1773855149-apothecary-logo-basketball-2025.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Valley Herbal Center",
+      "vendorId": "9cf34c04-35fe-42e2-a08c-7ad1a548486f",
+      "vendorName": "Valley Herbal Center, Inc.",
+      "slug": "ca-uls-c10-0000355-lic",
+      "listingPath": "/listing/9cf34c04-35fe-42e2-a08c-7ad1a548486f",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/034/318/avatar/1523062841-Untitled-1-Recovered.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Flight On Cherry",
+      "vendorId": "d5ced58a-e717-41c3-93f5-2aa398f3a7e4",
+      "vendorName": "Flight on Cherry",
+      "slug": "ca-uls-c10-0000214-lic",
+      "listingPath": "/listing/d5ced58a-e717-41c3-93f5-2aa398f3a7e4",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/304/220/avatar/1662504540-flightoncherry_logo1-min.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Circle",
+      "vendorId": "7de9f4f1-efb1-4828-94a1-1b3c4128ad51",
+      "vendorName": "THECIRCLE",
+      "slug": "ca-uls-c10-0000245-lic",
+      "listingPath": "/listing/7de9f4f1-efb1-4828-94a1-1b3c4128ad51",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/061/747/avatar/1762454073-crcllogo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Green Cross of Torrance",
+      "vendorId": "062b61e9-c58e-4a8b-87bb-62bab1aa9ec0",
+      "vendorName": "Green Cross of Torrance",
+      "slug": "ca-uls-c10-0000511-lic",
+      "listingPath": "/listing/062b61e9-c58e-4a8b-87bb-62bab1aa9ec0",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/031/453/avatar/1614811916-21_OGC_2000x2000_Profile-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "HAVEN Cannabis Marijuana and Weed Dispensary - Lakewood",
+      "vendorId": "8054e55e-2376-47e8-80b0-5a65f10c0073",
+      "vendorName": "Haven Cannabis Marijuana and Weed Dispensary - Lakewood",
+      "slug": "ca-uls-c10-0001133-lic",
+      "listingPath": "/listing/8054e55e-2376-47e8-80b0-5a65f10c0073",
+      "matchScore": 100,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/345/319/avatar/1759221476-haven_logo_general_1a.png?w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/345/319/avatar/1759221476-haven_logo_general_1a.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Valley Verde",
+      "vendorId": "2dc3ba1b-296e-4a29-90d0-df18a10c5611",
+      "vendorName": "Valley Verde",
+      "slug": "ca-uls-c10-0000839-lic",
+      "listingPath": "/listing/2dc3ba1b-296e-4a29-90d0-df18a10c5611",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/310/753/avatar/1676161094-vv_wm_icon_b.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Lemonnade Pacoima",
+      "vendorId": "29454d3e-3a79-4158-9b2c-7b3fa9b0d7da",
+      "vendorName": "LEMONNADE PACOIMA",
+      "slug": "ca-uls-c10-0000296-lic",
+      "listingPath": "/listing/29454d3e-3a79-4158-9b2c-7b3fa9b0d7da",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/304/591/avatar/1674518586-pacoima_wm_avatar.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Stilo Supply",
+      "vendorId": "19b7b831-a2ee-43bd-98eb-71bf5cb43471",
+      "vendorName": "STILO SUPPLY",
+      "slug": "ca-uls-c10-0000166-lic",
+      "listingPath": "/listing/19b7b831-a2ee-43bd-98eb-71bf5cb43471",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/055/063/avatar/1761085077-1729665465-weedmaps_logo_2.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Erb & Arbor",
+      "vendorId": "bb1df5a5-78dc-44a4-a9da-484515f8a2e4",
+      "vendorName": "Erb & Arbor",
+      "slug": "ca-uls-c10-0000852-lic",
+      "listingPath": "/listing/bb1df5a5-78dc-44a4-a9da-484515f8a2e4",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/311/690/avatar/1773792265-e_a_logos-pdf__7_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "FRIDAZE - Previously Hazel",
+      "vendorId": "5084b621-345e-47b9-b8a9-bf0c2eb823f9",
+      "vendorName": "Fridaze",
+      "slug": "ca-uls-c10-0000585-lic",
+      "listingPath": "/listing/5084b621-345e-47b9-b8a9-bf0c2eb823f9",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/026/140/avatar/1662074620-fridaze1.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Corner LBC",
+      "vendorId": "2f1aef3a-4ffc-460e-8865-1253768e3356",
+      "vendorName": "THECORNER",
+      "slug": "ca-uls-c10-0000222-lic",
+      "listingPath": "/listing/2f1aef3a-4ffc-460e-8865-1253768e3356",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/302/848/avatar/1735779378-crnr.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Cana Harbor Powered by Green Earth Pharmacy Inc",
+      "vendorId": "8d051585-757b-423a-baf9-8c59a9bd1b97",
+      "vendorName": "Cana Harbor",
+      "slug": "ca-uls-c10-0000416-lic",
+      "listingPath": "/listing/8d051585-757b-423a-baf9-8c59a9bd1b97",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/063/181/avatar/1698454481-cana_harbor_logo_3302020.JPG?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Vault - Pacific Palisades Delivery",
+      "vendorId": "7db3e78f-4b69-4973-836d-c16f80c49fd6",
+      "vendorName": "The Vault Woodland Hills Inc",
+      "slug": "ca-uls-c10-0000458-lic",
+      "listingPath": "/listing/7db3e78f-4b69-4973-836d-c16f80c49fd6",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/370/376/avatar/1729551075-screenshot_2024-10-21_at_3-35-02_pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Nature's Spot",
+      "vendorId": "04feb91c-dc1c-4430-8c90-0311025cc03e",
+      "vendorName": "Nature's Spot",
+      "slug": "ca-uls-c10-0000845-lic",
+      "listingPath": "/listing/04feb91c-dc1c-4430-8c90-0311025cc03e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/038/096/avatar/1772208369-all_taxes_included.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "South Bay Canna Clinic",
+      "vendorId": "164ad585-3e82-4d5b-a454-9863bfd7202d",
+      "vendorName": "South Bay Canna Clinic",
+      "slug": "ca-uls-c10-0001076-lic",
+      "listingPath": "/listing/164ad585-3e82-4d5b-a454-9863bfd7202d",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/001/947/avatar/1774800798-mobile_logo_april.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "KannaLuv",
+      "vendorId": "1385f590-0fed-46cc-a231-d3afbab13a39",
+      "vendorName": "KANNALUV",
+      "slug": "ca-uls-c10-0000808-lic",
+      "listingPath": "/listing/1385f590-0fed-46cc-a231-d3afbab13a39",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/309/322/avatar/1759180183-kanaluv.JPG?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "STIIIZY Pacoima (San Fernando)",
+      "vendorId": "8ebd72ce-880f-477f-93b5-00f727bc7ec6",
+      "vendorName": "STIIIZY Pacoima",
+      "slug": "ca-uls-c10-0001034-lic",
+      "listingPath": "/listing/8ebd72ce-880f-477f-93b5-00f727bc7ec6",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/321/112/avatar/1767144560-1111.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Maven Store",
+      "vendorId": "5d185e2f-37ca-4e0d-86f9-dfa9a876ca0e",
+      "vendorName": "The Maven Store",
+      "slug": "ca-uls-c10-0001128-lic",
+      "listingPath": "/listing/5d185e2f-37ca-4e0d-86f9-dfa9a876ca0e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/321/148/avatar/1658968986-mvn_-_store_-_logo___1_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Kush Alley",
+      "vendorId": "1a0c95ae-cc05-4dd5-878a-52e04ae1c703",
+      "vendorName": "KUSH ALLEY, INC., A CALIFORNIA CORPORATION",
+      "slug": "ca-uls-c10-0000093-lic",
+      "listingPath": "/listing/1a0c95ae-cc05-4dd5-878a-52e04ae1c703",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/301/025/avatar/1767315325-profile_pic.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Delta 9 THC",
+      "vendorId": "903f2244-43fc-4921-882b-b3125bf51b97",
+      "vendorName": "Delta 9 THC",
+      "slug": "ca-uls-c10-0000081-lic",
+      "listingPath": "/listing/903f2244-43fc-4921-882b-b3125bf51b97",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/035/702/avatar/1770926009-d9-full-logo-black.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Revo Group",
+      "vendorId": "11f48c9f-1e0a-4e5c-b1f8-7167de4bffbe",
+      "vendorName": "REVO GROUP, LLC",
+      "slug": "ca-uls-c10-0000819-lic",
+      "listingPath": "/listing/11f48c9f-1e0a-4e5c-b1f8-7167de4bffbe",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/309/167/avatar/1769674213-chatgpt_image_jan_29__2026__12_09_47_am.png?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "West Coast Holistic Center",
+      "vendorId": "f02f29f9-86c0-4a8a-b523-f932d4cab4ca",
+      "vendorName": "West Coast Holistic Center",
+      "slug": "ca-uls-c10-0000337-lic",
+      "listingPath": "/listing/f02f29f9-86c0-4a8a-b523-f932d4cab4ca",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/044/351/avatar/1709854865-wchc_weedmaps.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Calm and Collective",
+      "vendorId": "831fc1e5-7621-41f0-815d-f606f5b34945",
+      "vendorName": "Calm and Collective",
+      "slug": "ca-uls-c10-0000758-lic",
+      "listingPath": "/listing/831fc1e5-7621-41f0-815d-f606f5b34945",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/012/336/avatar/1673374887-calm_collective-stacked.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Herbal Pain Relief Center",
+      "vendorId": "1833990a-ea94-4b7a-9770-7e8f479bcb11",
+      "vendorName": "Herbal Pain Relief Center, Inc.",
+      "slug": "ca-uls-c10-0000712-lic",
+      "listingPath": "/listing/1833990a-ea94-4b7a-9770-7e8f479bcb11",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/021/407/avatar/1773888022-untitled_design__1_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Herbal Remedies Caregivers",
+      "vendorId": "4feeb1db-624a-4d34-ab22-8e5d0aea800d",
+      "vendorName": "Herbal Remedies Caregivers, Inc.",
+      "slug": "ca-uls-c10-0000252-lic",
+      "listingPath": "/listing/4feeb1db-624a-4d34-ab22-8e5d0aea800d",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/346/985/avatar/1757171435-hrc_sylmar_logo-1__1_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "HAVEN Cannabis Marijuana and Weed Dispensary - Belmont",
+      "vendorId": "0c53df2d-c54d-4bac-b5fb-b466331bec87",
+      "vendorName": "Haven Cannabis Marijuana and Weed Dispensary - Belmont",
+      "slug": "ca-uls-c10-0000735-lic",
+      "listingPath": "/listing/0c53df2d-c54d-4bac-b5fb-b466331bec87",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/304/000/avatar/1758925971-haven_logo_general_1a.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Set Northridge",
+      "vendorId": "581bd161-9993-429d-8f61-04d9ef31b2c9",
+      "vendorName": "The set Northridge",
+      "slug": "ca-uls-c10-0000785-lic",
+      "listingPath": "/listing/581bd161-9993-429d-8f61-04d9ef31b2c9",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/308/121/avatar/1774374059-img_2417.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "King's Crew",
+      "vendorId": "5f964e9f-f22c-4a30-9295-b33c05bf8e17",
+      "vendorName": "King's Crew",
+      "slug": "ca-uls-c10-0000026-lic",
+      "listingPath": "/listing/5f964e9f-f22c-4a30-9295-b33c05bf8e17",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/062/712/avatar/1765500192-kingscrew_black.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Off the Charts - Reseda",
+      "vendorId": "1f0a1618-5fa8-4bb6-8025-f925e029b3a9",
+      "vendorName": "Off the Charts Reseda",
+      "slug": "ca-uls-c10-0000980-lic",
+      "listingPath": "/listing/1f0a1618-5fa8-4bb6-8025-f925e029b3a9",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/317/776/avatar/1771222294-reseda.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Stone Age Farmacy",
+      "vendorId": "c6e4071b-c65e-498b-8146-98b4a0f6f2fd",
+      "vendorName": "STONE AGE FARMACY",
+      "slug": "ca-uls-c10-0001135-lic",
+      "listingPath": "/listing/c6e4071b-c65e-498b-8146-98b4a0f6f2fd",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/324/996/avatar/1694583563-unknown-1.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Syndicate - Long Beach",
+      "vendorId": "a3f36c5a-8c0c-4486-9e0c-aced5a770145",
+      "vendorName": "The Syndicate Long Beach",
+      "slug": "ca-uls-c10-0000247-lic",
+      "listingPath": "/listing/a3f36c5a-8c0c-4486-9e0c-aced5a770145",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/314/362/avatar/1759168708-syndicateweedmaps-avatar-main-lb1.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Syndicate - Northridge",
+      "vendorId": "805d08e6-bdb8-4871-92f5-51c3e7fe0243",
+      "vendorName": "The Syndicate Northridge",
+      "slug": "ca-uls-c10-0001010-lic",
+      "listingPath": "/listing/805d08e6-bdb8-4871-92f5-51c3e7fe0243",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/317/664/avatar/1759168947-syndicateweedmaps-avatar-main-nr1.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Pirate Town",
+      "vendorId": "db4e305a-6c8a-4320-903b-d1e37dd4d418",
+      "vendorName": "Pirate Town Cannabis Company",
+      "slug": "ca-uls-c10-0000964-lic",
+      "listingPath": "/listing/db4e305a-6c8a-4320-903b-d1e37dd4d418",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/317/663/avatar/1658944237-thumbnail.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Rebud - San Pedro",
+      "vendorId": "88902b7e-92cd-4a80-b6f5-0e15f333244e",
+      "vendorName": "REBUD San Pedro",
+      "slug": "ca-uls-c10-0001022-lic",
+      "listingPath": "/listing/88902b7e-92cd-4a80-b6f5-0e15f333244e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/406/742/avatar/1774636466-1774290340-rebud_logo_square_green-1.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Elevate - Granada Hills",
+      "vendorId": "f2068095-6153-4c57-b567-92bd10fa6351",
+      "vendorName": "Elevate",
+      "slug": "ca-uls-c10-0000031-lic",
+      "listingPath": "/listing/f2068095-6153-4c57-b567-92bd10fa6351",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/348/575/avatar/1722032213-elevate_design.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Strain Caregivers - Delivery",
+      "vendorId": "8f5210d6-45ea-43db-b59d-5d901f26e493",
+      "vendorName": "STRAIN CAREGIVERS",
+      "slug": "ca-uls-c10-0001152-lic",
+      "listingPath": "/listing/8f5210d6-45ea-43db-b59d-5d901f26e493",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/268/761/avatar/1684359793-strain_icon_delivery.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Squintz Foreign",
+      "vendorId": "6b295963-02d1-48b4-8994-7bb00545dd8d",
+      "vendorName": "SQUINTZ FOREIGN",
+      "slug": "ca-uls-c10-0001284-lic",
+      "listingPath": "/listing/6b295963-02d1-48b4-8994-7bb00545dd8d",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/364/404/avatar/1734748602-unnamed.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Marathon Collective",
+      "vendorId": "94528f16-6826-47d9-a34e-6b167a04b66e",
+      "vendorName": "The Marathon Collective",
+      "slug": "ca-uls-c10-0000406-lic",
+      "listingPath": "/listing/94528f16-6826-47d9-a34e-6b167a04b66e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/000/783/avatar/1763588650-marathon-collective.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Nature's Story",
+      "vendorId": "ae9d8391-d104-41f0-8fd0-9d306683918e",
+      "vendorName": "NATURE'S STORY, LLC",
+      "slug": "ca-uls-c10-0001023-lic",
+      "listingPath": "/listing/ae9d8391-d104-41f0-8fd0-9d306683918e",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/027/195/avatar/1772224497-all_taxes_included__2_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Clinik",
+      "vendorId": "a1519932-e111-4045-bc6a-891539225608",
+      "vendorName": "The Clinik LA",
+      "slug": "ca-uls-c10-0000459-lic",
+      "listingPath": "/listing/a1519932-e111-4045-bc6a-891539225608",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/004/465/avatar/1758986828-clinik_logo_weedmaps__3_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Malibu Community Collective",
+      "vendorId": "9c32f7c8-510a-4958-995f-e743e9f56996",
+      "vendorName": "MALIBU COMMUNITY COLLECTIVE, INC.",
+      "slug": "ca-uls-c10-0000018-lic",
+      "listingPath": "/listing/9c32f7c8-510a-4958-995f-e743e9f56996",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/048/208/avatar/1660859830-2.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "99 High Tide - Malibu",
+      "vendorId": "a5873f04-cd57-4eee-b03f-5bdee218efba",
+      "vendorName": "99 HIGH TIDE INC",
+      "slug": "ca-uls-c10-0000279-lic",
+      "listingPath": "/listing/a5873f04-cd57-4eee-b03f-5bdee218efba",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/041/853/avatar/1589913032-IMG_0014.JPG?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    }
+  ],
+  "unchangedCount": 10,
+  "skippedPlaceholder": 87,
+  "noMatchCount": 889,
+  "noMatchSample": [
+    {
+      "title": "MAGIC STICK",
+      "image": "https://weedmaps.com/images/deliveries/000/356/199/avatar/1768987580-untitled__800_x_800_px___2_.png?w=96&h=96&dpr=2&auto=format",
+      "line": 4
+    },
+    {
+      "title": "Tree Factory",
+      "image": "https://weedmaps.com/images/deliveries/000/271/242/avatar/1764880954-tf-wm-logo-800x800.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 5
+    },
+    {
+      "title": "Express Exotix",
+      "image": "https://weedmaps.com/images/deliveries/000/374/129/avatar/1771264098-img_0385.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 6
+    },
+    {
+      "title": "The Cure Company DTLA",
+      "image": "https://weedmaps.com/images/dispensaries/000/000/458/avatar/1768442008-mobile-banner-the-cure-company-logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 7
+    },
+    {
+      "title": "Grand Era",
+      "image": "https://weedmaps.com/images/deliveries/000/404/907/avatar/1774583619-profile-image-01__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 8
+    },
+    {
+      "title": "Greenway Highway",
+      "image": "https://weedmaps.com/images/deliveries/000/394/435/avatar/1757463236-greenway_highway.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 9
+    },
+    {
+      "title": "Dream Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/353/197/avatar/1763506372-yellow_weedmaps_profile_pic_copy.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 10
+    },
+    {
+      "title": "Arts District Cannabis",
+      "image": "https://weedmaps.com/images/dispensaries/000/045/472/avatar/1767999778-instalogo__2_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 11
+    },
+    {
+      "title": "Bud Dynasty",
+      "image": "https://weedmaps.com/images/deliveries/000/405/769/avatar/1773900155-reg_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 12
+    },
+    {
+      "title": "Pounds - Downtown LA",
+      "image": "https://weedmaps.com/images/deliveries/000/405/947/avatar/1773179232-logo_update_square.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 13
+    },
+    {
+      "title": "Sunset",
+      "image": "https://weedmaps.com/images/deliveries/000/400/162/avatar/1768300283-sunset_weeedmaps_userpic__1_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 14
+    },
+    {
+      "title": "Rebud - Downtown Los Angeles Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/226/668/avatar/1773708817-last_st-_p_logo_square.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 15
+    },
+    {
+      "title": "Budzilla - Downtown LA",
+      "image": "https://weedmaps.com/images/deliveries/000/399/989/avatar/1774320250-profile-image-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 16
+    },
+    {
+      "title": "PUFF - Downtown LA",
+      "image": "https://weedmaps.com/images/deliveries/000/399/335/avatar/1774314840-puff-la-profile-image__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 17
+    },
+    {
+      "title": "PLNTBSD",
+      "image": "https://weedmaps.com/images/deliveries/000/405/573/avatar/1774296678-profile-image-02__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 18
+    },
+    {
+      "title": "Harvest House - Downtown LA",
+      "image": "https://weedmaps.com/images/deliveries/000/400/527/avatar/1768081221-harvest_house_weedmaps__logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 19
+    },
+    {
+      "title": "Doorhash",
+      "image": "https://weedmaps.com/images/deliveries/000/398/251/avatar/1757204487-screenshot_2025-09-06_at_5-18-38___pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 21
+    },
+    {
+      "title": "HERB",
+      "image": "https://weedmaps.com/images/deliveries/000/205/426/avatar/1758306430-herb_-_cannabis_delivery_-_logo_-_green_-_jpg.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 22
+    },
+    {
+      "title": "Redeye Cannabis - Downtown LA",
+      "image": "https://weedmaps.com/images/deliveries/000/403/325/avatar/1768276917-thumbnail.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 23
+    },
+    {
+      "title": "X Group",
+      "image": "https://weedmaps.com/images/deliveries/000/373/772/avatar/1752616082-c8dc8f74-9f28-45ae-8518-e55e3b83f33d.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 25
+    },
+    {
+      "title": "PLNTBSD",
+      "image": "https://weedmaps.com/images/deliveries/000/405/560/avatar/1774295967-profile-image-02__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 30
+    },
+    {
+      "title": "Rebud Central LA Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/263/985/avatar/1773709569-last_st-_p_logo_square.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 31
+    },
+    {
+      "title": "LA Wonderland Marijuana Dispensary Recreational",
+      "image": "https://weedmaps.com/images/dispensaries/000/026/943/avatar/1603500519-6b44e7ad-7f0f-478f-9cc8-51a02302b62f.jpg?w=96&h=96&dpr=2&auto=format",
+      "line": 33
+    },
+    {
+      "title": "Puff N Luff - Downtown LA",
+      "image": "https://weedmaps.com/images/deliveries/000/398/543/avatar/1757723705-puffnluff_final2-0.PNG?w=96&h=96&dpr=2&auto=format",
+      "line": 34
+    },
+    {
+      "title": "Tree Factory",
+      "image": "https://weedmaps.com/images/deliveries/000/402/284/avatar/1764727591-tf-wm-logo-800x800.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 35
+    },
+    {
+      "title": "YB Delivery - Downtown LA",
+      "image": "https://weedmaps.com/images/deliveries/000/406/273/avatar/1774485919-67ff5ebb-d385-4978-9431-6ae79dec2a5d.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 36
+    },
+    {
+      "title": "Dream Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/342/525/avatar/1763506290-yellow_weedmaps_profile_pic_copy.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 37
+    },
+    {
+      "title": "Kush Connect",
+      "image": "https://weedmaps.com/images/deliveries/000/401/418/avatar/1768647133-kush_new_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 38
+    },
+    {
+      "title": "Jungle Boys DTLA",
+      "image": "https://weedmaps.com/images/dispensaries/000/353/200/avatar/1772356328-jb_march_ftc_logo_1000x1000.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 40
+    },
+    {
+      "title": "CCC by The Cure Company",
+      "image": "https://weedmaps.com/images/dispensaries/000/000/449/avatar/1768441928-mobile-banner-the-cure-company-logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 41
+    },
+    {
+      "title": "Pounds - Korea Town / Echo Park",
+      "image": "https://weedmaps.com/images/deliveries/000/405/953/avatar/1773179332-logo_update_square.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 42
+    },
+    {
+      "title": "Exotic Extraction Delivery - Korea town",
+      "image": "https://weedmaps.com/images/deliveries/000/400/044/avatar/1769393237-exoticextraction3.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 43
+    },
+    {
+      "title": "Greenway Highway",
+      "image": "https://weedmaps.com/images/deliveries/000/375/326/avatar/1767740439-1757463236-greenway_highway__1_.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 44
+    },
+    {
+      "title": "BudExpress - Korea Town / Echo Park Taxes Included",
+      "image": "https://weedmaps.com/images/deliveries/000/400/463/avatar/1760395186-0b437e3d-0739-4752-8967-53eef319ca48.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 45
+    },
+    {
+      "title": "Rebud Mid City Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/229/794/avatar/1773708954-last_st-_p_logo_square.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 47
+    },
+    {
+      "title": "Honor Roll Delivery - Taxes Included",
+      "image": "https://weedmaps.com/images/deliveries/000/274/360/avatar/1773802833-honor_roll_delivery_logo_2026.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 49
+    },
+    {
+      "title": "Trees Echo Park",
+      "image": "https://weedmaps.com/images/dispensaries/000/308/302/avatar/1630787870-trees_for_wm_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 50
+    },
+    {
+      "title": "SkyhighLA",
+      "image": "https://weedmaps.com/images/dispensaries/000/028/911/avatar/1772144579-chatgpt_image_feb_9__2026__12_24_01_pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 51
+    },
+    {
+      "title": "Doorhash",
+      "image": "https://weedmaps.com/images/deliveries/000/398/249/avatar/1757204436-screenshot_2025-09-06_at_5-18-38___pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 52
+    },
+    {
+      "title": "Tree Factory",
+      "image": "https://weedmaps.com/images/deliveries/000/402/289/avatar/1764727649-tf-wm-logo-800x800.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 53
+    }
+  ]
+}

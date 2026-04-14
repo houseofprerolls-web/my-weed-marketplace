@@ -1,0 +1,2 @@
+-- Run: supabase/migrations/0045_create_orders_table_if_missing.sql
+-- Fixes checkout / My orders when PostgREST reports public.orders is not in the schema cache.

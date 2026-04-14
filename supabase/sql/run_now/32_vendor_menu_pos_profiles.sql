@@ -1,0 +1,1 @@
+-- Run: supabase/migrations/0051_vendor_menu_pos_profiles.sql

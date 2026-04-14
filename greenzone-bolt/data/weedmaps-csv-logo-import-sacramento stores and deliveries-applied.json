@@ -1,0 +1,383 @@
+{
+  "csvPath": "c:\\Users\\itssj\\Downloads\\sacramento stores and deliveries.csv",
+  "dryRun": false,
+  "region": "sacramento",
+  "updatedCount": 17,
+  "changes": [
+    {
+      "csvTitle": "The Sanctuary Delivery - Citrus Heights / Orangevale",
+      "vendorId": "feedb9dd-df43-40c2-b255-db20ae303b6b",
+      "vendorName": "The Sanctuary",
+      "slug": "ca-uls-c10-0000678-lic",
+      "listingPath": "/listing/feedb9dd-df43-40c2-b255-db20ae303b6b",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/274/560/avatar/1718736248-1646174581-see_what_s_new_read_below__14_.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "1841 El Camino",
+      "vendorId": "34262fa8-c942-4a4e-bf1e-9cc18772e808",
+      "vendorName": "1841 El Camino",
+      "slug": "ca-uls-c10-0000009-lic",
+      "listingPath": "/listing/34262fa8-c942-4a4e-bf1e-9cc18772e808",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/044/170/avatar/1510582856-logo-main.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Zen Garden",
+      "vendorId": "87a52f82-1915-4455-bbb5-5042fc6956c6",
+      "vendorName": "Zen Garden",
+      "slug": "ca-uls-c10-0001046-lic",
+      "listingPath": "/listing/87a52f82-1915-4455-bbb5-5042fc6956c6",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/064/771/avatar/1640821300-zen_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "NUG - Sacramento",
+      "vendorId": "1637eb5b-f1c5-4a97-9a75-ce096a8208a3",
+      "vendorName": "NUG",
+      "slug": "ca-uls-c10-0000369-lic",
+      "listingPath": "/listing/1637eb5b-f1c5-4a97-9a75-ce096a8208a3",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/061/846/avatar/1676485280-sac-weedmaps.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "All About Wellness",
+      "vendorId": "35d4ec59-85ed-4ae4-a64f-f5eb35528731",
+      "vendorName": "All About Wellness",
+      "slug": "sac-aaw-05",
+      "listingPath": "/listing/35d4ec59-85ed-4ae4-a64f-f5eb35528731",
+      "matchScore": 100,
+      "previousLogoUrl": "https://dsfiwnwrwfgjuthhjima.supabase.co/storage/v1/object/public/mirrored-images/vendor-logos/35d4ec59-85ed-4ae4-a64f-f5eb35528731.png",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/056/989/avatar/1763412331-weedmaps_-_logohero_image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Cookies",
+      "vendorId": "a084b1ef-e360-404b-b9ed-67d55076a472",
+      "vendorName": "Cookies",
+      "slug": "ca-uls-c10-0001173-lic",
+      "listingPath": "/listing/a084b1ef-e360-404b-b9ed-67d55076a472",
+      "matchScore": 100,
+      "previousLogoUrl": "https://weedmaps.com/images/dispensaries/000/308/794/avatar/1763756512-1666038542-app_icon_cookies.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/030/644/avatar/1613673753-C_BITE_LOGO_cookiesblue-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Kana Company",
+      "vendorId": "b779e50d-dbf9-422c-a4b7-553806450446",
+      "vendorName": "The Kana Company",
+      "slug": "ca-uls-c10-0000689-lic",
+      "listingPath": "/listing/b779e50d-dbf9-422c-a4b7-553806450446",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/334/685/avatar/1765221984-kanaco_pfp__blk_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "MainStage",
+      "vendorId": "ae1dc50f-b86b-4c61-aef5-f713ac60837e",
+      "vendorName": "Mainstage",
+      "slug": "ca-uls-c10-0000574-lic",
+      "listingPath": "/listing/ae1dc50f-b86b-4c61-aef5-f713ac60837e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/300/387/avatar/1577995782-mainstage_orange_broadway.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Abatin Wellness Center x 4 Twenty Market",
+      "vendorId": "d48d8d7d-ae3b-4f45-9297-6548fc97728b",
+      "vendorName": "Abatin Wellness Center",
+      "slug": "sac-abatin-04",
+      "listingPath": "/listing/d48d8d7d-ae3b-4f45-9297-6548fc97728b",
+      "matchScore": 92,
+      "previousLogoUrl": "https://dsfiwnwrwfgjuthhjima.supabase.co/storage/v1/object/public/mirrored-images/vendor-logos/d48d8d7d-ae3b-4f45-9297-6548fc97728b.png",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/016/277/avatar/1699922983-4tm-abatin-social.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "STIIIZY Sacramento",
+      "vendorId": "6079b130-7267-4811-9c4f-fbc17a3bd974",
+      "vendorName": "Stiiizy",
+      "slug": "flexotic",
+      "listingPath": "/listing/6079b130-7267-4811-9c4f-fbc17a3bd974",
+      "matchScore": 92,
+      "previousLogoUrl": "https://weedmaps.com/images/deliveries/000/298/107/avatar/1771203608-tile_design_7.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/402/905/avatar/1767146214-1111.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Gas Station",
+      "vendorId": "dc7100c3-2dd9-4d93-b711-2dec032a711b",
+      "vendorName": "The Gas Station 760 Inc",
+      "slug": "ca-uls-c10-0001180-lic",
+      "listingPath": "/listing/dc7100c3-2dd9-4d93-b711-2dec032a711b",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/370/356/avatar/1729544404-1729196154-tgs_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Connected Sacramento",
+      "vendorId": "de990c59-1296-4380-a296-77823da711a0",
+      "vendorName": "Connected Sacramento",
+      "slug": "ca-uls-c10-0000330-lic",
+      "listingPath": "/listing/de990c59-1296-4380-a296-77823da711a0",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/029/540/avatar/1537323231-Screen_Shot_2018-09-18_at_6.48.39_PM.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Symbiotic Sacramento",
+      "vendorId": "49741889-effd-406a-a843-aa602936090c",
+      "vendorName": "Symbiotic Sacramento",
+      "slug": "ca-uls-c10-0000263-lic",
+      "listingPath": "/listing/49741889-effd-406a-a843-aa602936090c",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/310/134/avatar/1659026456-symbiotic-genetics-green-logo-mark-full-colour-rgb.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Kolas - Roseville Express Delivery",
+      "vendorId": "aff790eb-e629-4790-a2a6-0c19188f64f1",
+      "vendorName": "Kolas",
+      "slug": "sac-kolas-02",
+      "listingPath": "/listing/aff790eb-e629-4790-a2a6-0c19188f64f1",
+      "matchScore": 98,
+      "previousLogoUrl": "https://logo.clearbit.com/ikolas.com",
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/401/512/avatar/1763569253-kolas_-_wm_icon_delivery__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Canntinas",
+      "vendorId": "b7dded50-1f6f-4438-9bd8-bd75aa3efb75",
+      "vendorName": "Canntinas Cannabis Company",
+      "slug": "ca-uls-c10-0000762-lic",
+      "listingPath": "/listing/b7dded50-1f6f-4438-9bd8-bd75aa3efb75",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/395/358/avatar/1772682179-chatgpt_image_mar_4__2026__12_55_08_pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Embarc Sacramento",
+      "vendorId": "f691017f-f2e6-4ee4-a6bd-45b351908f8d",
+      "vendorName": "Embarc Sacramento",
+      "slug": "ca-uls-c10-0001168-lic",
+      "listingPath": "/listing/f691017f-f2e6-4ee4-a6bd-45b351908f8d",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/325/764/avatar/1768197901-wm_logo.jpg?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Artist Tree - Davis",
+      "vendorId": "8e67455c-af5d-4e29-be08-933b9ffea7bf",
+      "vendorName": "The Artist Tree",
+      "slug": "ca-uls-c10-0000643-lic",
+      "listingPath": "/listing/8e67455c-af5d-4e29-be08-933b9ffea7bf",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/392/717/avatar/1768866100-weedmaps_profile_image_jan2026.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    }
+  ],
+  "unchangedCount": 0,
+  "skippedPlaceholder": 23,
+  "noMatchCount": 223,
+  "noMatchSample": [
+    {
+      "title": "The Re-Up - Sacramento",
+      "image": "https://weedmaps.com/images/deliveries/000/249/926/avatar/1553630111-The_Re-Up_Logo.jpg?w=96&h=96&dpr=2&auto=format",
+      "line": 4
+    },
+    {
+      "title": "Nexus Delivers",
+      "image": "https://weedmaps.com/images/deliveries/000/290/392/avatar/1773533660-nexus_delivers_alt_2_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 7
+    },
+    {
+      "title": "Cannagram - City of Sacramento",
+      "image": "https://weedmaps.com/images/deliveries/000/278/275/avatar/1758837472-daily_deals__7_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 8
+    },
+    {
+      "title": "NorCal Holistics Delivery - Sacramento",
+      "image": "https://weedmaps.com/images/deliveries/000/266/038/avatar/1662592339-norcal_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 9
+    },
+    {
+      "title": "WeedNearMe - Sacramento",
+      "image": "https://weedmaps.com/images/deliveries/000/401/174/avatar/1771448599-chatgpt_image_feb_18__2026__12_47_22_pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 10
+    },
+    {
+      "title": "Toasty",
+      "image": "https://weedmaps.com/images/dispensaries/000/375/142/avatar/1740160745-toastyjpg.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 12
+    },
+    {
+      "title": "Nu Cannabis",
+      "image": "https://weedmaps.com/images/deliveries/000/367/115/avatar/1759678227-purple_and_pink_grainy_gradient_psychedelic_mug__instagram_post_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 13
+    },
+    {
+      "title": "Budzilla - Sacramento",
+      "image": "https://weedmaps.com/images/deliveries/000/400/311/avatar/1760132109-img_0538.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 14
+    },
+    {
+      "title": "Humble Root",
+      "image": "https://weedmaps.com/images/deliveries/000/208/204/avatar/1772358732-march_-_all_areas.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 17
+    },
+    {
+      "title": "Sacramento Cannabis Delivery By OFL",
+      "image": "https://weedmaps.com/images/deliveries/000/373/442/avatar/1767638099-sac-teal-icon.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 18
+    },
+    {
+      "title": "The Green Giant Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/354/697/avatar/1710876427-asset_4_3x.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 19
+    },
+    {
+      "title": "Alpaca Club Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/266/877/avatar/1770597932-img_8064.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 20
+    },
+    {
+      "title": "CAM Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/264/550/avatar/1746561941-untitled_design__7_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 21
+    },
+    {
+      "title": "Real Fire Society",
+      "image": "https://weedmaps.com/images/deliveries/000/351/332/avatar/1767413197-img_0002.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 22
+    },
+    {
+      "title": "Smoakland Weed Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/274/437/avatar/1771971372-weedmap_square_logo_-alpine__60_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 23
+    },
+    {
+      "title": "Canna-Couriers",
+      "image": "https://weedmaps.com/images/deliveries/000/225/644/avatar/1510581697-Instasize_0310230102.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 24
+    },
+    {
+      "title": "Royal Dab Delivers",
+      "image": "https://weedmaps.com/images/deliveries/000/406/223/avatar/1774421006-royal_dab_delivers_-_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 25
+    },
+    {
+      "title": "Kush Connect - Sacramento South",
+      "image": "https://weedmaps.com/images/deliveries/000/402/244/avatar/1764910467-screenshot_2025-12-04_at_8-46-34___pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 26
+    },
+    {
+      "title": "Exotic Extraction - Sacramento South",
+      "image": "https://weedmaps.com/images/deliveries/000/402/242/avatar/1765243755-exotic_avatar_.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 27
+    },
+    {
+      "title": "Natrl Hi",
+      "image": "https://weedmaps.com/images/deliveries/000/285/855/avatar/1710655779-nhsmalllogo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 28
+    },
+    {
+      "title": "Ohana Gardens",
+      "image": "https://weedmaps.com/images/deliveries/000/205/351/avatar/1772672626-file_000000008a9c722f99e4830569b2d4ee.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 29
+    },
+    {
+      "title": "Royal Dab Delivers",
+      "image": "https://weedmaps.com/images/deliveries/000/392/475/avatar/1774421028-royal_dab_delivers_-_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 30
+    },
+    {
+      "title": "YB Delivery - Sacramento",
+      "image": "https://weedmaps.com/images/deliveries/000/406/042/avatar/1773178983-1769730157-2743b53a-0e63-4ea5-a20d-32626b751d9b.jpg?w=96&h=96&dpr=2&auto=format",
+      "line": 33
+    },
+    {
+      "title": "Nexus Delivers",
+      "image": "https://weedmaps.com/images/deliveries/000/288/972/avatar/1773533449-nexus_delivers_alt_2_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 35
+    },
+    {
+      "title": "Delta Health and Wellness",
+      "image": "https://weedmaps.com/images/dispensaries/000/033/233/avatar/1523747633-DELTA_LOGO_250.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 37
+    },
+    {
+      "title": "Canna-Couriers",
+      "image": "https://weedmaps.com/images/deliveries/000/254/073/avatar/1560906038-logo_Instasize_0310230102.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 39
+    },
+    {
+      "title": "KOLAS- Sacramento",
+      "image": "https://weedmaps.com/images/deliveries/000/274/251/avatar/1761161937-kolas_-_wm_icon_delivery.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 43
+    },
+    {
+      "title": "Cannagram",
+      "image": "https://weedmaps.com/images/deliveries/000/376/220/avatar/1758837546-daily_deals__7_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 44
+    },
+    {
+      "title": "Norcal Medicine Man",
+      "image": "https://weedmaps.com/images/deliveries/000/336/654/avatar/1771366544-chatgpt_image_feb_17__2026__02_11_25_pm.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 45
+    },
+    {
+      "title": "Crystal Nugs",
+      "image": "https://weedmaps.com/images/deliveries/000/262/735/avatar/1721015126-crystal_nugs_dispensary_sacramento_delivery.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 46
+    },
+    {
+      "title": "Trees Of Knowledge",
+      "image": "https://weedmaps.com/images/deliveries/000/235/877/avatar/1523034266-1523031750-Trees_of_Knowledge_logo.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 47
+    },
+    {
+      "title": "Alpaca Club Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/270/296/avatar/1770598096-img_8064.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 48
+    },
+    {
+      "title": "Nu Cannabis",
+      "image": "https://weedmaps.com/images/deliveries/000/385/037/avatar/1759678260-purple_and_pink_grainy_gradient_psychedelic_mug__instagram_post_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 50
+    },
+    {
+      "title": "YB Delivery - Sacramento South",
+      "image": "https://weedmaps.com/images/deliveries/000/403/477/avatar/1769730970-2743b53a-0e63-4ea5-a20d-32626b751d9b.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 51
+    },
+    {
+      "title": "NorCal Holistics Delivery - South Sacramento",
+      "image": "https://weedmaps.com/images/deliveries/000/282/889/avatar/1642550853-norcalholistics.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 52
+    },
+    {
+      "title": "Sacramento Confidential Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/200/353/avatar/1726009117-space_monkey_logo_png_800x800_for_wm_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 57
+    },
+    {
+      "title": "Oak Park Cannabis",
+      "image": "https://weedmaps.com/images/dispensaries/000/401/214/avatar/1772672473-untitled.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 58
+    },
+    {
+      "title": "Humble Root",
+      "image": "https://weedmaps.com/images/deliveries/000/258/443/avatar/1772359268-march_-_all_areas.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 59
+    },
+    {
+      "title": "KOLAS Arden Marijuana Dispensary & Weed Delivery",
+      "image": "https://weedmaps.com/images/dispensaries/000/018/837/avatar/1761160501-kolas_-_wm_icon_k104.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 60
+    },
+    {
+      "title": "KOLAS- Arden-Arcade",
+      "image": "https://weedmaps.com/images/deliveries/000/275/447/avatar/1761671786-kolas_-_wm_icon_delivery.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 61
+    }
+  ]
+}

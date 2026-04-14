@@ -1,0 +1,203 @@
+'use client';
+
+import { useCallback, useMemo, useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { supabase } from '@/lib/supabase';
+import { useToast } from '@/hooks/use-toast';
+import {
+  parseMenuCsv,
+  rowToSupplyListingPayload,
+  SUPPLY_LISTING_CSV_SAMPLE,
+} from '@/lib/menuCsvImport';
+import { Loader2, Upload, Download } from 'lucide-react';
+
+type SupplyListingsCsvImportPanelProps = {
+  supplyAccountId: string;
+  onImported: () => void;
+};
+
+export function SupplyListingsCsvImportPanel({ supplyAccountId, onImported }: SupplyListingsCsvImportPanelProps) {
+  const { toast } = useToast();
+  const [preview, setPreview] = useState<ReturnType<typeof parseMenuCsv> | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  const parsedRows = preview?.rows ?? [];
+
+  const rowResults = useMemo(() => {
+    return parsedRows.map((row, idx) => {
+      const r = rowToSupplyListingPayload(row, supplyAccountId);
+      return { idx: idx + 2, r };
+    });
+  }, [parsedRows, supplyAccountId]);
+
+  const validPayloads = useMemo(() => {
+    return rowResults.filter((x) => x.r.ok).map((x) => (x.r as { ok: true; payload: Record<string, unknown> }).payload);
+  }, [rowResults]);
+
+  const errors = useMemo(() => {
+    return rowResults.filter((x) => !x.r.ok) as { idx: number; r: { ok: false; error: string } }[];
+  }, [rowResults]);
+
+  const onFile = useCallback(
+    (file: File | null) => {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        const text = String(reader.result || '');
+        const p = parseMenuCsv(text);
+        if (p.headers.length === 0 || p.rows.length === 0) {
+          toast({ title: 'Empty CSV', description: 'Add a header row and at least one data row.', variant: 'destructive' });
+          setPreview(null);
+          return;
+        }
+        setPreview(p);
+      };
+      reader.readAsText(file);
+    },
+    [toast]
+  );
+
+  const downloadSample = () => {
+    const blob = new Blob([SUPPLY_LISTING_CSV_SAMPLE], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'supply-listings-sample.csv';
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const runImport = async () => {
+    if (validPayloads.length === 0) {
+      toast({ title: 'Nothing to import', description: 'Fix row errors or choose a different file.', variant: 'destructive' });
+      return;
+    }
+    setBusy(true);
+    let inserted = 0;
+    const chunkSize = 30;
+    try {
+      for (let i = 0; i < validPayloads.length; i += chunkSize) {
+        const chunk = validPayloads.slice(i, i + chunkSize);
+        const { error } = await supabase.from('b2b_listings').insert(chunk);
+        if (error) throw error;
+        inserted += chunk.length;
+      }
+      toast({
+        title: 'Import complete',
+        description: `Added ${inserted} listing(s).${errors.length ? ` ${errors.length} row(s) skipped.` : ''}`,
+      });
+      setPreview(null);
+      onImported();
+    } catch (e: unknown) {
+      toast({
+        title: 'Import failed',
+        description: e instanceof Error ? e.message : 'Unknown error',
+        variant: 'destructive',
+      });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <Card className="border-zinc-800 bg-zinc-900/60 p-4 md:p-5">
+      <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+        <div>
+          <h2 className="text-lg font-semibold text-white">Import products from CSV</h2>
+          <p className="mt-1 max-w-2xl text-sm text-zinc-400">
+            Columns: <span className="text-zinc-300">name</span> (or title), <span className="text-zinc-300">category</span>, optional{' '}
+            <span className="text-zinc-300">list_price</span> / <span className="text-zinc-300">list_price_cents</span>,{' '}
+            <span className="text-zinc-300">moq</span>, <span className="text-zinc-300">case_size</span>,{' '}
+            <span className="text-zinc-300">description</span>, <span className="text-zinc-300">visibility</span> (draft or live). Rows
+            are catalog-only listings (no linked brand SKU). You can edit each listing after import.
+          </p>
+        </div>
+        <Button type="button" variant="outline" size="sm" className="border-zinc-600" onClick={downloadSample}>
+          <Download className="mr-2 h-4 w-4" />
+          Sample CSV
+        </Button>
+      </div>
+
+      <div className="mt-4 flex flex-wrap items-center gap-3">
+        <label htmlFor="supply-csv" className="sr-only">
+          CSV file
+        </label>
+        <input
+          id="supply-csv"
+          type="file"
+          accept=".csv,text/csv"
+          className="max-w-xs text-sm text-zinc-400 file:mr-3 file:rounded-md file:border-0 file:bg-green-800 file:px-3 file:py-1.5 file:text-sm file:font-medium file:text-white hover:file:bg-green-700"
+          onChange={(e) => {
+            const f = e.target.files?.[0] ?? null;
+            onFile(f);
+            e.target.value = '';
+          }}
+        />
+        <Button
+          type="button"
+          disabled={busy || validPayloads.length === 0}
+          className="bg-green-700 hover:bg-green-600"
+          onClick={() => void runImport()}
+        >
+          {busy ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Upload className="mr-2 h-4 w-4" />}
+          Import {validPayloads.length > 0 ? `${validPayloads.length} ` : ''}row{validPayloads.length === 1 ? '' : 's'}
+        </Button>
+      </div>
+
+      {preview && preview.headers.length > 0 ? (
+        <div className="mt-4 space-y-2">
+          <p className="text-xs text-zinc-500">
+            {preview.rows.length} data row(s) · delimiter:{' '}
+            {preview.delimiter === '\t' ? 'tab' : preview.delimiter === ';' ? 'semicolon' : 'comma'}
+          </p>
+          {errors.length > 0 ? (
+            <div className="rounded-md border border-amber-800/50 bg-amber-950/30 px-3 py-2 text-sm text-amber-100">
+              <p className="font-medium">Skipped rows</p>
+              <ul className="mt-1 max-h-28 list-inside list-disc overflow-y-auto text-xs">
+                {errors.slice(0, 12).map((e) => (
+                  <li key={e.idx}>
+                    Line {e.idx}: {e.r.error}
+                  </li>
+                ))}
+              </ul>
+              {errors.length > 12 ? <p className="mt-1 text-xs text-amber-200/80">…and {errors.length - 12} more</p> : null}
+            </div>
+          ) : null}
+          <div className="max-h-48 overflow-auto rounded border border-zinc-800">
+            <table className="w-full min-w-[400px] text-left text-xs text-zinc-300">
+              <thead className="sticky top-0 bg-zinc-950 text-zinc-400">
+                <tr>
+                  <th className="p-2">#</th>
+                  <th className="p-2">Status</th>
+                  {preview.headers.slice(0, 8).map((h) => (
+                    <th key={h} className="p-2">
+                      {h}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {parsedRows.slice(0, 15).map((row, i) => {
+                  const res = rowResults[i];
+                  const ok = res?.r.ok;
+                  return (
+                    <tr key={i} className="border-t border-zinc-800">
+                      <td className="p-2 text-zinc-500">{i + 1}</td>
+                      <td className="p-2">{ok ? <span className="text-green-400">ok</span> : <span className="text-amber-300">skip</span>}</td>
+                      {preview.headers.slice(0, 8).map((h) => (
+                        <td key={h} className="max-w-[140px] truncate p-2">
+                          {row[h] ?? ''}
+                        </td>
+                      ))}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ) : null}
+    </Card>
+  );
+}

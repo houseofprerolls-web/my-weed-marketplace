@@ -1,0 +1,533 @@
+{
+  "csvPath": "c:\\Users\\itssj\\Downloads\\san diego stores and deliveries.csv",
+  "dryRun": true,
+  "region": "san-diego",
+  "updatedCount": 32,
+  "changes": [
+    {
+      "csvTitle": "Harbor Collective",
+      "vendorId": "55e7f4cf-93d6-4ad5-a70c-a7cf16382fe6",
+      "vendorName": "Harbor Collective",
+      "slug": "sd-harbor-collective-03",
+      "listingPath": "/listing/55e7f4cf-93d6-4ad5-a70c-a7cf16382fe6",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/045/855/avatar/1510582858-Messages_Image_1103620127_.png?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Klover",
+      "vendorId": "72300064-6941-454f-b3e8-cc625ba8af0e",
+      "vendorName": "KLOVER",
+      "slug": "ca-uls-c10-0000174-lic",
+      "listingPath": "/listing/72300064-6941-454f-b3e8-cc625ba8af0e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/267/165/avatar/1768514602-klowmpp.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "March and Ash Delivery - Normal Heights / North Park",
+      "vendorId": "e3e5a30a-e85d-4ec0-8f1a-f668f90faa63",
+      "vendorName": "March and Ash",
+      "slug": "ca-uls-c10-0000636-lic",
+      "listingPath": "/listing/e3e5a30a-e85d-4ec0-8f1a-f668f90faa63",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/219/128/avatar/1774382088-m_a_wm_icon_generic.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "STIIIZY DELIVERY",
+      "vendorId": "6079b130-7267-4811-9c4f-fbc17a3bd974",
+      "vendorName": "Stiiizy",
+      "slug": "flexotic",
+      "listingPath": "/listing/6079b130-7267-4811-9c4f-fbc17a3bd974",
+      "matchScore": 98,
+      "previousLogoUrl": "https://dsfiwnwrwfgjuthhjima.supabase.co/storage/v1/object/public/vendor-media/1fb56a7e-de03-4b96-ab44-7cd425be10a5/1774672117763-Homepage_banner_1742846828.jpg",
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/298/107/avatar/1771203608-tile_design_7.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Goldn Bloom",
+      "vendorId": "79331d5a-3377-4ce8-ad0c-51ee982a4f67",
+      "vendorName": "Goldn Bloom",
+      "slug": "sd-goldn-bloom-04",
+      "listingPath": "/listing/79331d5a-3377-4ce8-ad0c-51ee982a4f67",
+      "matchScore": 100,
+      "previousLogoUrl": "https://dsfiwnwrwfgjuthhjima.supabase.co/storage/v1/object/public/mirrored-images/vendor-logos/79331d5a-3377-4ce8-ad0c-51ee982a4f67.png",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/052/773/avatar/1661186512-goldn_bloom.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Grove",
+      "vendorId": "c847b510-d1a7-4ec5-bfa9-0113a838583d",
+      "vendorName": "The Grove",
+      "slug": "ca-uls-c10-0000079-lic",
+      "listingPath": "/listing/c847b510-d1a7-4ec5-bfa9-0113a838583d",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/057/035/avatar/1767723767-big_v_blk_weedmaps_format_deals.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Wellgreens - City Heights / Normal Heights - Marijuana Weed Dispensary",
+      "vendorId": "1a96cf6e-cb0b-4621-9778-599c13868801",
+      "vendorName": "WELLGREENS",
+      "slug": "ca-uls-c10-0000550-lic",
+      "listingPath": "/listing/1a96cf6e-cb0b-4621-9778-599c13868801",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/355/981/avatar/1771447992-2026_01_09_cover_wg_weedmaps-12.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Puff-N-Dash - City Heights",
+      "vendorId": "b6fcdccf-f62b-4021-b783-603d17a8218c",
+      "vendorName": "PUFF-N-DASH",
+      "slug": "ca-uls-c10-0000908-lic",
+      "listingPath": "/listing/b6fcdccf-f62b-4021-b783-603d17a8218c",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/306/330/avatar/1760469444-puffndashred.png?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Buzz Cannabis - Sorrento Valley",
+      "vendorId": "2f1abc4f-4575-45bf-bc50-dd49859e5fa3",
+      "vendorName": "BUZZ CANNABIS",
+      "slug": "ca-uls-c10-0001094-lic",
+      "listingPath": "/listing/2f1abc4f-4575-45bf-bc50-dd49859e5fa3",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/376/308/avatar/1753842323-buzz_logo___400_x_400_px_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Cookies Mission Valley",
+      "vendorId": "a084b1ef-e360-404b-b9ed-67d55076a472",
+      "vendorName": "Cookies",
+      "slug": "ca-uls-c10-0001173-lic",
+      "listingPath": "/listing/a084b1ef-e360-404b-b9ed-67d55076a472",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/308/794/avatar/1763756512-1666038542-app_icon_cookies.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "March and Ash - Mission Valley",
+      "vendorId": "4a6fa243-d4cc-4038-8b97-9b3c1917ca3b",
+      "vendorName": "March and Ash (Mission Valley)",
+      "slug": "sd-march-and-ash-mission-valley-01",
+      "listingPath": "/listing/4a6fa243-d4cc-4038-8b97-9b3c1917ca3b",
+      "matchScore": 100,
+      "previousLogoUrl": "https://dsfiwnwrwfgjuthhjima.supabase.co/storage/v1/object/public/mirrored-images/vendor-logos/4a6fa243-d4cc-4038-8b97-9b3c1917ca3b.png",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/058/721/avatar/1774381820-m_a_wm_icon_generic.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Off the Charts - National City",
+      "vendorId": "450c5990-21df-4f45-99e6-eaf6e953b58a",
+      "vendorName": "Off The Charts",
+      "slug": "ca-uls-c10-0000552-lic",
+      "listingPath": "/listing/450c5990-21df-4f45-99e6-eaf6e953b58a",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/382/077/avatar/1771222560-national_city.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Originals San Diego",
+      "vendorId": "21ca0619-3591-438a-b1fa-8815ea058725",
+      "vendorName": "Originals",
+      "slug": "ca-uls-c10-0000775-lic",
+      "listingPath": "/listing/21ca0619-3591-438a-b1fa-8815ea058725",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/308/192/avatar/1763489951-profilepicweedmapsandiego-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Grasshopper [Chula Vista]",
+      "vendorId": "645c10e8-0e42-4c5d-a7bf-e07af040b7da",
+      "vendorName": "Grasshopper",
+      "slug": "ca-uls-c10-0000746-lic",
+      "listingPath": "/listing/645c10e8-0e42-4c5d-a7bf-e07af040b7da",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/307/560/avatar/1772149737-weemaps_logo_2.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Boulevard Dispensary",
+      "vendorId": "81166482-7b22-4d8b-b05a-991860443da4",
+      "vendorName": "The Boulevard",
+      "slug": "ca-uls-c10-0000669-lic",
+      "listingPath": "/listing/81166482-7b22-4d8b-b05a-991860443da4",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/302/560/avatar/1767540485-untitled_artwork_-_2023-01-02t095922-343.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Reserve - Balboa",
+      "vendorId": "c49e6a79-eea4-41f3-9fde-baeafb32a58e",
+      "vendorName": "The Reserve SD",
+      "slug": "ca-uls-c10-0000949-lic",
+      "listingPath": "/listing/c49e6a79-eea4-41f3-9fde-baeafb32a58e",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/327/954/avatar/1770325791-weedmaps_icon__16_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Torrey Holistics Dispensary | La Jolla / San Diego",
+      "vendorId": "dc4d2365-7270-41f1-a3cf-24f5c474d52a",
+      "vendorName": "Torrey Holistics",
+      "slug": "ca-uls-c10-0000242-lic",
+      "listingPath": "/listing/dc4d2365-7270-41f1-a3cf-24f5c474d52a",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/046/454/avatar/1767279939-torreyholistics-wmlogo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Perfect Union - San Diego",
+      "vendorId": "fee81734-30f3-46d8-a41c-8c047a8199f2",
+      "vendorName": "Perfect Union",
+      "slug": "ca-uls-c10-0000088-lic",
+      "listingPath": "/listing/fee81734-30f3-46d8-a41c-8c047a8199f2",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/399/674/avatar/1759193183-perfect_union__cannabis_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Lit - La Mesa",
+      "vendorId": "e908d622-10d0-4373-99ae-2c64c028fc3e",
+      "vendorName": "LiT La Mesa",
+      "slug": "ca-uls-c10-0000228-lic",
+      "listingPath": "/listing/e908d622-10d0-4373-99ae-2c64c028fc3e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/060/427/avatar/1745209080-lit_wm_logo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Cookies La Mesa",
+      "vendorId": "ff1f57dd-623d-4f8f-a20f-4e71084e562e",
+      "vendorName": "Cookies La Mesa",
+      "slug": "ca-uls-c10-0000407-lic",
+      "listingPath": "/listing/ff1f57dd-623d-4f8f-a20f-4e71084e562e",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/302/950/avatar/1593201598-bite-blue.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "PUFF - La Jolla",
+      "vendorId": "77f1f0dc-d3b5-4563-85fa-f9623fb9bb31",
+      "vendorName": "Puff LA",
+      "slug": "ca-uls-c10-0000811-lic",
+      "listingPath": "/listing/77f1f0dc-d3b5-4563-85fa-f9623fb9bb31",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/399/409/avatar/1774405843-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Jungle Boys San Diego",
+      "vendorId": "05b938c5-b3e3-43f3-bb24-bab5fb72ea71",
+      "vendorName": "Jungle Boys San Diego",
+      "slug": "ca-uls-c10-0000904-lic",
+      "listingPath": "/listing/05b938c5-b3e3-43f3-bb24-bab5fb72ea71",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/316/874/avatar/1772403196-jb_march_ftc_logo_1000x1000.png?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "EMBR",
+      "vendorId": "f463df67-f546-408f-88a6-edaaff20f09b",
+      "vendorName": "Embr",
+      "slug": "ca-uls-c10-0000290-lic",
+      "listingPath": "/listing/f463df67-f546-408f-88a6-edaaff20f09b",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/307/692/avatar/1763584402-screen_shot_2022-09-06_at_10-15-03_am_1_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Dr Greenthumb's San Diego",
+      "vendorId": "d8ed2c79-4b98-42dd-b3fe-0c45e5cff2e6",
+      "vendorName": "Dr. GreenThumb's",
+      "slug": "ca-uls-c10-0000422-lic",
+      "listingPath": "/listing/d8ed2c79-4b98-42dd-b3fe-0c45e5cff2e6",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/307/155/avatar/1768497908-download_-_2026-01-15t090341-985.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "March and Ash Imperial Beach",
+      "vendorId": "6e10c5a6-00ba-478e-ad52-544e8e0aa373",
+      "vendorName": "March and Ash (Imperial Beach)",
+      "slug": "des-march-ib-01",
+      "listingPath": "/listing/6e10c5a6-00ba-478e-ad52-544e8e0aa373",
+      "matchScore": 100,
+      "previousLogoUrl": "https://dsfiwnwrwfgjuthhjima.supabase.co/storage/v1/object/public/mirrored-images/vendor-logos/6e10c5a6-00ba-478e-ad52-544e8e0aa373.png",
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/316/182/avatar/1774381883-m_a_wm_icon_generic.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Backpack Boyz San Diego",
+      "vendorId": "a7105425-4297-463d-95c6-1253f1451571",
+      "vendorName": "Backpack Boyz",
+      "slug": "ca-uls-c10-0000772-lic",
+      "listingPath": "/listing/a7105425-4297-463d-95c6-1253f1451571",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/313/393/avatar/1690741485-1686601599-img_2691.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "California Holistics Dispensary | Chula Vista / San Diego",
+      "vendorId": "6bb0df00-3bf5-44aa-9046-b90d933a0e5f",
+      "vendorName": "California Holistics",
+      "slug": "ca-uls-c10-0001005-lic",
+      "listingPath": "/listing/6bb0df00-3bf5-44aa-9046-b90d933a0e5f",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/318/940/avatar/1767279941-californiaholistics-wmlogo.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "Mankind Dispensary",
+      "vendorId": "77753264-c735-44ad-9eb3-ab02c162a719",
+      "vendorName": "Mankind Dispensary",
+      "slug": "ca-uls-c10-0000494-lic",
+      "listingPath": "/listing/77753264-c735-44ad-9eb3-ab02c162a719",
+      "matchScore": 100,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/045/933/avatar/1721144003-800x800_mk_logo_72dpi.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "HerbNJoy - Chula Vista",
+      "vendorId": "e04bbac6-34d5-4a21-9f26-a7212d2b3203",
+      "vendorName": "HerbNJoy",
+      "slug": "ca-uls-c10-0001048-lic",
+      "listingPath": "/listing/e04bbac6-34d5-4a21-9f26-a7212d2b3203",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/337/032/avatar/1680215938-herbnjoy.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "MJ Direct - El Cajon",
+      "vendorId": "43da9996-1a8b-459a-b9e1-1281d1d2a4f3",
+      "vendorName": "MJ Direct-Escondido",
+      "slug": "ca-uls-c10-0000052-lic",
+      "listingPath": "/listing/43da9996-1a8b-459a-b9e1-1281d1d2a4f3",
+      "matchScore": 88,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/dispensaries/000/033/502/avatar/1740608261-mj_direct.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "MedLeaf Weed Delivery - Solana Beach",
+      "vendorId": "90306ca1-118c-4a48-9045-f52ef67593f3",
+      "vendorName": "MedLeaf",
+      "slug": "ca-uls-c10-0001097-lic",
+      "listingPath": "/listing/90306ca1-118c-4a48-9045-f52ef67593f3",
+      "matchScore": 92,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/401/014/avatar/1766792939-wm_logo__2_.jpg?w=96&h=96&dpr=2&auto=format"
+    },
+    {
+      "csvTitle": "The Cake House - Solana Beach",
+      "vendorId": "9e5258fb-47bc-4f23-a748-cdf8b8f7e15e",
+      "vendorName": "The Cake House",
+      "slug": "ca-uls-c10-0000769-lic",
+      "listingPath": "/listing/9e5258fb-47bc-4f23-a748-cdf8b8f7e15e",
+      "matchScore": 98,
+      "previousLogoUrl": null,
+      "newLogoUrl": "https://weedmaps.com/images/deliveries/000/369/443/avatar/1759431826-wm_profile_pictures.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format"
+    }
+  ],
+  "unchangedCount": 0,
+  "skippedPlaceholder": 26,
+  "noMatchCount": 141,
+  "noMatchSample": [
+    {
+      "title": "Doorhash - Gaslamp",
+      "image": "https://weedmaps.com/images/deliveries/000/398/562/avatar/1774541193-untitled-12_copy_7.png?w=96&h=96&dpr=2&auto=format",
+      "line": 4
+    },
+    {
+      "title": "Grand Era",
+      "image": "https://weedmaps.com/images/deliveries/000/404/916/avatar/1774583641-profile-image-01__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 5
+    },
+    {
+      "title": "AP & K - Gaslamp District",
+      "image": "https://weedmaps.com/images/deliveries/000/399/549/avatar/1767402591-4a056e28-7f32-4c7d-8864-c9e41c27aa66.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 6
+    },
+    {
+      "title": "BudExpress - Gaslamp",
+      "image": "https://weedmaps.com/images/deliveries/000/401/132/avatar/1773933105-photoroom_20260319_081107.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 8
+    },
+    {
+      "title": "PUFF - Gaslamp District",
+      "image": "https://weedmaps.com/images/deliveries/000/399/355/avatar/1774405804-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 10
+    },
+    {
+      "title": "Golden State Greens Point Loma - Gaslamp",
+      "image": "https://weedmaps.com/images/deliveries/000/214/051/avatar/1761839167-uncle_ihj_deal_card__instagram_profile_picture_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 11
+    },
+    {
+      "title": "Budzilla - Gaslamp District",
+      "image": "https://weedmaps.com/images/deliveries/000/400/026/avatar/1774320947-profile-image-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 12
+    },
+    {
+      "title": "West Coast Safe Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/398/325/avatar/1773978884-whatsapp_image_2026-03-19_at_8-52-30_pm.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 13
+    },
+    {
+      "title": "Cali Cannabis Care - Gaslamp District",
+      "image": "https://weedmaps.com/images/deliveries/000/401/007/avatar/1773646014-chatgpt_image_16____________2026___-__00_15_24.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 14
+    },
+    {
+      "title": "PLNTBSD",
+      "image": "https://weedmaps.com/images/deliveries/000/405/584/avatar/1774296578-profile-image-02__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 15
+    },
+    {
+      "title": "Cannabis Plus - Gaslamp",
+      "image": "https://weedmaps.com/images/deliveries/000/399/519/avatar/1759335244-logo_800x800.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 18
+    },
+    {
+      "title": "BudExpress - Hillcrest",
+      "image": "https://weedmaps.com/images/deliveries/000/405/992/avatar/1773933153-photoroom_20260319_081107.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 19
+    },
+    {
+      "title": "BudExpress - North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/401/133/avatar/1773933133-photoroom_20260319_081107.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 22
+    },
+    {
+      "title": "Doorhash - North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/398/600/avatar/1774541639-untitled-12_copy_4.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 23
+    },
+    {
+      "title": "HiKei",
+      "image": "https://weedmaps.com/images/dispensaries/000/067/207/avatar/1768247332-hikei_avatar1_copy__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 25
+    },
+    {
+      "title": "Cannabis Plus - North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/399/529/avatar/1759335381-logo_800x800.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 26
+    },
+    {
+      "title": "Budzilla - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/400/032/avatar/1774321751-profile-image-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 27
+    },
+    {
+      "title": "Cali Cannabis Care - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/402/840/avatar/1773646435-chatgpt_image_16____________2026___-__00_15_24.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 29
+    },
+    {
+      "title": "PUFF - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/399/400/avatar/1774405817-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 30
+    },
+    {
+      "title": "Doorhash - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/398/598/avatar/1774541472-untitled-12_copy_4.png?w=96&h=96&dpr=2&auto=format",
+      "line": 34
+    },
+    {
+      "title": "Golden State Greens Point Loma - Ocean Beach",
+      "image": "https://weedmaps.com/images/deliveries/000/269/864/avatar/1761839318-uncle_ihj_deal_card__instagram_profile_picture_.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 35
+    },
+    {
+      "title": "PUFF - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/399/407/avatar/1774405837-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 36
+    },
+    {
+      "title": "Budzilla - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/400/031/avatar/1774321747-profile-image-01.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 37
+    },
+    {
+      "title": "Golden State Greens Point Loma",
+      "image": "https://weedmaps.com/images/dispensaries/000/044/304/avatar/1774034453-20260320_1317_spring_logo_background_remix_01km6avykce2pa2v79k1k9rmzb.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 41
+    },
+    {
+      "title": "Grand Era",
+      "image": "https://weedmaps.com/images/deliveries/000/404/937/avatar/1774584123-profile-image-01__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 43
+    },
+    {
+      "title": "PLNTBSD",
+      "image": "https://weedmaps.com/images/deliveries/000/405/600/avatar/1774297055-profile-image-02__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 45
+    },
+    {
+      "title": "West Coast Safe Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/398/329/avatar/1773979055-whatsapp_image_2026-03-19_at_8-52-30_pm.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 47
+    },
+    {
+      "title": "Grand Era",
+      "image": "https://weedmaps.com/images/deliveries/000/404/934/avatar/1774584115-profile-image-01__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 49
+    },
+    {
+      "title": "Cannabis Plus - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/399/526/avatar/1759335350-logo_800x800.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 50
+    },
+    {
+      "title": "AP & K - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/399/553/avatar/1767402713-4a056e28-7f32-4c7d-8864-c9e41c27aa66.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 51
+    },
+    {
+      "title": "West Coast Safe Delivery",
+      "image": "https://weedmaps.com/images/deliveries/000/398/328/avatar/1773979039-whatsapp_image_2026-03-19_at_8-52-30_pm.jpeg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 53
+    },
+    {
+      "title": "Cali Cannabis Care - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/401/141/avatar/1773646273-chatgpt_image_16____________2026___-__00_15_24.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 55
+    },
+    {
+      "title": "AP & K - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/399/552/avatar/1767402682-4a056e28-7f32-4c7d-8864-c9e41c27aa66.PNG?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 56
+    },
+    {
+      "title": "PLNTBSD",
+      "image": "https://weedmaps.com/images/deliveries/000/405/603/avatar/1774297261-profile-image-02__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 57
+    },
+    {
+      "title": "Sessions By The Bay - Lounge & Dispensary National City / Chula Vista",
+      "image": "https://weedmaps.com/images/dispensaries/000/381/964/avatar/1745286463-sessions-by-the-bay-weedmaps.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 60
+    },
+    {
+      "title": "Cannabus - Mission Valley",
+      "image": "https://weedmaps.com/images/deliveries/000/399/253/avatar/1773986316-sddd.png?w=96&h=96&dpr=2&auto=format",
+      "line": 64
+    },
+    {
+      "title": "Cannabus - Normal Heights / North Park",
+      "image": "https://weedmaps.com/images/deliveries/000/399/256/avatar/1773986385-sddd.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 65
+    },
+    {
+      "title": "Cannabus - Ocean Beach",
+      "image": "https://weedmaps.com/images/deliveries/000/399/257/avatar/1773986406-sddd.png?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 67
+    },
+    {
+      "title": "Grand Era",
+      "image": "https://weedmaps.com/images/deliveries/000/404/947/avatar/1774584136-profile-image-01__1_.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 70
+    },
+    {
+      "title": "PUFF - Ocean Beach",
+      "image": "https://weedmaps.com/images/deliveries/000/399/403/avatar/1774405824-puff-la-profile-image.jpg?blur=500&q=1&w=96&h=96&dpr=2&auto=format",
+      "line": 71
+    }
+  ]
+}

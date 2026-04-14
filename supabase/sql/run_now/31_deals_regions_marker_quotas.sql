@@ -1,0 +1,1 @@
+-- Run: supabase/migrations/0050_deals_regions_vendor_location_quotas.sql

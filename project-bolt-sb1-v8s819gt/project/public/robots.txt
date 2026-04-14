@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+Allow: /directory
+Allow: /map
+Allow: /feed
+Allow: /strains
+Allow: /deals
+Allow: /dispensaries
+Allow: /listing
+
+Disallow: /account
+Disallow: /vendor
+Disallow: /admin
+Disallow: /cart
+Disallow: /api
+
+Sitemap: https://greenzone.com/sitemap.xml
