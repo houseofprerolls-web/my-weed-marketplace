@@ -200,6 +200,8 @@ export default function AdminOutreachPage() {
   } | null>(null);
   const [replaceAllBeforeImport, setReplaceAllBeforeImport] = useState(false);
   const [importBusy, setImportBusy] = useState(false);
+  /** Remount file input after import so picking the same CSV fires onChange again. */
+  const [csvFileInputKey, setCsvFileInputKey] = useState(0);
   const [selected, setSelected] = useState<Set<string>>(() => new Set());
   const [sendBusy, setSendBusy] = useState(false);
   const [rowBusy, setRowBusy] = useState<string | null>(null);
@@ -326,6 +328,7 @@ export default function AdminOutreachPage() {
       const token = await tokenRef();
       if (!token) {
         setContacts([]);
+        setTotal(0);
         return;
       }
       const sp = new URLSearchParams();
@@ -435,23 +438,41 @@ export default function AdminOutreachPage() {
   }, [csvPreview]);
 
   async function runImport() {
-    if (csvImportRows.length === 0) return;
+    if (csvImportRows.length === 0) {
+      toast({
+        title: 'No rows to import',
+        description: 'Choose a .csv file with a header row and at least one data row.',
+        variant: 'destructive',
+      });
+      return;
+    }
     if (replaceAllBeforeImport) {
       const ok = window.confirm(
         'Delete ALL outreach contacts and send history, then import this file? This cannot be undone.'
       );
-      if (!ok) return;
+      if (!ok) {
+        toast({ title: 'Import cancelled', description: 'No changes were made.' });
+        return;
+      }
     }
     setImportBusy(true);
     try {
       const token = await tokenRef();
-      if (!token) return;
+      if (!token) {
+        toast({
+          title: 'Sign in required',
+          description:
+            'No active session — import cannot run. Refresh the page and sign in again, then retry. (An expired session can also make the contact list look empty.)',
+          variant: 'destructive',
+        });
+        return;
+      }
       const res = await fetch('/api/master/outreach/import', {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({ rows: csvImportRows, replace_all: replaceAllBeforeImport }),
       });
-      const j = (await res.json()) as {
+      let j: {
         error?: string;
         processed?: number;
         unique_emails?: number;
@@ -459,6 +480,18 @@ export default function AdminOutreachPage() {
         replaced_all?: boolean;
         merged_duplicate_emails_in_file?: number;
       };
+      try {
+        j = (await res.json()) as typeof j;
+      } catch {
+        toast({
+          title: 'Import failed',
+          description: res.ok
+            ? 'Server returned an invalid response.'
+            : `${res.status} ${res.statusText}`,
+          variant: 'destructive',
+        });
+        return;
+      }
       if (!res.ok) {
         toast({ title: 'Import failed', description: j.error || res.statusText, variant: 'destructive' });
         return;
@@ -475,9 +508,17 @@ export default function AdminOutreachPage() {
         description: parts.join(' '),
       });
       setCsvPreview(null);
+      setCsvFileInputKey((k) => k + 1);
       setPage(1);
       await loadList();
       if (view === 'board') await loadBoard();
+    } catch (e: unknown) {
+      const msg = e instanceof Error ? e.message : 'Network error';
+      toast({
+        title: 'Import failed',
+        description: `${msg} — check your connection and try again.`,
+        variant: 'destructive',
+      });
     } finally {
       setImportBusy(false);
     }
@@ -963,10 +1004,14 @@ export default function AdminOutreachPage() {
           <div className="flex-1 space-y-2">
             <Label className="text-zinc-400">File</Label>
             <Input
+              key={csvFileInputKey}
               type="file"
               accept=".csv,text/csv"
               className="border-zinc-700 bg-zinc-950 text-zinc-200 file:text-zinc-300"
-              onChange={(e) => onFile(e.target.files?.[0] ?? null)}
+              onChange={(e) => {
+                onFile(e.target.files?.[0] ?? null);
+                e.target.value = '';
+              }}
             />
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
