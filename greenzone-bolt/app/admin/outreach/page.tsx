@@ -20,6 +20,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { supabase } from '@/lib/supabase';
 import { parseOutreachCsv } from '@/lib/outreachCsvParse';
 import { OUTREACH_MERGE_TOKENS } from '@/lib/outreachTemplate';
+import { ensureConnectMailboxInOptions } from '@/lib/outreachFromOptions';
 import { htmlToPlainText, plainTextToSimpleHtml } from '@/lib/outreachHtmlText';
 import { useToast } from '@/hooks/use-toast';
 import {
@@ -159,8 +160,10 @@ export default function AdminOutreachPage() {
   const [view, setView] = useState<'table' | 'board'>('table');
   const [boardScope, setBoardScope] = useState<'team' | 'my'>('team');
   const [assignedFilter, setAssignedFilter] = useState<'all' | 'me' | 'unassigned'>('all');
-  const [fromOptions, setFromOptions] = useState<{ id: string; from: string }[]>([]);
-  const [fromId, setFromId] = useState<string>('default');
+  const [fromOptions, setFromOptions] = useState<{ id: string; from: string }[]>(() =>
+    ensureConnectMailboxInOptions([])
+  );
+  const [fromId, setFromId] = useState<string>(() => ensureConnectMailboxInOptions([])[0]?.id ?? 'connect');
   const [draftSubject, setDraftSubject] = useState('');
   const [draftHtml, setDraftHtml] = useState('');
   const [draftText, setDraftText] = useState('');
@@ -299,14 +302,20 @@ export default function AdminOutreachPage() {
         default_from_id?: string;
         error?: string;
       };
+      const merged = ensureConnectMailboxInOptions(Array.isArray(j.options) ? j.options : []);
       if (!res.ok) {
-        toast({ title: 'From addresses', description: j.error || res.statusText, variant: 'destructive' });
+        toast({
+          title: 'From list (partial)',
+          description: j.error || res.statusText,
+          variant: 'destructive',
+        });
+        setFromOptions(merged);
+        setFromId((prev) => (merged.some((o) => o.id === prev) ? prev : merged[0]?.id || 'connect'));
         return;
       }
-      const opts = j.options || [];
-      setFromOptions(opts);
-      const def = j.default_from_id || opts[0]?.id || 'default';
-      setFromId((prev) => (opts.some((o) => o.id === prev) ? prev : def));
+      setFromOptions(merged);
+      const def = j.default_from_id || merged.find((o) => o.id === 'default')?.id || merged[0]?.id || 'default';
+      setFromId((prev) => (merged.some((o) => o.id === prev) ? prev : def));
     })();
   }, [isMasterAdmin, toast, tokenRef]);
 
@@ -729,21 +738,28 @@ export default function AdminOutreachPage() {
               </SelectContent>
             </Select>
           </div>
-          <div className="min-w-[200px] flex-1">
-            <Label className="text-zinc-500">Send from (SMTP or Resend)</Label>
-            <Select value={fromId} onValueChange={setFromId} disabled={fromOptions.length === 0}>
-              <SelectTrigger className="mt-1 border-zinc-700 bg-zinc-950 text-zinc-200">
-                <SelectValue placeholder={fromOptions.length ? 'Choose sender' : 'No from addresses'} />
-              </SelectTrigger>
-              <SelectContent>
-                {fromOptions.map((o) => (
-                  <SelectItem key={o.id} value={o.id}>
-                    <span className="font-mono text-xs">{o.id}</span>
-                    <span className="ml-2 text-zinc-500">{o.from}</span>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+          <div className="min-w-[200px] flex-1 max-w-md">
+            <Label htmlFor="outreach-send-from" className="text-zinc-500">
+              Send from (verified sender)
+            </Label>
+            <select
+              id="outreach-send-from"
+              className="mt-1 flex h-10 w-full cursor-pointer rounded-md border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-100 shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-600/40 disabled:cursor-not-allowed disabled:opacity-50"
+              value={fromOptions.some((o) => o.id === fromId) ? fromId : (fromOptions[0]?.id ?? '')}
+              disabled={fromOptions.length === 0}
+              onChange={(e) => setFromId(e.target.value)}
+              title="Outbound From header — must match a verified domain in Resend (or your SMTP account)."
+            >
+              {fromOptions.map((o) => (
+                <option key={o.id} value={o.id}>
+                  {o.from}
+                </option>
+              ))}
+            </select>
+            <p className="mt-1 text-[11px] text-zinc-600">
+              Includes <span className="font-mono text-zinc-400">connect@datreehouse.com</span> when not already in
+              server config. Sends still require <span className="font-mono">RESEND_API_KEY</span> or SMTP on the server.
+            </p>
           </div>
         </div>
         <p className="mb-2 text-xs text-zinc-500">
