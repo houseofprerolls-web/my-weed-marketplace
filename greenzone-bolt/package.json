@@ -87,8 +87,6 @@
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.3.0",
-    "eslint": "8.49.0",
-    "eslint-config-next": "13.5.1",
     "input-otp": "^1.2.4",
     "jspdf": "^2.5.2",
     "lucide-react": "^0.446.0",
@@ -117,6 +115,8 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-next": "13.5.1",
     "@types/nodemailer": "^8.0.0",
     "@types/pdf-parse": "^1.1.5",
     "csv-parse": "^6.2.1",
