@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState, type ChangeEvent } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type ChangeEvent } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -19,6 +19,8 @@ import { useRole } from '@/hooks/useRole';
 import { useAuth } from '@/contexts/AuthContext';
 import { supabase } from '@/lib/supabase';
 import { parseOutreachCsv } from '@/lib/outreachCsvParse';
+import { OUTREACH_MERGE_TOKENS } from '@/lib/outreachTemplate';
+import { htmlToPlainText, plainTextToSimpleHtml } from '@/lib/outreachHtmlText';
 import { useToast } from '@/hooks/use-toast';
 import {
   Loader2,
@@ -35,6 +37,9 @@ import {
   UserPlus,
   UserMinus,
   ExternalLink,
+  RotateCcw,
+  Columns2,
+  ArrowDownToLine,
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -62,6 +67,7 @@ type Contact = {
 const DRAFT_SUBJECT_KEY = 'outreach_template_draft_subject';
 const DRAFT_HTML_KEY = 'outreach_template_draft_html';
 const DRAFT_TEXT_KEY = 'outreach_template_draft_text';
+const USE_DRAFT_ON_SEND_KEY = 'outreach_use_draft_when_sending';
 
 function readDraftFromStorage() {
   if (typeof window === 'undefined') {
@@ -72,6 +78,27 @@ function readDraftFromStorage() {
     html: localStorage.getItem(DRAFT_HTML_KEY) ?? '',
     text: localStorage.getItem(DRAFT_TEXT_KEY) ?? '',
   };
+}
+
+function insertAtCursor(
+  el: HTMLInputElement | HTMLTextAreaElement | null,
+  snippet: string,
+  current: string,
+  onNext: (next: string) => void
+) {
+  if (!el) {
+    onNext(`${current}${snippet}`);
+    return;
+  }
+  const start = el.selectionStart ?? current.length;
+  const end = el.selectionEnd ?? current.length;
+  const next = current.slice(0, start) + snippet + current.slice(end);
+  onNext(next);
+  const pos = start + snippet.length;
+  queueMicrotask(() => {
+    el.focus();
+    el.setSelectionRange(pos, pos);
+  });
 }
 
 const STATUSES = [
@@ -139,7 +166,20 @@ export default function AdminOutreachPage() {
   const [draftText, setDraftText] = useState('');
   const [previewOpen, setPreviewOpen] = useState(false);
   const [previewLoading, setPreviewLoading] = useState(false);
-  const [previewResult, setPreviewResult] = useState<{ subject: string; html: string; text: string } | null>(null);
+  const [previewResult, setPreviewResult] = useState<{
+    subject: string;
+    html: string;
+    text: string;
+    built_in?: { subject: string; html: string; text: string };
+    sample?: boolean;
+  } | null>(null);
+  const [compareBuiltinPreview, setCompareBuiltinPreview] = useState(true);
+  const [useDraftWhenSending, setUseDraftWhenSending] = useState(true);
+  const [templateDefaultLoading, setTemplateDefaultLoading] = useState(false);
+  const subjectFieldRef = useRef<HTMLInputElement>(null);
+  const htmlFieldRef = useRef<HTMLTextAreaElement>(null);
+  const textFieldRef = useRef<HTMLTextAreaElement>(null);
+  const mergeTargetRef = useRef<'subject' | 'html' | 'text'>('text');
   const [contacts, setContacts] = useState<Contact[]>([]);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
@@ -180,7 +220,71 @@ export default function AdminOutreachPage() {
     setDraftSubject(d.subject);
     setDraftHtml(d.html);
     setDraftText(d.text);
+    if (typeof window !== 'undefined') {
+      setUseDraftWhenSending(localStorage.getItem(USE_DRAFT_ON_SEND_KEY) !== '0');
+    }
   }, [isMasterAdmin]);
+
+  function persistUseDraftOnSend(on: boolean) {
+    setUseDraftWhenSending(on);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(USE_DRAFT_ON_SEND_KEY, on ? '1' : '0');
+    }
+  }
+
+  function insertMergeToken(token: string) {
+    const t = mergeTargetRef.current;
+    if (t === 'subject') insertAtCursor(subjectFieldRef.current, token, draftSubject, setDraftSubject);
+    else if (t === 'html') insertAtCursor(htmlFieldRef.current, token, draftHtml, setDraftHtml);
+    else insertAtCursor(textFieldRef.current, token, draftText, setDraftText);
+  }
+
+  async function loadDefaultTemplate() {
+    setTemplateDefaultLoading(true);
+    try {
+      const token = await tokenRef();
+      if (!token) return;
+      const res = await fetch('/api/master/outreach/template-default', {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const j = (await res.json()) as { subject?: string; html?: string; text?: string; error?: string };
+      if (!res.ok) {
+        toast({ title: 'Could not load template', description: j.error || res.statusText, variant: 'destructive' });
+        return;
+      }
+      if (j.subject != null) setDraftSubject(j.subject);
+      if (j.html != null) setDraftHtml(j.html);
+      if (j.text != null) setDraftText(j.text);
+      setPreviewOpen(true);
+      toast({
+        title: 'Built-in template loaded',
+        description: 'Merge tokens are intact. Use Save draft locally to persist in this browser.',
+      });
+    } finally {
+      setTemplateDefaultLoading(false);
+    }
+  }
+
+  function syncPlainFromHtml() {
+    if (!draftHtml.trim()) {
+      toast({ title: 'HTML is empty', description: 'Nothing to convert.', variant: 'destructive' });
+      return;
+    }
+    setDraftText(htmlToPlainText(draftHtml));
+    toast({ title: 'Plain text filled', description: 'Best-effort extraction from HTML — review before send.' });
+  }
+
+  function syncHtmlFromPlain() {
+    if (!draftText.trim()) {
+      toast({ title: 'Plain text is empty', description: 'Nothing to convert.', variant: 'destructive' });
+      return;
+    }
+    setDraftHtml(plainTextToSimpleHtml(draftText));
+    toast({
+      title: 'HTML filled',
+      description: 'Simple auto-layout from plain text. Prefer the built-in HTML if you only changed wording.',
+    });
+  }
 
   useEffect(() => {
     if (!isMasterAdmin) return;
@@ -408,7 +512,15 @@ export default function AdminOutreachPage() {
       const res = await fetch('/api/master/outreach/send', {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ contact_ids: ids, max_batch: 25, from_id: fromId }),
+        body: JSON.stringify({
+          contact_ids: ids,
+          max_batch: 25,
+          from_id: fromId,
+          use_template_draft: useDraftWhenSending,
+          draft_subject: draftSubject.trim() || null,
+          draft_html: draftHtml.trim() || null,
+          draft_text: draftText.trim() || null,
+        }),
       });
       const j = (await res.json()) as {
         error?: string;
@@ -449,15 +561,29 @@ export default function AdminOutreachPage() {
           draft_subject: draftSubject.trim() || null,
           draft_html: draftHtml.trim() || null,
           draft_text: draftText.trim() || null,
+          compare_builtin: compareBuiltinPreview,
         }),
       });
-      const j = (await res.json()) as { error?: string; subject?: string; html?: string; text?: string };
+      const j = (await res.json()) as {
+        error?: string;
+        subject?: string;
+        html?: string;
+        text?: string;
+        built_in?: { subject: string; html: string; text: string };
+        sample?: boolean;
+      };
       if (!res.ok) {
         toast({ title: 'Preview failed', description: j.error || res.statusText, variant: 'destructive' });
         return;
       }
       if (j.subject != null && j.html != null && j.text != null) {
-        setPreviewResult({ subject: j.subject, html: j.html, text: j.text });
+        setPreviewResult({
+          subject: j.subject,
+          html: j.html,
+          text: j.text,
+          built_in: j.built_in,
+          sample: j.sample,
+        });
         setPreviewOpen(true);
       }
     } finally {
@@ -618,15 +744,38 @@ export default function AdminOutreachPage() {
             </Select>
           </div>
         </div>
-        <p className="mb-3 text-xs text-zinc-500">
-          Merge fields for custom HTML/text:{' '}
-          <code className="text-zinc-400">{'{{person_name}}'}</code>,{' '}
-          <code className="text-zinc-400">{'{{company_name}}'}</code>,{' '}
-          <code className="text-zinc-400">{'{{unsubscribe_url}}'}</code>,{' '}
-          <code className="text-zinc-400">{'{{phone}}'}</code>,{' '}
-          <code className="text-zinc-400">{'{{uls_premise_kind}}'}</code>. Leave drafts empty to use env vars on the
-          server.
+        <p className="mb-2 text-xs text-zinc-500">
+          Use merge tokens in the draft (typed or inserted below). They are replaced per contact when you preview or
+          send. If both HTML and plain text are empty, the server uses the built-in template (or{' '}
+          <span className="font-mono">OUTREACH_EMAIL_HTML</span> / <span className="font-mono">OUTREACH_EMAIL_TEXT</span>{' '}
+          when set). Only one of HTML or plain text is required: the other is filled in automatically.
         </p>
+        <label className="mb-3 flex cursor-pointer items-center gap-2 text-xs text-zinc-400">
+          <Checkbox
+            checked={useDraftWhenSending}
+            onCheckedChange={(v) => persistUseDraftOnSend(v === true)}
+            aria-label="Use template draft when sending"
+          />
+          Use template draft when sending (subject + bodies below; turn off to always use server built-in / env only)
+        </label>
+        <div className="mb-3 flex flex-wrap gap-2">
+          {OUTREACH_MERGE_TOKENS.map(({ token, label }) => (
+            <Button
+              key={token}
+              type="button"
+              variant="outline"
+              size="sm"
+              className="border-zinc-600 font-mono text-[11px] text-emerald-200/90"
+              title={label}
+              onClick={() => insertMergeToken(token)}
+            >
+              {token}
+            </Button>
+          ))}
+          <span className="w-full text-[11px] text-zinc-600 sm:w-auto sm:pl-2">
+            Inserts into the field you last clicked (subject, HTML, or plain text).
+          </span>
+        </div>
         <div className="flex flex-wrap gap-2">
           <Button
             type="button"
@@ -646,6 +795,20 @@ export default function AdminOutreachPage() {
             {previewLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Eye className="mr-2 h-4 w-4" />}
             Preview (first selected or sample)
           </Button>
+          <Button
+            type="button"
+            variant="outline"
+            className="border-zinc-600"
+            disabled={templateDefaultLoading}
+            onClick={() => void loadDefaultTemplate()}
+          >
+            {templateDefaultLoading ? (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            ) : (
+              <RotateCcw className="mr-2 h-4 w-4" />
+            )}
+            Load built-in template
+          </Button>
           <Button type="button" variant="secondary" className="border-zinc-600" onClick={saveDraftToStorage}>
             Save draft locally
           </Button>
@@ -661,54 +824,114 @@ export default function AdminOutreachPage() {
             </a>
           </Button>
         </div>
+        <label className="mt-3 flex cursor-pointer items-center gap-2 text-xs text-zinc-400">
+          <Checkbox
+            checked={compareBuiltinPreview}
+            onCheckedChange={(v) => setCompareBuiltinPreview(v === true)}
+            aria-label="Compare to built-in when previewing"
+          />
+          <Columns2 className="h-3.5 w-3.5 shrink-0 text-zinc-500" />
+          When previewing, also show built-in default (same contact) so you can see what changed
+        </label>
         {previewOpen ? (
           <div className="mt-4 grid gap-3 md:grid-cols-1">
             <div>
-              <Label className="text-zinc-500">Draft subject (optional override)</Label>
+              <Label className="text-zinc-500">Draft subject (optional)</Label>
               <Input
+                ref={subjectFieldRef}
                 className="mt-1 border-zinc-700 bg-zinc-950 text-white"
                 value={draftSubject}
                 onChange={(e) => setDraftSubject(e.target.value)}
-                placeholder="Overrides OUTREACH_EMAIL_SUBJECT when non-empty"
+                onFocus={() => {
+                  mergeTargetRef.current = 'subject';
+                }}
+                placeholder="Empty = server default subject (or OUTREACH_EMAIL_SUBJECT)"
               />
             </div>
             <div>
-              <Label className="text-zinc-500">Draft HTML</Label>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <Label className="text-zinc-500">Draft HTML</Label>
+                <Button type="button" variant="ghost" size="sm" className="h-7 text-xs text-zinc-400" onClick={syncPlainFromHtml}>
+                  <ArrowDownToLine className="mr-1 h-3.5 w-3.5" />
+                  Fill plain text from HTML
+                </Button>
+              </div>
               <Textarea
-                className="mt-1 min-h-[120px] border-zinc-700 bg-zinc-950 font-mono text-xs text-zinc-200"
+                ref={htmlFieldRef}
+                className="mt-1 min-h-[140px] border-zinc-700 bg-zinc-950 font-mono text-xs text-zinc-200"
                 value={draftHtml}
                 onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setDraftHtml(e.target.value)}
-                placeholder="Leave empty to use OUTREACH_EMAIL_HTML from env"
+                onFocus={() => {
+                  mergeTargetRef.current = 'html';
+                }}
+                placeholder="Optional if plain text is set. Merge tokens stay as {{company_name}} etc."
               />
             </div>
             <div>
-              <Label className="text-zinc-500">Draft plain text</Label>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <Label className="text-zinc-500">Draft plain text</Label>
+                <Button type="button" variant="ghost" size="sm" className="h-7 text-xs text-zinc-400" onClick={syncHtmlFromPlain}>
+                  <ArrowDownToLine className="mr-1 h-3.5 w-3.5" />
+                  Fill HTML from plain text
+                </Button>
+              </div>
               <Textarea
-                className="mt-1 min-h-[120px] border-zinc-700 bg-zinc-950 font-mono text-xs text-zinc-200"
+                ref={textFieldRef}
+                className="mt-1 min-h-[140px] border-zinc-700 bg-zinc-950 font-mono text-xs text-zinc-200"
                 value={draftText}
                 onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setDraftText(e.target.value)}
-                placeholder="Leave empty to use OUTREACH_EMAIL_TEXT from env"
+                onFocus={() => {
+                  mergeTargetRef.current = 'text';
+                }}
+                placeholder="Optional if HTML is set."
               />
             </div>
           </div>
         ) : null}
         {previewResult ? (
-          <div className="mt-4 rounded-md border border-zinc-800 bg-zinc-950 p-4">
-            <p className="text-xs font-medium text-zinc-400">Rendered preview</p>
-            <p className="mt-1 text-xs text-zinc-600">
-              Batch send still uses <span className="font-mono">OUTREACH_EMAIL_*</span> on the server — copy a finished
-              draft into env (or Vercel) before sending live.
-            </p>
-            <p className="mt-2 text-sm text-zinc-200">
-              <span className="text-zinc-500">Subject:</span> {previewResult.subject}
-            </p>
-            <div className="mt-3 max-h-48 overflow-auto rounded border border-zinc-800 bg-white p-2 text-xs text-black">
-              {/* eslint-disable-next-line react/no-danger */}
-              <div dangerouslySetInnerHTML={{ __html: previewResult.html }} />
+          <div className="mt-4 space-y-4 rounded-md border border-zinc-800 bg-zinc-950 p-4">
+            <div>
+              <p className="text-xs font-medium text-zinc-400">Your template (merged)</p>
+              {previewResult.sample ? (
+                <p className="mt-1 text-[11px] text-amber-200/80">Sample contact — select a row to preview a real import.</p>
+              ) : null}
+              <p className="mt-2 text-sm text-zinc-200">
+                <span className="text-zinc-500">Subject:</span> {previewResult.subject}
+              </p>
+              <div className="mt-3 max-h-48 overflow-auto rounded border border-zinc-800 bg-white p-2 text-xs text-black">
+                {/* eslint-disable-next-line react/no-danger */}
+                <div dangerouslySetInnerHTML={{ __html: previewResult.html }} />
+              </div>
+              <pre className="mt-2 max-h-32 overflow-auto whitespace-pre-wrap rounded border border-zinc-800 p-2 text-xs text-zinc-400">
+                {previewResult.text}
+              </pre>
             </div>
-            <pre className="mt-2 max-h-32 overflow-auto whitespace-pre-wrap rounded border border-zinc-800 p-2 text-xs text-zinc-400">
-              {previewResult.text}
-            </pre>
+            {previewResult.built_in ? (
+              <div className="border-t border-zinc-800 pt-4">
+                <p className="text-xs font-medium text-zinc-400">Built-in default (merged, same contact)</p>
+                {previewResult.built_in.subject === previewResult.subject &&
+                previewResult.built_in.html === previewResult.html &&
+                previewResult.built_in.text === previewResult.text ? (
+                  <p className="mt-2 text-xs text-zinc-500">Matches your preview — draft resolves the same as the server default.</p>
+                ) : (
+                  <>
+                    <p className="mt-2 text-sm text-zinc-200">
+                      <span className="text-zinc-500">Subject:</span> {previewResult.built_in.subject}
+                    </p>
+                    <div className="mt-3 max-h-48 overflow-auto rounded border border-zinc-800 bg-white p-2 text-xs text-black">
+                      {/* eslint-disable-next-line react/no-danger */}
+                      <div dangerouslySetInnerHTML={{ __html: previewResult.built_in.html }} />
+                    </div>
+                    <pre className="mt-2 max-h-32 overflow-auto whitespace-pre-wrap rounded border border-zinc-800 p-2 text-xs text-zinc-400">
+                      {previewResult.built_in.text}
+                    </pre>
+                  </>
+                )}
+              </div>
+            ) : null}
+            <p className="text-[11px] text-zinc-600">
+              Sends use the same merge rules as this preview when &quot;Use template draft when sending&quot; is on.
+            </p>
           </div>
         ) : null}
       </Card>

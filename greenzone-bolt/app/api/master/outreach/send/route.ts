@@ -19,6 +19,11 @@ type SendBody = {
   contact_ids?: string[];
   max_batch?: number;
   from_id?: string;
+  /** When true (default), optional draft_* fields are applied the same way as preview (merge tokens, HTML↔text fill-in). */
+  use_template_draft?: boolean;
+  draft_subject?: string | null;
+  draft_html?: string | null;
+  draft_text?: string | null;
 };
 
 export async function POST(request: NextRequest) {
@@ -47,6 +52,15 @@ export async function POST(request: NextRequest) {
     return jsonError(400, fromResolved.error);
   }
   const outboundFrom = fromResolved.from;
+
+  const useDraft = body.use_template_draft !== false;
+  const sendDraft = useDraft
+    ? {
+        subject: body.draft_subject ?? null,
+        html: body.draft_html ?? null,
+        text: body.draft_text ?? null,
+      }
+    : null;
 
   const ids = Array.isArray(body.contact_ids) ? body.contact_ids.filter((x) => typeof x === 'string') : [];
   if (ids.length === 0) {
@@ -77,7 +91,7 @@ export async function POST(request: NextRequest) {
       continue;
     }
 
-    const { subject, html, text } = composeOutreachMessage(row, siteUrl);
+    const { subject, html, text } = composeOutreachMessage(row, siteUrl, sendDraft);
     const unsubUrl = buildOutreachUnsubscribeUrl(siteUrl, row.id);
 
     const outboundToken = randomUUID();

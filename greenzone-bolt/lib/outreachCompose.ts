@@ -5,6 +5,7 @@ import {
   type OutreachMergeVars,
 } from '@/lib/outreachTemplate';
 import { buildOutreachUnsubscribeUrl } from '@/lib/outreachUnsubscribe';
+import { htmlToPlainText, plainTextToSimpleHtml } from '@/lib/outreachHtmlText';
 
 export type OutreachComposeRow = {
   id: string;
@@ -32,22 +33,38 @@ export type OutreachComposeDraft = {
   text?: string | null;
 };
 
+function resolveCustomBodies(draft: OutreachComposeDraft | null | undefined): {
+  html: string;
+  text: string;
+} | null {
+  const envHtml = (process.env.OUTREACH_EMAIL_HTML || '').trim();
+  const envText = (process.env.OUTREACH_EMAIL_TEXT || '').trim();
+  const customHtml = (draft?.html ?? '').trim() || envHtml;
+  const customText = (draft?.text ?? '').trim() || envText;
+
+  if (customHtml && customText) {
+    return { html: customHtml, text: customText };
+  }
+  if (customHtml && !customText) {
+    return { html: customHtml, text: htmlToPlainText(customHtml) };
+  }
+  if (!customHtml && customText) {
+    return { html: plainTextToSimpleHtml(customText), text: customText };
+  }
+  return null;
+}
+
 /** Same output shape as send route: subject + bodies after merge. */
 export function composeOutreachMessage(
   row: OutreachComposeRow,
   siteUrl: string,
   draft?: OutreachComposeDraft | null
 ): { subject: string; html: string; text: string } {
-  const envHtml = (process.env.OUTREACH_EMAIL_HTML || '').trim();
-  const envText = (process.env.OUTREACH_EMAIL_TEXT || '').trim();
-  const customHtml = (draft?.html ?? '').trim() || envHtml;
-  const customText = (draft?.text ?? '').trim() || envText;
-  const subjectBase =
-    (draft?.subject ?? '').trim() || defaultOutreachSubject();
+  const subjectBase = (draft?.subject ?? '').trim() || defaultOutreachSubject();
   const vars = outreachMergeVarsForRow(row, siteUrl);
-
-  if (customHtml && customText) {
-    return applyTemplateOverrides(subjectBase, customHtml, customText, vars);
+  const bodies = resolveCustomBodies(draft);
+  if (bodies) {
+    return applyTemplateOverrides(subjectBase, bodies.html, bodies.text, vars);
   }
   const rendered = renderOutreachOnboardingBody(vars);
   return { subject: subjectBase, html: rendered.html, text: rendered.text };

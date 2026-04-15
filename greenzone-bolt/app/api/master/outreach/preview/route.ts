@@ -14,6 +14,8 @@ type PreviewBody = {
   draft_subject?: string | null;
   draft_html?: string | null;
   draft_text?: string | null;
+  /** When true, response includes `built_in` — same merge row, empty draft (server default + env bodies). */
+  compare_builtin?: boolean;
 };
 
 export async function POST(request: NextRequest) {
@@ -52,6 +54,10 @@ export async function POST(request: NextRequest) {
       return jsonError(404, 'Contact not found');
     }
     const out = composeOutreachMessage(row, siteUrl, draft);
+    if (body.compare_builtin) {
+      const built_in = composeOutreachMessage(row, siteUrl, null);
+      return NextResponse.json({ ...out, built_in });
+    }
     return NextResponse.json(out);
   }
 
@@ -64,5 +70,9 @@ export async function POST(request: NextRequest) {
     uls_premise_kind: 'storefront' as string | null,
   };
   const out = composeOutreachMessage(dummy, siteUrl, draft);
+  if (body.compare_builtin) {
+    const built_in = composeOutreachMessage(dummy, siteUrl, null);
+    return NextResponse.json({ ...out, built_in, sample: true });
+  }
   return NextResponse.json({ ...out, sample: true });
 }
