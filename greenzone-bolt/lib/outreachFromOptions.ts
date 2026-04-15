@@ -39,34 +39,52 @@ export function implicitOutreachFromWhenResendConfigured(): string | null {
   return OUTREACH_CONNECT_MAILBOX;
 }
 
+/**
+ * Ensures the primary DaTreehouse mailbox appears in the outreach “from” picker when not already listed
+ * (normalized by address).
+ */
+export function ensureConnectMailboxInOptions(options: OutreachFromOption[]): OutreachFromOption[] {
+  const hasConnect = options.some(
+    (o) => normalizeOutreachFromIdentity(o.from).toLowerCase() === OUTREACH_CONNECT_MAILBOX.toLowerCase()
+  );
+  if (hasConnect) return options;
+  const taken = new Set(options.map((o) => o.id));
+  const id = taken.has('connect') ? 'connect_datreehouse' : 'connect';
+  return [...options, { id, from: OUTREACH_CONNECT_MAILBOX }];
+}
+
 export function parseOutreachFromOptions(): OutreachFromOption[] {
   const raw = (process.env.OUTREACH_EMAIL_FROM_OPTIONS || '').trim();
   const primary = normalizeOutreachFromIdentity(process.env.OUTREACH_EMAIL_FROM || '');
   const implicit = implicitOutreachFromWhenResendConfigured();
   const singleFrom = primary || implicit;
 
+  let result: OutreachFromOption[];
   if (!raw) {
-    return singleFrom ? [{ id: 'default', from: singleFrom }] : [];
-  }
-  try {
-    const parsed = JSON.parse(raw) as unknown;
-    if (!Array.isArray(parsed)) {
-      return singleFrom ? [{ id: 'default', from: singleFrom }] : [];
+    result = singleFrom ? [{ id: 'default', from: singleFrom }] : [];
+  } else {
+    try {
+      const parsed = JSON.parse(raw) as unknown;
+      if (!Array.isArray(parsed)) {
+        result = singleFrom ? [{ id: 'default', from: singleFrom }] : [];
+      } else {
+        const out: OutreachFromOption[] = [];
+        for (const el of parsed) {
+          if (!el || typeof el !== 'object') continue;
+          const o = el as { id?: unknown; from?: unknown };
+          const id = typeof o.id === 'string' ? o.id.trim() : '';
+          const from = typeof o.from === 'string' ? normalizeOutreachFromIdentity(o.from) : '';
+          if (id && from) out.push({ id, from });
+        }
+        if (out.length === 0 && primary) result = [{ id: 'default', from: primary }];
+        else if (out.length === 0 && implicit) result = [{ id: 'default', from: implicit }];
+        else result = out;
+      }
+    } catch {
+      result = singleFrom ? [{ id: 'default', from: singleFrom }] : [];
     }
-    const out: OutreachFromOption[] = [];
-    for (const el of parsed) {
-      if (!el || typeof el !== 'object') continue;
-      const o = el as { id?: unknown; from?: unknown };
-      const id = typeof o.id === 'string' ? o.id.trim() : '';
-      const from = typeof o.from === 'string' ? normalizeOutreachFromIdentity(o.from) : '';
-      if (id && from) out.push({ id, from });
-    }
-    if (out.length === 0 && primary) return [{ id: 'default', from: primary }];
-    if (out.length === 0 && implicit) return [{ id: 'default', from: implicit }];
-    return out;
-  } catch {
-    return singleFrom ? [{ id: 'default', from: singleFrom }] : [];
   }
+  return ensureConnectMailboxInOptions(result);
 }
 
 /** Resolve client-provided from_id against env allowlist only. */
