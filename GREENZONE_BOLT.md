@@ -43,6 +43,12 @@ npm run dev
 
 Open `http://localhost:3000`. Set **Authentication → URL configuration** in Supabase for your local URL if you use sign-in.
 
-## 4. Old folder
+## 4. Vercel (repo connected at monorepo root)
+
+Root **`vercel.json`** runs `npm run build --prefix greenzone-bolt`, then links **`./.next`** → **`greenzone-bolt/.next`** so the Next.js preset finds `routes-manifest.json`. Prefer that over changing **Output Directory** in the dashboard (leave it default / empty unless you know you need an override).
+
+Alternatively, set the Vercel project **Root Directory** to **`greenzone-bolt`** and remove the custom `buildCommand` from root `vercel.json` so the app builds in-place there.
+
+## 5. Old folder
 
 If `project-bolt-sb1-v8s819gt/` is still on disk, close anything using it and delete that folder manually so you only maintain **`greenzone-bolt/`**.
