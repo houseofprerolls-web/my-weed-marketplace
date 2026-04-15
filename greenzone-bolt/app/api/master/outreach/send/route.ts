@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
   if (!outreachEmailConfigured()) {
     return jsonError(
       503,
-      'Email not configured: set OUTREACH_EMAIL_FROM (or OUTREACH_EMAIL_FROM_OPTIONS), then either mailbox SMTP e.g. Microsoft 365 (OUTREACH_SMTP_HOST, OUTREACH_SMTP_USER, OUTREACH_SMTP_PASS) or Resend (OUTREACH_RESEND_API_KEY or RESEND_API_KEY)'
+      'Email not configured: set RESEND_API_KEY (or OUTREACH_RESEND_API_KEY) and optionally OUTREACH_EMAIL_FROM — or set OUTREACH_EMAIL_FROM plus SMTP (OUTREACH_SMTP_*) or OUTREACH_EMAIL_TRANSPORT=smtp to force mailbox send'
     );
   }
 

@@ -2,6 +2,10 @@
  * Allowlisted outbound "from" identities (SMTP or Resend). Set OUTREACH_EMAIL_FROM_OPTIONS as JSON array, e.g.
  * [{"id":"onboarding","from":"Team <onboarding@verified.com>"},{"id":"sales","from":"Sales <sales@verified.com>"}]
  * If unset, falls back to OUTREACH_EMAIL_FROM as a single option with id "default".
+ *
+ * With `RESEND_API_KEY` (or `OUTREACH_RESEND_API_KEY`) and no from envs, we default the sender to
+ * `connect@datreehouse.com` (same mailbox as Supabase Auth / forgot-password when configured per .env.example),
+ * unless `RESEND_DEFAULT_FROM` or `AUTH_EMAIL_FROM` is set to your verified Resend identity.
  */
 
 export type OutreachFromOption = { id: string; from: string };
@@ -19,16 +23,35 @@ export function normalizeOutreachFromIdentity(from: string): string {
   return t;
 }
 
+/** Same key family as Vercel’s Resend integration — shared with outreach sends. */
+export function outreachOrAppResendApiKey(): string {
+  return (process.env.OUTREACH_RESEND_API_KEY || process.env.RESEND_API_KEY || '').trim();
+}
+
+/**
+ * If Resend is configured but no outreach-specific "from" is set, use the same default as Supabase Auth SMTP
+ * (see .env.example): connect@datreehouse.com, or RESEND_DEFAULT_FROM / AUTH_EMAIL_FROM when set.
+ */
+export function implicitOutreachFromWhenResendConfigured(): string | null {
+  if (!outreachOrAppResendApiKey()) return null;
+  const shared = (process.env.RESEND_DEFAULT_FROM || process.env.AUTH_EMAIL_FROM || '').trim();
+  if (shared) return normalizeOutreachFromIdentity(shared);
+  return OUTREACH_CONNECT_MAILBOX;
+}
+
 export function parseOutreachFromOptions(): OutreachFromOption[] {
   const raw = (process.env.OUTREACH_EMAIL_FROM_OPTIONS || '').trim();
   const primary = normalizeOutreachFromIdentity(process.env.OUTREACH_EMAIL_FROM || '');
+  const implicit = implicitOutreachFromWhenResendConfigured();
+  const singleFrom = primary || implicit;
+
   if (!raw) {
-    return primary ? [{ id: 'default', from: primary }] : [];
+    return singleFrom ? [{ id: 'default', from: singleFrom }] : [];
   }
   try {
     const parsed = JSON.parse(raw) as unknown;
     if (!Array.isArray(parsed)) {
-      return primary ? [{ id: 'default', from: primary }] : [];
+      return singleFrom ? [{ id: 'default', from: singleFrom }] : [];
     }
     const out: OutreachFromOption[] = [];
     for (const el of parsed) {
@@ -39,9 +62,10 @@ export function parseOutreachFromOptions(): OutreachFromOption[] {
       if (id && from) out.push({ id, from });
     }
     if (out.length === 0 && primary) return [{ id: 'default', from: primary }];
+    if (out.length === 0 && implicit) return [{ id: 'default', from: implicit }];
     return out;
   } catch {
-    return primary ? [{ id: 'default', from: primary }] : [];
+    return singleFrom ? [{ id: 'default', from: singleFrom }] : [];
   }
 }
 
@@ -49,7 +73,10 @@ export function parseOutreachFromOptions(): OutreachFromOption[] {
 export function resolveAllowedOutreachFrom(fromId: string | undefined | null): { from: string; id: string } | { error: string } {
   const options = parseOutreachFromOptions();
   if (options.length === 0) {
-    return { error: 'No from addresses configured (OUTREACH_EMAIL_FROM or OUTREACH_EMAIL_FROM_OPTIONS)' };
+    return {
+      error:
+        'No from addresses configured. Set OUTREACH_EMAIL_FROM, or set RESEND_API_KEY and optionally RESEND_DEFAULT_FROM (otherwise connect@datreehouse.com is used when Resend is configured).',
+    };
   }
   const requested = (fromId || 'default').trim();
   let match = options.find((o) => o.id === requested);

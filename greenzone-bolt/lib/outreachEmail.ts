@@ -1,15 +1,22 @@
 /**
  * Server-only transactional send.
  *
- * 1) **Mailbox SMTP** (e.g. Microsoft 365 / Outlook, or any host) when set: `OUTREACH_SMTP_HOST`, `OUTREACH_SMTP_USER`,
- *    `OUTREACH_SMTP_PASS`, plus `OUTREACH_EMAIL_FROM` or `OUTREACH_EMAIL_FROM_OPTIONS`.
- * 2) **Resend** (fallback): `OUTREACH_RESEND_API_KEY` or `RESEND_API_KEY` + from options.
+ * Uses the same **Resend API key** as typical Vercel setups (`RESEND_API_KEY`, or `OUTREACH_RESEND_API_KEY`).
+ * Transport: set `OUTREACH_EMAIL_TRANSPORT=smtp` to force mailbox SMTP; `resend` to force Resend; otherwise **auto**
+ * prefers **Resend HTTP** when a Resend key exists (aligned with Supabase Auth when Auth uses Resend), else SMTP.
  *
- * Supabase Auth mail is configured in the Supabase Dashboard (Authentication → SMTP), not here.
+ * From: `OUTREACH_EMAIL_FROM` / `OUTREACH_EMAIL_FROM_OPTIONS`, or when only `RESEND_API_KEY` is set see
+ * `implicitOutreachFromWhenResendConfigured` in `outreachFromOptions.ts` (same default mailbox as forgot-password in .env.example).
+ *
+ * Supabase Auth mail itself is still configured in the Supabase Dashboard (Authentication → SMTP).
  */
 
 import nodemailer from 'nodemailer';
-import { normalizeOutreachFromIdentity, parseOutreachFromOptions } from '@/lib/outreachFromOptions';
+import {
+  normalizeOutreachFromIdentity,
+  parseOutreachFromOptions,
+  outreachOrAppResendApiKey,
+} from '@/lib/outreachFromOptions';
 
 export type SendOutreachEmailParams = {
   to: string;
@@ -49,12 +56,17 @@ function smtpConfigured(): boolean {
   return Boolean(smtpHost() && smtpUser() && smtpPass());
 }
 
+function outreachEmailTransportPref(): 'resend' | 'smtp' {
+  const t = (process.env.OUTREACH_EMAIL_TRANSPORT || '').trim().toLowerCase();
+  if (t === 'smtp') return 'smtp';
+  if (t === 'resend') return 'resend';
+  if (outreachOrAppResendApiKey()) return 'resend';
+  return 'smtp';
+}
+
 export function outreachEmailConfigured(): boolean {
-  const fromOk = parseOutreachFromOptions().length > 0;
-  if (!fromOk) return false;
-  if (smtpConfigured()) return true;
-  const key = (process.env.OUTREACH_RESEND_API_KEY || process.env.RESEND_API_KEY || '').trim();
-  return Boolean(key);
+  if (parseOutreachFromOptions().length === 0) return false;
+  return smtpConfigured() || Boolean(outreachOrAppResendApiKey());
 }
 
 function smtpPort(): number {
@@ -114,7 +126,7 @@ async function sendOutreachEmailSmtp(params: SendOutreachEmailParams): Promise<S
 }
 
 async function sendOutreachEmailResend(params: SendOutreachEmailParams): Promise<SendOutreachEmailResult> {
-  const apiKey = (process.env.OUTREACH_RESEND_API_KEY || process.env.RESEND_API_KEY || '').trim();
+  const apiKey = outreachOrAppResendApiKey();
   const resolvedFrom = normalizeOutreachFromIdentity(
     params.from?.trim() ||
       parseOutreachFromOptions()[0]?.from ||
@@ -124,7 +136,7 @@ async function sendOutreachEmailResend(params: SendOutreachEmailParams): Promise
     return {
       providerMessageId: null,
       error:
-        'Missing OUTREACH_RESEND_API_KEY (or RESEND_API_KEY) or a configured from address (OUTREACH_EMAIL_FROM / OUTREACH_EMAIL_FROM_OPTIONS)',
+        'Missing RESEND_API_KEY (or OUTREACH_RESEND_API_KEY) or a configured from address (OUTREACH_EMAIL_FROM / OUTREACH_EMAIL_FROM_OPTIONS / implicit connect@ when Resend key is set)',
     };
   }
 
@@ -156,8 +168,13 @@ async function sendOutreachEmailResend(params: SendOutreachEmailParams): Promise
 }
 
 export async function sendOutreachEmail(params: SendOutreachEmailParams): Promise<SendOutreachEmailResult> {
-  if (smtpConfigured()) {
-    return sendOutreachEmailSmtp(params);
+  const pref = outreachEmailTransportPref();
+  if (pref === 'resend') {
+    if (outreachOrAppResendApiKey()) return sendOutreachEmailResend(params);
+    if (smtpConfigured()) return sendOutreachEmailSmtp(params);
+    return sendOutreachEmailResend(params);
   }
+  if (smtpConfigured()) return sendOutreachEmailSmtp(params);
+  if (outreachOrAppResendApiKey()) return sendOutreachEmailResend(params);
   return sendOutreachEmailResend(params);
 }

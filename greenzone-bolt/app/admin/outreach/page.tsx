@@ -653,12 +653,14 @@ export default function AdminOutreachPage() {
           <span className="text-violet-300">Storefront</span>. Same columns in both exports; only the type string (and
           license prefix) changes. Import maps owner, phone, email, DBA/legal; full type line stays in Notes. Check{' '}
           <span className="font-medium text-zinc-300">Replace all existing contacts</span> to wipe before import.
-          Set <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_EMAIL_FROM</code> (or{' '}
-          <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_EMAIL_FROM_OPTIONS</code>), then either SMTP (
+          Set <code className="rounded bg-zinc-800 px-1 text-xs">RESEND_API_KEY</code> (same as Vercel / forgot-password
+          via Resend) and optionally <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_EMAIL_FROM</code> — if
+          from is omitted, sends use <code className="rounded bg-zinc-800 px-1 text-xs">connect@datreehouse.com</code>{' '}
+          when the key is present. Or use <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_EMAIL_FROM_OPTIONS</code>, SMTP (
           <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_SMTP_HOST</code>,{' '}
           <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_SMTP_USER</code>,{' '}
-          <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_SMTP_PASS</code>) or Resend (
-          <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_RESEND_API_KEY</code>). Optional{' '}
+          <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_SMTP_PASS</code>), or{' '}
+          <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_EMAIL_TRANSPORT=smtp</code> to force mailbox. Optional{' '}
           <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_EMAIL_HTML</code> /{' '}
           <code className="rounded bg-zinc-800 px-1 text-xs">OUTREACH_EMAIL_TEXT</code> for custom copy.
         </p>
